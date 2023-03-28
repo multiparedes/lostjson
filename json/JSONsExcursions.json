@@ -1,0 +1,36 @@
+{
+    "@context": "https://schema.org",
+    "@type": "itemList",
+	"itemListElement": [
+    {
+        "@type": "Trip",
+        "name": "Teix",
+        "description": "Aquesta activitat és una excursió que comença al poble de Valldemossa i va pujant fins arribar al puig del Teix.",
+        "itinerary": [
+            {
+                "@type": "City",
+                "name": "Valldemossa",
+                "description": "Poble a l'illa de Mallorca localitzat a la Serra de Tramuntana. ",
+                "url": "https://es.wikipedia.org/wiki/Valldemosa"
+                
+            },
+            {
+                "@type": "Mountain",
+                "name": "Teix",
+                "description": "Pic de Mallorca a la Serra de Tramuntana ",
+                "image": "https://trailrunningmallorca.es/wp-content/uploads/2015/11/teix.jpg"
+                
+            }
+        ],
+        "image": ["http://www.walkingmallorca.co.uk/senderismo_mallorca/images/senda_16/mapa_16.gif","https://cdn1.click-mallorca.com/blog/wp-content/uploads/2021/04/puig-des-teix-1.jpg",
+                "https://cdn1.click-mallorca.com/blog/wp-content/uploads/2021/04/puig-des-teix-4.jpg", "https://cdn1.click-mallorca.com/blog/wp-content/uploads/2021/04/puig-des-teix-3.jpg",
+                "https://cdn1.click-mallorca.com/blog/wp-content/uploads/2021/04/puig-des-teix-2.jpg"],
+        "subjectOf": {
+            "@type": "CreativeWork",
+            "video": ["https://www.youtube.com/watch?v=P017pMlrILk"],
+            "audio": [""]
+        },
+        "sameAs": "urlAInformacioExtra.json" 
+    }	
+    ]
+}

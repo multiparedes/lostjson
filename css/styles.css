@@ -4177,7 +4177,25 @@ textarea.form-control-lg {
   background-clip: border-box;
   border: var(--bs-card-border-width) solid var(--bs-card-border-color);
   border-radius: var(--bs-card-border-radius);
+
+  transition: all 250ms linear;
 }
+
+.card:hover .card-img-top {
+  filter: grayscale(0%);
+  transition: filter 250ms linear;
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.no-active {
+  filter: grayscale(100%);
+  transition: filter 250ms linear;
+
+}
+
 .card > hr {
   margin-right: 0;
   margin-left: 0;
