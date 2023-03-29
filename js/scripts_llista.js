@@ -13,7 +13,7 @@ function generateCard() {
         toGen.innerHTML = toGen.innerHTML.concat(createCard({
             nom: "Teix",
             dificultatString: "Facil",
-            dificultatStars: toStars(3.25),
+            dificultatStars: 3.5,
             distancia: "12",
             desnivel: "400",
             urlFoto: "/assets/img/teix.jpg"
@@ -49,7 +49,7 @@ function createCard(card) {
                     <div class="text-center">
                         <h5 class="fw-bolder">${card.nom}</h5>
                         <div class="d-flex justify-content-center small text-warning mb-2">
-                            ${card.dificultatStars}
+                        ${toStars(card.dificultatStars)}  <span class="text-muted">(${card.dificultatStars})<span>
                         </div>
 
                         <div class="d-flex flex-column small">
@@ -61,7 +61,7 @@ function createCard(card) {
                 </div>
                 <!-- Product actions-->
                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Hike it!</a></div>
+                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="excursio.html?id=1">Hike it!</a></div>
                 </div>
             </div>
         </div>
