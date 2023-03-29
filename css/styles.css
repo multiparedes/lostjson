@@ -11183,3 +11183,12 @@ footer a:hover, footer a:active, footer a:focus {
 .rotated {
   transform: rotate(-180deg);
 }
+
+.carousel-inner img {
+  height: 400px; /* Ajusta este valor según el tamaño deseado */
+  object-fit: cover;
+}
+
+.mr-4 {
+  margin-right: 0.5em;
+}
