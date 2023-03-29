@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Es JSON - Llistat</title>
+        <title>Llista d'excursions</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -42,8 +42,33 @@
                 </div>
             </div>
         </header>
+
         <!-- Section-->
         <section class="py-5">
+
+        <!-- Filtros -->
+        <div class="container  px-4 px-lg-5">
+            <form class="row gx-3">
+                <div class="col-md-6 col-lg-8 mb-3 mb-md-0 align-self-center" ">
+                  <input type="text" class="form-control form-control-sm" placeholder="Cercar per nom d'excursió ..." style="padding: 0.55em;"">
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex justify-content-end">
+                  <div class="input-group">
+                    <label for="ordenarPor" class="visually-hidden">Ordenar per</label>
+                    <select class="form-select" id="ordenarPor" style="border-radius: 4px;">
+                      <option selected>Ordenar per</option>
+                      <option value="dificultad">Dificultat</option>
+                      <option value="distancia">Distància</option>
+                      <option value="tiempo">Temps</option>
+                    </select>
+                  </div>
+                </div>
+              </form>
+          </div>
+          
+          
+          
+
             <div class="container px-4 px-lg-5 mt-5">
                 <div id="toGenerar" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"></div>
             </div>
