@@ -6,43 +6,48 @@
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
 
-async function generateCard() {
+function cardViewer(){
+    const selector = document.getElementById("ordenarPor")
+    let opcionSeleccionada = selector.selectedIndex;
+    generateCard({sortValue: 0});
+
+
+    selector.addEventListener("change",(event) => {
+    opcionSeleccionada = selector.selectedIndex;
+    console.log(opcionSeleccionada)
+    switch(opcionSeleccionada){
+        case 1:
+            generateCard({sortValue: 1});
+            break;
+        case 2:
+            generateCard({sortValue: 2});
+            break;
+        case 3:
+            generateCard({sortValue: 3});
+            break;
+    }
+    })
+}
+
+async function generateCard({sortValue}) {
     const toGen = document.getElementById("toGenerar")
 
-    var jsonExcursions = "d";
-   await fetch('../json/JSONsExcursions.json')
-  .then(response => response.json())
-  .then(data => {
-    // Aquí puedes trabajar con los datos en formato JSON convertidos a objeto JavaScript
-    jsonExcursions = data.itemListElement;
-  })
-  .catch(error => {
-    // En caso de error, puedes manejarlo aquí
-    console.error(error);
-  });
-  
-  var jsonExcursions;
-  await fetch('../json/JSONsExcursions.json')
-  .then(response => response.json())
-  .then(data => {
-      // Aquí puedes trabajar con los datos en formato JSON convertidos a objeto JavaScript
-      jsonExcursions = data.itemListElement;
-    })
-    .catch(error => {
+        var jsonExcursions;
+        await fetch('../json/JSONsExcursions.json')
+        .then(response => response.json())
+        .then(data => {
+        // Aquí puedes trabajar con los datos en formato JSON convertidos a objeto JavaScript
+        jsonExcursions = data.itemListElement;
+        })
+        .catch(error => {
         // En caso de error, puedes manejarlo aquí
         console.error(error);
-    });
-    var urlsExtras = [];
-    for (let i = 0; i < jsonExcursions.length-1; i++) {
-        urlsExtras = [...urlsExtras, `../json/informacioExtra${i}.json`];
-      }
-    
-
+        });   
       let infoExtras = [];
     const posts = await Promise.all(
-        urlsExtras.map(async (extra) => {
-           // console.log(extra)
-          return await fetch(extra)
+        jsonExcursions.map(async (excursio) => {
+          
+          return await fetch(excursio.sameAs)
          .then(response => response.json())
          .then(data => {
             // Aquí puedes trabajar con los datos en formato JSON convertidos a objeto JavaScript
@@ -51,51 +56,111 @@ async function generateCard() {
           });
           
       })
-
       )
-    //  let infoExtras = posts.map(response =>  response.json());
+      
+        let excursions = []
+        excursions = jsonExcursions.map((excursio,index) =>  {return {
+        excursioInfo: excursio, 
+        extra: infoExtras[index]
+        }});
+        console.log(excursions)
 
-    
-    jsonExcursions.forEach((elem,index) => {
-        console.log(jsonExcursions)
-        toGen.innerHTML = toGen.innerHTML.concat(createCard({
-            nom: elem.name,
-            dificultatString: "Dificultat",
-            dificultatStars: infoExtras[index].Dificultat,
-            distancia: infoExtras[index].Distancia,
-            desnivel: infoExtras[index].Desnivell,
-            urlFoto: "/assets/img/teix.jpg"
-        }))
-    });
+        switch(sortValue){
+            case 1:
+                excursions.sort(function(a, b) {
+                    return a.extra.Dificultat - b.extra.Dificultat;
+                  });
+                break;
+            case 2:
+                excursions.sort(function(a, b) {
+                    return  a.extra.Distancia - b.extra.Distancia ;
+                  });
+                  break;
+            case 3:
+                  excursions.sort(function(a, b) {
+                    return durationToMin(a.extra.Duracio_total) - durationToMin(b.extra.Duracio_total);
+                  });
+                break;
+                
+        }
+        console.log(excursions)
+        
+      
+        cards = "";
+        excursions.forEach((elem,index) => {
+            //console.log(jsonExcursions)
+            cards = cards.concat(createCard({
+                id: index,
+                nom: elem.excursioInfo.name,
+                dificultatString: dificultyToInt(elem.extra.Dificultat),
+                dificultatStars: elem.extra.Dificultat,
+                distancia: elem.extra.Distancia,
+                desnivel: elem.extra.Desnivell,
+                duration: elem.extra.Duracio_total,
+                urlFoto: elem.excursioInfo.image[0]
+            }))
+        });
+
+        toGen.innerHTML = cards;
    
     
 
+}
+function durationToMin(duration){
+    // Separar el string en dos partes: horas y minutos
+    const partes = duration.split(" ");
+    const horas = parseInt(partes[0]);
+    const minutos = parseInt(partes[1]);
+
+    // Convertir las horas y los minutos a minutos y sumarlos
+    const tiempoEnMinutos = horas * 60 + minutos;
+    return tiempoEnMinutos
+}
+
+function dificultyToInt(value){
+    switch (value) {
+        case 0:
+            return "Molt Fàcil"
+        case 1:
+            return "Fàcil"
+        case 2:
+            return "Mitjà"
+        case 3:
+            return "Díficil"
+        case 4:
+            return "Avançat"
+        case 5:
+            return "Expert"
+    }
 }
 
 function toStars(int) {
     var enteras = ""
 
+
     for(var i = 0; i < Math.floor(int); i++) {
         enteras = enteras.concat('<div class="bi-star-fill"></div>\n')
     }
-
-    if((int % 1) <= 0.5) {
+    if(int === 0){
+        return enteras
+    }
+    else if((int % 1) <= 0.5) {
         enteras = enteras.concat('<div class="bi-star-half"></div>\n')
     } else {
         enteras = enteras.concat('<div class="bi-star-fill"></div>\n')
     }
-
-    console.log(enteras % 1)
+   
 
     return enteras
 }
 
 
 function createCard(card) {
+   
     return `
         <div class="col mb-5">
             <div class="card h-100">
-                <img class="card-img-top no-active" src="${card.urlFoto}" alt="Puig des Teix - Cim" />
+                <img class="card-img-top no-active" src="${card.urlFoto}" alt=${card.nom} />
                 <div class="card-body p-4">
                     <div class="text-center">
                         <h5 class="fw-bolder">${card.nom}</h5>
@@ -105,14 +170,15 @@ function createCard(card) {
 
                         <div class="d-flex flex-column small">
                             <div>${card.dificultatString}</div>
-                            <div>${card.distancia}km</div>
-                            <div>Desnivel: ${card.desnivel}m</div>   
+                            <div>${card.distancia} km</div>
+                            <div>Desnivel: ${card.desnivel} m</div>  
+                            <div>Duracio: ${card.duration} </div>    
                         </div>
                     </div>
                 </div>
                 <!-- Product actions-->
                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="excursio.html?id=1">Hike it!</a></div>
+                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="excursio.html?id=${card.id}">Hike it!</a></div>
                 </div>
             </div>
         </div>
@@ -121,12 +187,15 @@ function createCard(card) {
 }
 
 var card = {
+    id: 0,
     nom: "",
     dificultatString: "",
     dificultatStars: "",
     distancia: "",
     desnivel: "",
+    duration: "",
     urlFoto: ""
 }
 
-generateCard()
+
+cardViewer();
