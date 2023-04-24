@@ -6,19 +6,70 @@
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
 
-function generateCard() {
+async function generateCard() {
     const toGen = document.getElementById("toGenerar")
 
-    for(var i = 0; i < 100; i++) {
+    var jsonExcursions = "d";
+   await fetch('../json/JSONsExcursions.json')
+  .then(response => response.json())
+  .then(data => {
+    // Aquí puedes trabajar con los datos en formato JSON convertidos a objeto JavaScript
+    jsonExcursions = data.itemListElement;
+  })
+  .catch(error => {
+    // En caso de error, puedes manejarlo aquí
+    console.error(error);
+  });
+  
+  var jsonExcursions;
+  await fetch('../json/JSONsExcursions.json')
+  .then(response => response.json())
+  .then(data => {
+      // Aquí puedes trabajar con los datos en formato JSON convertidos a objeto JavaScript
+      jsonExcursions = data.itemListElement;
+    })
+    .catch(error => {
+        // En caso de error, puedes manejarlo aquí
+        console.error(error);
+    });
+    var urlsExtras = [];
+    for (let i = 0; i < jsonExcursions.length-1; i++) {
+        urlsExtras = [...urlsExtras, `../json/informacioExtra${i}.json`];
+      }
+    
+
+      let infoExtras = [];
+    const posts = await Promise.all(
+        urlsExtras.map(async (extra) => {
+           // console.log(extra)
+          return await fetch(extra)
+         .then(response => response.json())
+         .then(data => {
+            // Aquí puedes trabajar con los datos en formato JSON convertidos a objeto JavaScript
+            infoExtras.push(data);
+           
+          });
+          
+      })
+
+      )
+    //  let infoExtras = posts.map(response =>  response.json());
+
+    
+    jsonExcursions.forEach((elem,index) => {
+        console.log(jsonExcursions)
         toGen.innerHTML = toGen.innerHTML.concat(createCard({
-            nom: "Teix",
-            dificultatString: "Facil",
-            dificultatStars: 3.5,
-            distancia: "12",
-            desnivel: "400",
+            nom: elem.name,
+            dificultatString: "Dificultat",
+            dificultatStars: infoExtras[index].Dificultat,
+            distancia: infoExtras[index].Distancia,
+            desnivel: infoExtras[index].Desnivell,
             urlFoto: "/assets/img/teix.jpg"
         }))
-    }
+    });
+   
+    
+
 }
 
 function toStars(int) {
