@@ -16,7 +16,7 @@ function showExcursio(){
     const queryString = window.location.search;
     const params = new URLSearchParams(queryString);
     const excursioId = params.get("id");
-    console.log("hola")
-    console.log(excursioId)
+    
+    
 }
 showExcursio()

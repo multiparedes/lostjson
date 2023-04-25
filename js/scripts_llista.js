@@ -20,7 +20,6 @@ function cardViewer(){
 
     selector.addEventListener("change",() => {
     opcionSeleccionada = selector.selectedIndex;
-    console.log(opcionSeleccionada)
     switch(opcionSeleccionada){
         case 1:
             generateCard({sortValue: 1});
@@ -69,7 +68,6 @@ async function generateCard({sortValue, name}) {
         info: excursio, 
         extra: infoExtras[index]
         }});
-        console.log(excursions)
         //if search was made
         if(name){
 
@@ -96,12 +94,12 @@ async function generateCard({sortValue, name}) {
                 break;  
                 
         }
-        console.log(excursions)
+       
+
         
       
         cards = "";
         excursions.forEach((elem) => {
-            //console.log(jsonExcursions)
             cards = cards.concat(createCard({
                 id: elem.info.identifier,
                 nom: elem.info.name,
@@ -169,7 +167,7 @@ function toStars(int) {
 
 
 function createCard(card) {
-    console.log(card.id)
+   
     return `
         <div class="col mb-5">
             <div class="card h-100">
