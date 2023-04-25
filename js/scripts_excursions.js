@@ -11,3 +11,12 @@ map.addEventListener('mouseleave', () => {
   map.style.pointerEvents = 'none'; // desactivar eventos del ratón para el iframe
   mapOverlayMessage.style.display = 'block'; // mostrar el overlay
 });
+
+function showExcursio(){
+    const queryString = window.location.search;
+    const params = new URLSearchParams(queryString);
+    const excursioId = params.get("id");
+    console.log("hola")
+    console.log(excursioId)
+}
+showExcursio()

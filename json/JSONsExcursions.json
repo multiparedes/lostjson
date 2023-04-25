@@ -5,6 +5,7 @@
     {
         "@type": "Trip",
         "name": "Roa",
+        "identifier": 0,
         "description": "Aquesta activitat és una excursió que comença al poble de Valldemossa i va pujant fins arribar al puig del Teix.",
         "itinerary": [
             {
@@ -30,10 +31,11 @@
             "video": ["https://www.youtube.com/watch?v=P017pMlrILk"],
             "audio": [""]
         },
-        "sameAs": "./json/informacioExtra0.json"
+        "sameAs": "https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra0.json"
     },{
         "@type": "Trip",
         "name": "Teix",
+        "identifier": 1,
         "description": "Aquesta activitat és una excursió que comença al poble de Valldemossa i va pujant fins arribar al puig del Teix.",
         "itinerary": [
             {
@@ -59,11 +61,13 @@
             "video": ["https://www.youtube.com/watch?v=P017pMlrILk"],
             "audio": [""]
         },
-        "sameAs": "./json/informacioExtra1.json"
+        "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra1.json"
+       
     },
     {
         "@type": "Trip",
         "name": "Manel",
+        "identifier": 2,
         "description": "Aquesta activitat és una excursió que comença al poble de Valldemossa i va pujant fins arribar al puig del Teix.",
         "itinerary": [
             {
@@ -89,7 +93,7 @@
             "video": ["https://www.youtube.com/watch?v=P017pMlrILk"],
             "audio": [""]
         },
-        "sameAs": "./json/informacioExtra2.json"
+        "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra2.json"
     }
     ]
 }

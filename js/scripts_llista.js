@@ -11,8 +11,14 @@ function cardViewer(){
     let opcionSeleccionada = selector.selectedIndex;
     generateCard({sortValue: 0});
 
+    const input = document.getElementById("cercador")
+    input.addEventListener("change",() =>{
+        generateCard({name: input.value})
+    })
+    
 
-    selector.addEventListener("change",(event) => {
+
+    selector.addEventListener("change",() => {
     opcionSeleccionada = selector.selectedIndex;
     console.log(opcionSeleccionada)
     switch(opcionSeleccionada){
@@ -29,11 +35,11 @@ function cardViewer(){
     })
 }
 
-async function generateCard({sortValue}) {
+async function generateCard({sortValue, name}) {
     const toGen = document.getElementById("toGenerar")
 
         var jsonExcursions;
-        await fetch('../json/JSONsExcursions.json')
+        await fetch('https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/JSONsExcursions.json')
         .then(response => response.json())
         .then(data => {
         // Aquí puedes trabajar con los datos en formato JSON convertidos a objeto JavaScript
@@ -60,11 +66,18 @@ async function generateCard({sortValue}) {
       
         let excursions = []
         excursions = jsonExcursions.map((excursio,index) =>  {return {
-        excursioInfo: excursio, 
+        info: excursio, 
         extra: infoExtras[index]
         }});
         console.log(excursions)
+        //if search was made
+        if(name){
 
+       // TODO
+
+        }
+
+        //If sort was made
         switch(sortValue){
             case 1:
                 excursions.sort(function(a, b) {
@@ -80,24 +93,24 @@ async function generateCard({sortValue}) {
                   excursions.sort(function(a, b) {
                     return durationToMin(a.extra.Duracio_total) - durationToMin(b.extra.Duracio_total);
                   });
-                break;
+                break;  
                 
         }
         console.log(excursions)
         
       
         cards = "";
-        excursions.forEach((elem,index) => {
+        excursions.forEach((elem) => {
             //console.log(jsonExcursions)
             cards = cards.concat(createCard({
-                id: index,
-                nom: elem.excursioInfo.name,
+                id: elem.info.identifier,
+                nom: elem.info.name,
                 dificultatString: dificultyToInt(elem.extra.Dificultat),
                 dificultatStars: elem.extra.Dificultat,
                 distancia: elem.extra.Distancia,
                 desnivel: elem.extra.Desnivell,
                 duration: elem.extra.Duracio_total,
-                urlFoto: elem.excursioInfo.image[0]
+                urlFoto: elem.info.image[0]
             }))
         });
 
@@ -156,7 +169,7 @@ function toStars(int) {
 
 
 function createCard(card) {
-   
+    console.log(card.id)
     return `
         <div class="col mb-5">
             <div class="card h-100">
