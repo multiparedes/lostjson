@@ -32,7 +32,8 @@
             "audio": [""]
         },
         "sameAs": "https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra0.json"
-    },{
+    },
+    {
         "@type": "Trip",
         "name": "Teix",
         "identifier": 1,
@@ -91,6 +92,49 @@
         "subjectOf": {
             "@type": "CreativeWork",
             "video": ["https://www.youtube.com/watch?v=P017pMlrILk"],
+            "audio": [""]
+        },
+        "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra2.json"
+    },
+    {
+        "@type": "Trip",
+        "name": "La Trapa",
+        "identifier": 3,
+        "description": "Aquesta exursió cirucla per una zona costera d'extrema bellesa, amb impresionants vistes sobre l'illa de Sa Dragonera. L'antic monasteri de la Trapa és una aturada obligatoria. Cala en Basset pot ser un bon lloc per refrescar-se.",
+        "itinerary": [
+            {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Coll de la Gramola"
+                
+            },
+            {
+                "@type": "Mountain",
+                "name": "Ses Basses"
+                
+            },
+            {
+                "@type": "Mountain",
+                "name": "Cap Fabioler"
+                
+            },
+            {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Can Tomeví"
+                
+            },
+            {
+                "@type": "City",
+                "name": "Sant Elm",
+                "description": "Poble a l'illa de Mallorca localitzat a la Serra de Tramuntana. ",
+                "url": "https://en.wikipedia.org/wiki/Sant_Elm"
+            }
+            
+        ],
+        "image": ["https://www.calafornells.com/wp-content/uploads/2014/05/la-trapa.jpg","https://s1.wklcdn.com/image_192/5789508/65786460/43477825.jpg",
+    "https://www.estilopalma.com/wp-content/uploads/2020/03/Cap-Fabioler-7018-1140x760.jpg","https://www.turismepetit.com/wp-content/uploads/2021/04/cala-embasset.jpg"],
+        "subjectOf": {
+            "@type": "CreativeWork",
+            "video": ["https://www.youtube.com/watch?v=gGwuUTjfH2Q&ab_channel=MallorcaUndertheSun"],
             "audio": [""]
         },
         "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra2.json"
