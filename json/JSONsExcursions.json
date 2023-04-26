@@ -230,6 +230,48 @@
             "audio": [""]
         },
         "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra5.json"
+    },
+    {
+        "@type": "Trip",
+        "name": "El Camí dels Cingles",
+        "identifier":6,
+        "description": "La part nort del Puig Major és un dels llocs més abruptes i silenciosos de la geografia balear. En aquesta zona se va intentà construir fa 75 anys u funicular que havia de pujkar a la zona més alta de l'illa. El projecta va pracasar. La 'coma' Fosca es el lloc de l'illa on més neu s'acumula",
+        "itinerary": [
+            {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Plataforma del funicular"
+                
+            },
+            {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Porxo Esbucat"
+                
+            },
+            {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Font de la Balma"
+                
+            },
+            {
+                "@type": "Mountain",
+                "name": "Coll dels Cards Colers"
+                
+            },
+            {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "carretera de Sóller a Lluc"
+                
+            }
+            
+        ],
+        "image": ["https://trailrunningmallorca.es/wp-content/gallery/fornalutx-1/IMG_2812.jpeg","https://trailrunningmallorca.es/wp-content/gallery/fornalutx-1/IMG_2816.jpeg",
+    "https://trailrunningmallorca.es/wp-content/gallery/fornalutx-1/IMG_2811.jpeg","https://trailrunningmallorca.es/wp-content/gallery/fornalutx-1/IMG_2814.jpeg"],
+        "subjectOf": {
+            "@type": "CreativeWork",
+            "video": ["https://www.youtube.com/watch?v=tGqQVJ5U3hw&ab_channel=MarcHorrachColl"],
+            "audio": [""]
+        },
+        "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra6.json"
     }
     
     ]
