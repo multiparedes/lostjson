@@ -253,7 +253,7 @@
                 
             },
             {
-                "@type": "Mountain",
+                "@type": "LandmarksOrHistoricalBuildings",
                 "name": "Coll dels Cards Colers"
                 
             },
@@ -272,6 +272,72 @@
             "audio": [""]
         },
         "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra6.json"
+    },
+    {
+        "@type": "Trip",
+        "name": "El Puig Tomir",
+        "identifier":7,
+        "description": "El imponent Puig Tomir és una de les muntanyes més representatives de la Serra. Desde es cim situat a 1103 metres d'altura, les vistes son especteculars, sobre la regió de Lluc, tot el sector nort de la Tramuntana, el cap de Formentó i la bahia d'Alcúdia. Desde la 'casa de neu' del Tomir baixarem al coll del Puig de Ca de Miner i enllaçarem amb el camí que per Alcanella ens deixarà de nou al coll del Pedregaret",
+        "itinerary": [
+            {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Carretera Lluc-Pollença, Km 17,400"
+                
+            },
+            {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Casa de Menut"
+                
+            },
+            {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Cases de Binifaldó"
+                
+            },
+            {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Coll del Pedregaret"
+                
+            },
+            {
+                "@type": "Mountain",
+                "name": "Puig Tomir"
+                
+            },
+            {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Coll del Puig de Ca de Miner"
+                
+            },
+            {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Cases de Alcanella"
+                
+            },
+            {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Cases de Binifaldó"
+                
+            },
+            {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Coll del Menut"
+                
+            },
+            {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Carretera Lluc-Pollença, Km 17,400"
+                
+            }
+        ],
+        "image": ["https://upload.wikimedia.org/wikipedia/commons/7/73/Puig_Tomir.jpg","https://mallorcawalks.com/wp-content/uploads/2020/01/1DA0C23B-0519-4672-86BE-0F99BC8C31C7.jpeg",
+    "https://www.mendikat.net/storage/mountains/8653_pgdm9ak86nqcszft.jpg","https://estaticos-cdn.prensaiberica.es/clip/083f1c41-e967-4f66-aa5a-e759c9560edf_16-9-discover-aspect-ratio_default_0.jpg"],
+        "subjectOf": {
+            "@type": "CreativeWork",
+            "video": ["https://www.youtube.com/watch?v=1YI3TaGtVEY&ab_channel=UltimaHora"],
+            "audio": [""]
+        },
+        "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra7.json"
     }
     
     ]
