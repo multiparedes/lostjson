@@ -338,6 +338,47 @@
             "audio": [""]
         },
         "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra7.json"
+    },
+    {
+        "@type": "Trip",
+        "name": "El Puig de Santa Magdalena, per el camí des Pou",
+        "identifier":8,
+        "description": "Interessant excursió, tot i que un setanta per cent del recorregut es realitza per esfalt, entre camps cultivats i amb aigua com a protegonista, donada l'abundancia de pous. L'itinerari finalitza amb la pujada al puig de la Creu de la Minyó i a l'Oratori de Santa Magdalena.",
+        "itinerary": [
+            {
+                "@type": "City",
+                "name": "Búger"
+                
+            },
+            {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Pont de Binissetí"
+                
+            },
+            {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Pou dels Porquers"
+                
+            },
+            {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "puig y Creu de la Minyó"
+                
+            },
+            {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Oratori de Santa Magdalena"
+                
+            }
+        ],
+        "image": ["https://media.mallorca-touristguide.com/imagenes/886/14019santa%20magdalena%20inca%20-%20025.JPG","https://www.turismepetit.com/wp-content/uploads/2022/10/area-recreativa-puig-santa-magdalena.jpg",
+    "https://caminandopormallorca.es/wp-content/uploads/2022/04/1650558775699-1400x800.jpg","https://caminandopormallorca.es/wp-content/uploads/2022/04/IMG_20220421_103554-1024x576.jpg"],
+        "subjectOf": {
+            "@type": "CreativeWork",
+            "video": ["https://www.youtube.com/watch?v=hrNOFiOjziM&ab_channel=MEGACICLISMO"],
+            "audio": [""]
+        },
+        "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra8.json"
     }
     
     ]
