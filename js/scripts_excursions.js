@@ -71,17 +71,34 @@ async function showExcursio() {
   //Height min
   node = document.getElementById("min_height");
   node.innerHTML = `${infoExtra.Altura_minima}m`;
-  //Desnivell 
+  //Desnivell
   node = document.getElementById("unevenness");
   node.innerHTML = `${infoExtra.Desnivell}m`;
-  //Distance 
+  //Distance
   node = document.getElementById("distance");
-  node.innerHTML = `${infoExtra.Distancia}km` ;
-  //Duration 
+  node.innerHTML = `${infoExtra.Distancia}km`;
+  //Duration
   node = document.getElementById("duration");
   node.innerHTML = infoExtra.Duracio_total;
   //Season
   node = document.getElementById("season");
   node.innerHTML = infoExtra.Epoca_recomanada;
+
+  //Images
+  let images = "";
+  let active = "";
+  node = document.getElementById("carouselImagenes");
+  excursio.image.forEach((img, idx) => {
+    
+    active = ""
+    if(idx == 0){
+      active = " active"
+    }
+    images = images.concat(`<div class="carousel-item ${active}">
+  <img src="${img}" class="d-block w-100" alt="...">
+</div>`);
+  });
+  
+  node.innerHTML = images;
 }
 showExcursio();
