@@ -1,9 +1,8 @@
-import { dificultyToString } from './utils.js';
+import { dificultyToString } from "./utils.js";
 
 const mapOverlay = document.querySelector(".map-container");
 const mapOverlayMessage = document.querySelector(".b-message");
 const map = document.querySelector(".mapa");
-
 
 mapOverlay.addEventListener("click", () => {
   map.style.pointerEvents = "auto"; // activar eventos del ratón para el iframe
@@ -32,7 +31,7 @@ async function showExcursio() {
   jsonExcursions = jsonExcursions.itemListElement;
   console.log(jsonExcursions);
   console.log(excursioId);
-  
+
   //Information about the excursio is fetched
   const excursio = jsonExcursions.find((exc) => exc.identifier == excursioId);
   const infoExtra = await fetch(excursio.sameAs)
@@ -43,31 +42,46 @@ async function showExcursio() {
     });
 
   //Title
-  const title = document.getElementById("excursioTitle");
-  title.innerHTML = excursio.name;
+  let node = document.getElementById("excursioTitle");
+  node.innerHTML = excursio.name;
 
   //Start
-  const start = document.getElementById("start");
-  start.innerHTML = excursio.itinerary[0].name;
+  node = document.getElementById("start");
+  node.innerHTML = excursio.itinerary[0].name;
 
   //Description
-  const description = document.getElementById("description");
-  description.innerHTML = excursio.description;
+  node = document.getElementById("description");
+  node.innerHTML = excursio.description;
 
   //Dificulty
-  const dificulty = document.getElementById("dificulty");
-  dificulty.innerHTML = dificultyToString(infoExtra.Dificultat);
+  node = document.getElementById("dificulty");
+  node.innerHTML = dificultyToString(infoExtra.Dificultat);
 
-  //Dificulty
-  let type = document.getElementById("type1");
-  type.innerHTML = infoExtra.Tipus_de_ruta;
+  //Type
+  node = document.getElementById("type1");
+  node.innerHTML = infoExtra.Tipus_de_ruta;
 
-  type = document.getElementById("type2");
-  type.innerHTML = infoExtra.Tipus_de_ruta;
+  node = document.getElementById("type2");
+  node.innerHTML = infoExtra.Tipus_de_ruta;
 
+  //Height max
+  node = document.getElementById("max_height");
+  node.innerHTML = `${infoExtra.Altura_maxima}m`;
 
-
-  
-    
+  //Height min
+  node = document.getElementById("min_height");
+  node.innerHTML = `${infoExtra.Altura_minima}m`;
+  //Desnivell 
+  node = document.getElementById("unevenness");
+  node.innerHTML = `${infoExtra.Desnivell}m`;
+  //Distance 
+  node = document.getElementById("distance");
+  node.innerHTML = `${infoExtra.Distancia}km` ;
+  //Duration 
+  node = document.getElementById("duration");
+  node.innerHTML = infoExtra.Duracio_total;
+  //Season
+  node = document.getElementById("season");
+  node.innerHTML = infoExtra.Epoca_recomanada;
 }
 showExcursio();

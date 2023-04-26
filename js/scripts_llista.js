@@ -99,7 +99,7 @@ async function generateCard({ sortValue, name }) {
       createCard({
         id: elem.info.identifier,
         nom: elem.info.name,
-        dificultatString: dificultyToInt(elem.extra.Dificultat),
+        dificultatString: dificultyToString(elem.extra.Dificultat),
         dificultatStars: elem.extra.Dificultat,
         distancia: elem.extra.Distancia,
         desnivel: elem.extra.Desnivell,
