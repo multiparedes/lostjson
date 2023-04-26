@@ -184,6 +184,53 @@
             "audio": [""]
         },
         "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra4.json"
+    },
+    {
+        "@type": "Trip",
+        "name": "Es tres mils",
+        "identifier":5,
+        "description": "Una ruta cirucular que corona tres muntanyes emblemàtiques de la Serra de Tramuntana: sa Rateta, na Franquesa i el puig de l'Ofre, totes per demunt dels mil metros. Part de la pujada es realitza per l'antic camí que varen utilitzar els neveros durant segles.",
+        "itinerary": [
+            {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Cúber"
+                
+            },
+            {
+                "@type": "Mountain",
+                "name": "Sa Rateta"
+                
+            },
+            {
+                "@type": "Mountain",
+                "name": "Na Franquesa"
+                
+            },
+            {
+                "@type": "Mountain",
+                "name": "Puig de l'Ofre"
+                
+            },
+            {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Binimorat"
+                
+            },
+            {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Cúber"
+            }
+            
+        ],
+        "image": ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/C%C3%BAber.jpg/800px-C%C3%BAber.jpg","https://3.bp.blogspot.com/-eGtgSc2X7aE/VFtiypvc9TI/AAAAAAAASEM/d-ru3AfbSoo/s1600/Image00012.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/6/6e/NaFranquesa.jpg","https://caminandopormallorca.es/wp-content/uploads/2023/02/1676574868452-700x465.jpg"],
+        "subjectOf": {
+            "@type": "CreativeWork",
+            "video": ["https://www.youtube.com/watch?v=tGqQVJ5U3hw&ab_channel=MarcHorrachColl"],
+            "audio": [""]
+        },
+        "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra5.json"
     }
+    
     ]
 }
