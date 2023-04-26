@@ -16,10 +16,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://www.youtube.com/player_api"></script>
+    </head>
     <body>
-        <script>
-           //  const excursions  = require('/json/JSONsExcursions.json');
-        </script>
+     
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light shadow-sm" id="mainNav">
             <div class="container px-5">
@@ -135,7 +135,7 @@
                 <div id="carouselVideos" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/P017pMlrILk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                        </div>
+                            <iframe id="video" width="100%" height="450px" src="https://www.youtube.com/embed/P017pMlrILk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                        </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselVideos" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -148,6 +148,32 @@
                 </div>
               </div>
             </div>
+            <div id="player"></div>
+            <script>
+                // Variable global para el reproductor de YouTube
+                    var player;
+
+                    // Función para cargar el reproductor de YouTube
+                    function loadVideo(videoId) {
+                    // Crea el reproductor de YouTube en el contenedor
+                    player = new YT.Player('player', {
+                    height: '360',
+                    width: '640',
+                    videoId: videoId,
+                    events: {
+                    'onReady': onPlayerReady
+                    }
+                    });
+                    }
+
+                    // Función que se ejecuta cuando el reproductor está listo
+                    function onPlayerReady(event) {
+                    // Reproduce el video
+                    event.target.playVideo();
+
+                    loadVideo('https://www.youtube.com/watch?v=8ANP88A8U_E');
+                    }
+                    </script>
             <!-- Puntos de interes -->
             <div class="card mb-4">
                 <div class="card-header">Punts d'interès:</div>
@@ -157,6 +183,8 @@
                         <div class="carousel-item active">
                             <img src="https://ndic.gov.ng/wp-content/uploads/2020/04/placeholder.png" class="d-block w-100" alt="...">
                         </div>
+                        
+                        
                         <div class="carousel-item">
                             <img src="https://ndic.gov.ng/wp-content/uploads/2020/04/placeholder.png" class="d-block w-100" alt="...">
                         </div>
@@ -186,6 +214,8 @@
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://apis.google.com/js/api.js"></script>
+        <script src="https://www.youtube.com/iframe_api"></script>
         <!-- Core theme JS-->
         <script type="module"src="js/scripts_excursions.js" ></script>
     </body>

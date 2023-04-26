@@ -3,6 +3,7 @@ import { dificultyToString } from "./utils.js";
 const mapOverlay = document.querySelector(".map-container");
 const mapOverlayMessage = document.querySelector(".b-message");
 const map = document.querySelector(".mapa");
+let videoUrl;
 
 mapOverlay.addEventListener("click", () => {
   map.style.pointerEvents = "auto"; // activar eventos del ratón para el iframe
@@ -29,8 +30,6 @@ async function showExcursio() {
     });
 
   jsonExcursions = jsonExcursions.itemListElement;
-  console.log(jsonExcursions);
-  console.log(excursioId);
 
   //Information about the excursio is fetched
   const excursio = jsonExcursions.find((exc) => exc.identifier == excursioId);
@@ -89,16 +88,56 @@ async function showExcursio() {
   let active = "";
   node = document.getElementById("carouselImagenes");
   excursio.image.forEach((img, idx) => {
-    
-    active = ""
-    if(idx == 0){
-      active = " active"
+    active = "";
+    if (idx == 0) {
+      active = " active";
     }
     images = images.concat(`<div class="carousel-item ${active}">
   <img src="${img}" class="d-block w-100" alt="...">
 </div>`);
   });
-  
   node.innerHTML = images;
+
+  //Videos
+  var apiKey = "AIzaSyDcAKL42Vj1BhWgu7Psg-3K0CHtMdJm5OA";
+  
+  videoUrl = ""
+  gapi.load("client", function () {
+    // Inicializa la API de cliente de JavaScript de YouTube
+    gapi.client
+      .init({
+        apiKey: apiKey,
+        discoveryDocs: [
+          "https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest",
+        ],
+      })
+      .then(function () {
+        // Realiza la búsqueda de videos de la playa Formentor
+        return gapi.client.youtube.search.list({
+          q: "playa Formentor",
+          type: "video",
+          part: "id,snippet",
+          maxResults: 1,
+        });
+      })
+      .then(
+        function (response) {
+         videoUrl = response.result.items[0].id.videoId;
+         console.log(response)
+        },
+        function (reason) {
+          console.log("Error: " + reason.result.error.message);
+        }
+      );
+  });
+
+    
+    
+}
+function onYouTubePlayerAPIReady() {
+  // Crea el reproductor de video.
+  var player = new YT.Player('player', {
+    videoId: 'VIDEO_ID_AQUI'
+  });
 }
 showExcursio();
