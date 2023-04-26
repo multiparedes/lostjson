@@ -138,6 +138,99 @@
             "audio": [""]
         },
         "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra3.json"
+    },
+    {
+        "@type": "Trip",
+        "name": "S'Arenalet d'Aubarca",
+        "identifier": 4,
+        "description": "Artà pot presumir d'un litoral verge i poc frequentat per els banyista. L'excursió que proposam rodetj apart de la seva costay ofereix la possibilitat de descubrir i disfrutar de tres de les platjes més guapes: es Matzoc, sa Font Celada y s'Arenalet d'Aubarca. Els més sacrificats poden pujar fins a la Talaia Moreia, en el Cap de Ferrutx, des de on es poot obtenir una excelent panoràmica d'Alcúdia y la costa artanenca, y desde on pareix habitaren els darrers pobladors de Madina Mayurqa.",
+        "itinerary": [
+            {
+                "@type": "City",
+                "name": "Artà"
+                
+            },
+            {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Cala Estreta"
+                
+            },
+            {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Es Matzoc"
+                
+            },
+            {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Torre des Matzoc"
+                
+            },
+            {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "sa Font Celada"
+                
+            },
+            {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "S'Arenalet d'Aubarca"
+            }
+            
+        ],
+        "image": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8_GawZvWvI0UJPNTmkj9-M4G1GWUoL6f7Nw&usqp=CAU","https://redcostabrava.com/wp-content/uploads/2015/03/cala-estreta-de-palamos-001-600x600.jpg",
+    "https://lh5.googleusercontent.com/p/AF1QipMjaOg-sTjzj4n1IfvyrQQ8Loi1WcO2rzjdibNF=s1600","https://www.fincallorca.de/img/beaches/76/cala_font_celada_1160x654_80.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Torre_des_Matzoc_04.jpg/1200px-Torre_des_Matzoc_04.jpg"],
+        "subjectOf": {
+            "@type": "CreativeWork",
+            "video": ["https://www.youtube.com/watch?v=sEwpzxikYO4&ab_channel=Josemallorca"],
+            "audio": [""]
+        },
+        "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra4.json"
+    },
+    {
+        "@type": "Trip",
+        "name": "Es tres mils",
+        "identifier":5,
+        "description": "Una ruta cirucular que corona tres muntanyes emblemàtiques de la Serra de Tramuntana: sa Rateta, na Franquesa i el puig de l'Ofre, totes per demunt dels mil metros. Part de la pujada es realitza per l'antic camí que varen utilitzar els neveros durant segles.",
+        "itinerary": [
+            {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Cúber"
+                
+            },
+            {
+                "@type": "Mountain",
+                "name": "Sa Rateta"
+                
+            },
+            {
+                "@type": "Mountain",
+                "name": "Na Franquesa"
+                
+            },
+            {
+                "@type": "Mountain",
+                "name": "Puig de l'Ofre"
+                
+            },
+            {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Binimorat"
+                
+            },
+            {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Cúber"
+            }
+            
+        ],
+        "image": ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/C%C3%BAber.jpg/800px-C%C3%BAber.jpg","https://3.bp.blogspot.com/-eGtgSc2X7aE/VFtiypvc9TI/AAAAAAAASEM/d-ru3AfbSoo/s1600/Image00012.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/6/6e/NaFranquesa.jpg","https://caminandopormallorca.es/wp-content/uploads/2023/02/1676574868452-700x465.jpg"],
+        "subjectOf": {
+            "@type": "CreativeWork",
+            "video": ["https://www.youtube.com/watch?v=tGqQVJ5U3hw&ab_channel=MarcHorrachColl"],
+            "audio": [""]
+        },
+        "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra5.json"
     }
+    
     ]
 }
