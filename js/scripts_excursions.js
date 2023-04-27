@@ -93,51 +93,56 @@ async function showExcursio() {
       active = " active";
     }
     images = images.concat(`<div class="carousel-item ${active}">
-  <img src="${img}" class="d-block w-100" alt="...">
-</div>`);
+    <img src="${img}" class="d-block w-100" alt="...">
+    </div>`);
   });
   node.innerHTML = images;
 
-  //Videos
-  var apiKey = "AIzaSyDcAKL42Vj1BhWgu7Psg-3K0CHtMdJm5OA";
-  
-  videoUrl = ""
-  gapi.load("client", function () {
-    // Inicializa la API de cliente de JavaScript de YouTube
-    gapi.client
-      .init({
-        apiKey: apiKey,
-        discoveryDocs: [
-          "https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest",
-        ],
-      })
-      .then(function () {
-        // Realiza la búsqueda de videos de la playa Formentor
-        return gapi.client.youtube.search.list({
-          q: "playa Formentor",
-          type: "video",
-          part: "id,snippet",
-          maxResults: 1,
-        });
-      })
-      .then(
-        function (response) {
-         videoUrl = response.result.items[0].id.videoId;
-         console.log(response)
-        },
-        function (reason) {
-          console.log("Error: " + reason.result.error.message);
-        }
-      );
-  });
+  // //Videos
+  // var apiKey = "AIzaSyC1L90Hb8tGFsbgGAKWJtEoDKhZvzc437w";
 
-    
-    
-}
-function onYouTubePlayerAPIReady() {
-  // Crea el reproductor de video.
-  var player = new YT.Player('player', {
-    videoId: 'VIDEO_ID_AQUI'
-  });
+  // videoUrl = ""
+  // let videoName = excursio.name.split(",")[0]
+  //  gapi.load("client", function () {
+  //   // Inicializa la API de cliente de JavaScript de YouTube
+  //   gapi.client
+  //   .init({
+  //     apiKey: apiKey,
+  //     discoveryDocs: [
+  //       "https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest",
+  //     ],
+  //   })
+  //   .then(function () {
+  //     // Realiza la búsqueda de videos de la playa Formentor
+  //     return gapi.client.youtube.search.list({
+  //       q: `Excursión ${videoName}`,
+  //       type: "video",
+  //       part: "id,snippet",
+  //       maxResults: 1,
+  //     });
+  //   })
+  //   .then(
+  //     function (response) {
+  //       videoUrl = response.result.items[0].id.videoId;
+  //       console.log(videoUrl)
+  //     },
+  //     function (reason) {
+  //       console.log("Error: " + reason.result.error.message);
+  //     }
+  //     );
+  //   });
+  //Weather
+  const weatherApiKey = "f6cb10fa96624400aee1b519f5b3f2ad";
+
+  const weatherResponse = await fetch(
+    `https://api.openweathermap.org/data/2.5/weather?lat=39.643761&lon=2.646356&appid=${weatherApiKey}`
+  )
+    .then((response) => response.json())
+    .catch((error) => {
+      // En caso de error, puedes manejarlo aquí
+      console.error(error);
+    });
+
+  console.log(weatherResponse);
 }
 showExcursio();

@@ -17,6 +17,9 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://www.youtube.com/player_api"></script>
+        <script src="https://apis.google.com/js/api.js"></script>
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <script type="module"src="js/scripts_excursions.js" ></script>
     </head>
     <body>
      
@@ -134,8 +137,11 @@
                 <div class="card-body">
                 <div id="carouselVideos" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <iframe id="video" width="100%" height="450px" src="https://www.youtube.com/embed/P017pMlrILk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                        </div>
+                        <div class="carousel-item active">  
+                             <div id="player">
+                               
+                             </div>
+                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselVideos" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -148,32 +154,7 @@
                 </div>
               </div>
             </div>
-            <div id="player"></div>
-            <script>
-                // Variable global para el reproductor de YouTube
-                    var player;
-
-                    // Función para cargar el reproductor de YouTube
-                    function loadVideo(videoId) {
-                    // Crea el reproductor de YouTube en el contenedor
-                    player = new YT.Player('player', {
-                    height: '360',
-                    width: '640',
-                    videoId: videoId,
-                    events: {
-                    'onReady': onPlayerReady
-                    }
-                    });
-                    }
-
-                    // Función que se ejecuta cuando el reproductor está listo
-                    function onPlayerReady(event) {
-                    // Reproduce el video
-                    event.target.playVideo();
-
-                    loadVideo('https://www.youtube.com/watch?v=8ANP88A8U_E');
-                    }
-                    </script>
+            
             <!-- Puntos de interes -->
             <div class="card mb-4">
                 <div class="card-header">Punts d'interès:</div>
@@ -212,11 +193,8 @@
                 </div>
             </div>
         </footer>
+        <!-- Core theme JS-->
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://apis.google.com/js/api.js"></script>
-        <script src="https://www.youtube.com/iframe_api"></script>
-        <!-- Core theme JS-->
-        <script type="module"src="js/scripts_excursions.js" ></script>
     </body>
 </html>
