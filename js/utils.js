@@ -39,3 +39,33 @@
     const tiempoEnMinutos = horas * 60 + minutos;
     return tiempoEnMinutos;
   }
+
+  export async function getExcursio(){
+    const queryString = window.location.search;
+  const params = new URLSearchParams(queryString);
+  const excursioId = params.get("id");
+
+  let jsonExcursions = await fetch(
+    "https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/JSONsExcursions.json"
+  )
+    .then((response) => response.json())
+    .catch((error) => {
+      // En caso de error, puedes manejarlo aquí
+      console.error(error);
+    });
+
+  jsonExcursions = jsonExcursions.itemListElement;
+
+  //Information about the excursio is fetched
+  const excursio = jsonExcursions.find((exc) => exc.identifier == excursioId);
+  const infoExtra = await fetch(excursio.sameAs)
+    .then((response) => response.json())
+    .catch((error) => {
+      // En caso de error, puedes manejarlo aquí
+      console.error(error);
+    });
+    return {
+      excursio,
+      infoExtra
+    }
+  }
