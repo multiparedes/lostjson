@@ -57,7 +57,7 @@ async function generateCard({ sortValue, name }) {
           infoExtras = [...infoExtras, data];
         });
     })
-  );gi
+  );
 
   let excursions = [];
   excursions = jsonExcursions.map((excursio, index) => {
