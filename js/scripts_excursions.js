@@ -86,7 +86,7 @@ async function showExcursio() {
   //Images
   let images = "";
   let active = "";
-  node = document.getElementById("carouselImagenes");
+  node = document.getElementById("carouselImagenesGenerate");
   excursio.image.forEach((img, idx) => {
     active = "";
     if (idx == 0) {
