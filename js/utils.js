@@ -21,13 +21,10 @@
     for (var i = 0; i < Math.floor(int); i++) {
       enteras = enteras.concat('<div class="bi-star-fill"></div>\n');
     }
-    if (int === 0) {
-      return enteras;
-    } else if (int % 1 <= 0.5) {
-      enteras = enteras.concat('<div class="bi-star-half"></div>\n');
-    } else {
+    
+    if (int % 1 >= 0.5) {
       enteras = enteras.concat('<div class="bi-star-fill"></div>\n');
-    }
+    } 
   
     return enteras;
   }
