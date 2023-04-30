@@ -1,10 +1,9 @@
 {
-    "Distancia": 10.39,
-    "Duracio_total": "5h 0min",  
-    "Desnivell": 690,
-    "Altura_maxima": 1096,
-    "Altura_minima": 573,
+    "Distancia": 1.4,
+    "Duracio_total": "2h 0min",  
+    "Desnivell": 317,
+    "Altura_maxima": 63,
     "Epoca_recomanada": "Tot l'any",
     "Tipus_de_ruta": "Circular",
-    "Dificultat": 3
+    "Dificultat": 1
 }

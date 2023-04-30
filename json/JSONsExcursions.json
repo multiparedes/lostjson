@@ -5,7 +5,7 @@
     {
         "@type": "Trip",
         "name": "Teix",
-        "identifier": 1,
+        "identifier": 0,
         "description": "Aquesta activitat és una excursió que comença al poble de Valldemossa i va pujant fins arribar al puig del Teix.",
         "itinerary": [
             {
@@ -37,7 +37,7 @@
     {
         "@type": "Trip",
         "name": "La Trapa",
-        "identifier": 2,
+        "identifier": 1,
         "description": "Aquesta exursió cirucla per una zona costera d'extrema bellesa, amb impresionants vistes sobre l'illa de Sa Dragonera. L'antic monasteri de la Trapa és una aturada obligatoria. Cala en Basset pot ser un bon lloc per refrescar-se.",
         "itinerary": [
             {
@@ -80,7 +80,7 @@
     {
         "@type": "Trip",
         "name": "S'Arenalet d'Aubarca",
-        "identifier": 3,
+        "identifier": 2,
         "description": "Artà pot presumir d'un litoral verge i poc frequentat per els banyista. L'excursió que proposam rodetj apart de la seva costay ofereix la possibilitat de descubrir i disfrutar de tres de les platjes més guapes: es Matzoc, sa Font Celada y s'Arenalet d'Aubarca. Els més sacrificats poden pujar fins a la Talaia Moreia, en el Cap de Ferrutx, des de on es poot obtenir una excelent panoràmica d'Alcúdia y la costa artanenca, y desde on pareix habitaren els darrers pobladors de Madina Mayurqa.",
         "itinerary": [
             {
@@ -126,7 +126,7 @@
     {
         "@type": "Trip",
         "name": "Es tres mils",
-        "identifier": 4,
+        "identifier": 3,
         "description": "Una ruta cirucular que corona tres muntanyes emblemàtiques de la Serra de Tramuntana: sa Rateta, na Franquesa i el puig de l'Ofre, totes per demunt dels mil metros. Part de la pujada es realitza per l'antic camí que varen utilitzar els neveros durant segles.",
         "itinerary": [
             {
@@ -172,7 +172,7 @@
     {
         "@type": "Trip",
         "name": "El Camí dels Cingles",
-        "identifier": 5,
+        "identifier": 4,
         "description": "La part nort del Puig Major és un dels llocs més abruptes i silenciosos de la geografia balear. En aquesta zona se va intentà construir fa 75 anys u funicular que havia de pujkar a la zona més alta de l'illa. El projecta va pracasar. La 'coma' Fosca es el lloc de l'illa on més neu s'acumula",
         "itinerary": [
             {
@@ -214,7 +214,7 @@
     {
         "@type": "Trip",
         "name": "El Puig Tomir",
-        "identifier": 6,
+        "identifier": 5,
         "description": "El imponent Puig Tomir és una de les muntanyes més representatives de la Serra. Desde es cim situat a 1103 metres d'altura, les vistes son especteculars, sobre la regió de Lluc, tot el sector nort de la Tramuntana, el cap de Formentó i la bahia d'Alcúdia. Desde la 'casa de neu' del Tomir baixarem al coll del Puig de Ca de Miner i enllaçarem amb el camí que per Alcanella ens deixarà de nou al coll del Pedregaret",
         "itinerary": [
             {
@@ -280,7 +280,7 @@
     {
         "@type": "Trip",
         "name": "El Puig de Santa Magdalena, per el camí des Pou",
-        "identifier": 7,
+        "identifier": 6,
         "description": "Interessant excursió, tot i que un setanta per cent del recorregut es realitza per esfalt, entre camps cultivats i amb aigua com a protegonista, donada l'abundancia de pous. L'itinerari finalitza amb la pujada al puig de la Creu de la Minyó i a l'Oratori de Santa Magdalena.",
         "itinerary": [
             {
