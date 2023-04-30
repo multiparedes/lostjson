@@ -31,7 +31,7 @@
             "video": ["https://www.youtube.com/watch?v=P017pMlrILk"],
             "audio": [""]
         },
-        "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra1.json"
+        "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra0.json"
        
     },
     {
@@ -75,7 +75,7 @@
             "video": ["https://www.youtube.com/watch?v=gGwuUTjfH2Q&ab_channel=MallorcaUndertheSun"],
             "audio": [""]
         },
-        "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra3.json"
+        "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra1.json"
     },
     {
         "@type": "Trip",
@@ -121,7 +121,7 @@
             "video": ["https://www.youtube.com/watch?v=sEwpzxikYO4&ab_channel=Josemallorca"],
             "audio": [""]
         },
-        "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra4.json"
+        "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra2.json"
     },
     {
         "@type": "Trip",
@@ -167,7 +167,7 @@
             "video": ["https://www.youtube.com/watch?v=tGqQVJ5U3hw&ab_channel=MarcHorrachColl"],
             "audio": [""]
         },
-        "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra5.json"
+        "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra3.json"
     },
     {
         "@type": "Trip",
@@ -209,7 +209,7 @@
             "video": ["https://www.youtube.com/watch?v=tGqQVJ5U3hw&ab_channel=MarcHorrachColl"],
             "audio": [""]
         },
-        "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra6.json"
+        "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra4.json"
     },
     {
         "@type": "Trip",
@@ -275,7 +275,7 @@
             "video": ["https://www.youtube.com/watch?v=1YI3TaGtVEY&ab_channel=UltimaHora"],
             "audio": [""]
         },
-        "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra7.json"
+        "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra5.json"
     },
     {
         "@type": "Trip",
@@ -316,7 +316,7 @@
             "video": ["https://www.youtube.com/watch?v=hrNOFiOjziM&ab_channel=MEGACICLISMO"],
             "audio": [""]
         },
-        "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra8.json"
+        "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra6.json"
     }
     
     ]
