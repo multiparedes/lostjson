@@ -1,7 +1,7 @@
 import { dificultyToString, getExcursio } from "./utils.js";
 
 const mapOverlay = document.querySelector(".map-container");
-const mapOverlayMessage = document.querySelector(".b-message");
+const mapOverlayMessage = document.querySelector(".b-container");
 const map = document.querySelector(".mapa");
 
 
@@ -12,7 +12,7 @@ mapOverlay.addEventListener("click", () => {
 
 map.addEventListener("mouseleave", () => {
   map.style.pointerEvents = "none"; // desactivar eventos del ratón para el iframe
-  mapOverlayMessage.style.display = "block"; // mostrar el overlay
+  mapOverlayMessage.style.display = "flex"; // mostrar el overlay
 });
 
 async function showExcursio() {

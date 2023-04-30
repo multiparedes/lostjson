@@ -16,7 +16,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        
+        <!-- Leafjs and GPXextension -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>        
     </head>
     <body>
      
@@ -47,18 +50,19 @@
                             <!-- Post title-->
                             <h1 class="fw-bolder mb-1" id="excursioTitle"></h1>
                             <!-- Post meta content-->
-                            <div class="text-muted fst-italic mb-2" id="start" >Valldemossa</div>
+                            <div class="text-muted fst-italic mb-2" id="start" ></div>
                             <!-- Post categories-->
                             <p class="badge bg-secondary text-decoration-none link-light " id="dificulty"></p>
                             <p class="badge bg-secondary text-decoration-none link-light" id="type1"></p>
                         </header>
 
-                        <!-- Preview image figure-->
+                        <!-- Map -->
                         <div class="map-container">
-                            <iframe height="450px" class="mapa carousel-inner" frameBorder="0" src="https://es.wikiloc.com/wikiloc/spatialArtifacts.do?event=view&id=87698109&measures=off&title=off&near=off&images=off&maptype=H"></iframe>
-                            <div class="b-message">Fes clic en el mapa per a interactuar</div>
+                            <div id="map" height="450px" class="mapa"></div>
+                            <div class="b-container">
+                                <p class="b-message">Fes clic en el mapa per a interactuar</p>
+                            </div>
                         </div>
-
                         <!-- Post content-->
                         <section class="mb-5">
                             <p class="fs-5 mb-4" id="description" style="text-align: justify;">
@@ -196,5 +200,49 @@
         <script src="https://www.youtube.com/player_api"></script>
         <script src="https://apis.google.com/js/api.js"></script>
         <script type="module"src="js/scripts_excursions.js" ></script>
+        <script>
+            let map = L.map("map", {
+                dragging: true, // Habilita la interacción de arrastre
+                scrollWheelZoom: true // Habilita la interacción de ampliación/reducción mediante la rueda de desplazamiento
+            }).setView([0, 0], 13);
+
+            const queryString = window.location.search;
+            const params = new URLSearchParams(queryString);
+            const excursioId = params.get("id")
+
+            L.tileLayer('https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png', {
+                maxZoom: 20,
+            }).addTo(map);
+        
+            var gpx = './assets/gpx/'+excursioId+".gpx"; // URL to your GPX file or the GPX itself
+            var markerIcon = L.icon({
+                iconUrl: './assets/marker.png',
+                iconSize: [32, 32],
+                iconAnchor: [16, 32],
+                popupAnchor: [0, -30]
+            });
+            new L.GPX(gpx, {
+                async: true,
+                polyline_options: {
+                    color: 'orange',
+                    weight: 3,
+                    lineCap: 'round'
+                },
+                marker_options: {
+                    startIconUrl: null,
+                    endIconUrl: null,
+                    shadowUrl: null,
+                    wptIcons: {
+                        '': markerIcon 
+                    }
+                }
+            }).on('loaded', function(e) {
+                var gpx = e.target;
+                map.fitBounds(gpx.getBounds(), { padding: [10, 10] });
+
+                // Agrega puntos extra
+                //L.marker([LATITUD, LONGITUD], { icon: markerIcon }).bindPopup(DESCRIPCION).addTo(map);
+            }).addTo(map);
+        </script>
     </body>
 </html>
