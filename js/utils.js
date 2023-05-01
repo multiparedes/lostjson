@@ -46,7 +46,7 @@
   const excursioId = params.get("id");
 
   let jsonExcursions = await fetch(
-    "https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/JSONsExcursions.json"
+    '../json/JSONsExcursions.json'
   )
     .then((response) => response.json())
     .catch((error) => {
