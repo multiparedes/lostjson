@@ -41,6 +41,7 @@
   }
 
   export async function getExcursio(){
+    //Excursio id is gotten with the url
     const queryString = window.location.search;
   const params = new URLSearchParams(queryString);
   const excursioId = params.get("id");
@@ -50,7 +51,6 @@
   )
     .then((response) => response.json())
     .catch((error) => {
-      // En caso de error, puedes manejarlo aquí
       console.error(error);
     });
 
@@ -61,7 +61,6 @@
   const infoExtra = await fetch(excursio.sameAs)
     .then((response) => response.json())
     .catch((error) => {
-      // En caso de error, puedes manejarlo aquí
       console.error(error);
     });
     return {

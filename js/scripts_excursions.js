@@ -20,8 +20,10 @@ map.addEventListener("mouseleave", () => {
 
 async function showExcursio() {
 
+  //Get the info of the excursió
   const { excursio, infoExtra } = await getExcursio();
 
+  //Fill the html template with dynamic info
   fillExcursio(excursio,infoExtra);
 
 // Videos
@@ -65,11 +67,9 @@ async function showExcursio() {
   )
     .then((response) => response.json())
     .catch((error) => {
-      // En caso de error, puedes manejarlo aquí
+      
       console.error(error);
     });
-
-  console.log(weatherResponse.weather)
 
   
   const weatherInfo = {
@@ -79,7 +79,7 @@ async function showExcursio() {
    weather_icon:weatherResponse.weather[0].icon,
    weather_description: weatherResponse.weather[0].description,
   }
-  console.log(weatherInfo)
+
 
 
   document.getElementById("weather_desc").innerHTML = capitalizeFirstLetter(weatherInfo.weather_description)

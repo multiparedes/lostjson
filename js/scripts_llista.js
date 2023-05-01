@@ -9,15 +9,18 @@
 import { durationToMin, toStars, dificultyToString } from './utils.js';
 
 function cardViewer() {
-  const selector = document.getElementById("ordenarPor");
-  let opcionSeleccionada = selector.selectedIndex;
-  generateCard({ sortValue: 0 });
-
+  //Checks if a search by name has been made
   const input = document.getElementById("cercador");
   input.addEventListener("change", () => {
     generateCard({ name: input.value });
   });
 
+  //Checks if a sort has been made
+  const selector = document.getElementById("ordenarPor");
+  let opcionSeleccionada = selector.selectedIndex;
+  generateCard({ sortValue: 0 });
+
+  //Depending on the sort criterium a diferent parametre is passed
   selector.addEventListener("change", () => {
     opcionSeleccionada = selector.selectedIndex;
     switch (opcionSeleccionada) {
@@ -35,19 +38,21 @@ function cardViewer() {
 }
 
 async function generateCard({ sortValue, name }) {
+  
   const toGen = document.getElementById("toGenerar");
 
+  //Get the info of the excursions
   let jsonExcursions = await fetch(
     "../json/JSONsExcursions.json"
   )
     .then((response) => response.json())
     .catch((error) => {
-      // En caso de error, puedes manejarlo aquí
       console.error(error);
     });
 
   jsonExcursions = jsonExcursions.itemListElement;
-
+  
+  //Get the extra info
   let infoExtras = [];
   await Promise.all(
     jsonExcursions.map(async (excursio) => {
@@ -59,6 +64,7 @@ async function generateCard({ sortValue, name }) {
     })
   );
 
+  //Encapsulate the info into an object 
   let excursions = [];
   excursions = jsonExcursions.map((excursio, index) => {
     return {
@@ -73,17 +79,17 @@ async function generateCard({ sortValue, name }) {
 
   //If sort was made
   switch (sortValue) {
-    case 1:
+    case 1: //By dificulty
       excursions.sort(function (a, b) {
         return a.extra.Dificultat - b.extra.Dificultat;
       });
       break;
-    case 2:
+    case 2: // By distance
       excursions.sort(function (a, b) {
         return a.extra.Distancia - b.extra.Distancia;
       });
       break;
-    case 3:
+    case 3: // By duration
       excursions.sort(function (a, b) {
         return (
           durationToMin(a.extra.Duracio_total) -
