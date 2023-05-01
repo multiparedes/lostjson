@@ -4,6 +4,9 @@ const mapOverlay = document.querySelector(".map-container");
 const mapOverlayMessage = document.querySelector(".b-container");
 const map = document.querySelector(".mapa");
 
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
 
 mapOverlay.addEventListener("click", () => {
   map.style.pointerEvents = "auto"; // activar eventos del ratón para el iframe
@@ -45,7 +48,6 @@ async function showExcursio() {
     .then(
       function (response) {
         let videoUrl = response.result.items[0].id.videoId;
-        console.log(videoUrl)
         var videoPlayer = document.getElementById('video');
         videoPlayer.src = `https://www.youtube.com/embed/${videoUrl}`;
       },
@@ -67,15 +69,24 @@ async function showExcursio() {
       console.error(error);
     });
 
+  console.log(weatherResponse.weather)
+
   
   const weatherInfo = {
    temp: weatherResponse.main.temp,
    temp_max: weatherResponse.main.temp_max,
    temp_min:weatherResponse.main.temp_min,
-   weather:weatherResponse.weather[0].main,
+   weather_icon:weatherResponse.weather[0].icon,
    weather_description: weatherResponse.weather[0].description,
   }
   console.log(weatherInfo)
+
+
+  document.getElementById("weather_desc").innerHTML = capitalizeFirstLetter(weatherInfo.weather_description)
+  document.getElementById("weather_icon").src = "https://openweathermap.org/img/wn/" + weatherInfo.weather_icon + "@2x.png"
+  document.getElementById("temp_normal").innerHTML = weatherInfo.temp
+  document.getElementById("temp_max").innerHTML = weatherInfo.temp_max
+  document.getElementById("temp_min").innerHTML = weatherInfo.temp_min
 }
 
 async function fillExcursio(excursio, infoExtra){

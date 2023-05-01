@@ -6,7 +6,10 @@
         "@type": "Trip",
         "name": "Teix",
         "identifier": 0,
-        "description": "Aquesta activitat és una excursió que comença al poble de Valldemossa i va pujant fins arribar al puig del Teix.",
+        "descripción": 
+        '''
+        a
+        ''',
         "itinerary": [
             {
                 "@type": "City",
