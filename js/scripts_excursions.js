@@ -61,7 +61,7 @@ async function showExcursio() {
   const weatherApiKey = "f6cb10fa96624400aee1b519f5b3f2ad";
 
   let weatherResponse = await fetch(
-    `https://api.openweathermap.org/data/2.5/weather?lat=39.643761&lon=2.646356&appid=${weatherApiKey}&units=metric&lang=es`
+    `https://api.openweathermap.org/data/2.5/weather?lat=39.643761&lon=2.646356&appid=${weatherApiKey}&units=metric&lang=ca`
   )
     .then((response) => response.json())
     .catch((error) => {
@@ -91,51 +91,45 @@ async function showExcursio() {
 
 async function fillExcursio(excursio, infoExtra){
   //Title
-  let node = document.getElementById("excursioTitle");
-  node.innerHTML = excursio.name;
+  document.getElementById("excursioTitle").innerHTML = excursio.name;
+  
 
   //Start
-  node = document.getElementById("start");
-  node.innerHTML = excursio.itinerary[0].name;
+  document.getElementById("start").innerHTML = excursio.itinerary[0].name;
 
   //Description
-  node = document.getElementById("description");
-  node.innerHTML = excursio.description;
+  document.getElementById("description").innerHTML = excursio.description;
 
   //Dificulty
-  node = document.getElementById("dificulty");
-  node.innerHTML = dificultyToString(infoExtra.Dificultat);
+  document.getElementById("dificulty").innerHTML = dificultyToString(infoExtra.Dificultat);
 
   //Type
-  node = document.getElementById("type1");
-  node.innerHTML = infoExtra.Tipus_de_ruta;
-
-  node = document.getElementById("type2");
-  node.innerHTML = infoExtra.Tipus_de_ruta;
-
+  document.getElementById("type1").innerHTML = infoExtra.Tipus_de_ruta;
+  document.getElementById("type2").innerHTML = infoExtra.Tipus_de_ruta;
+  
   //Height max
-  node = document.getElementById("max_height");
-  node.innerHTML = `${infoExtra.Altura_maxima}m`;
+  document.getElementById("max_height").innerHTML = `${infoExtra.Altura_maxima}m`;
+  
 
   //Height min
-  node = document.getElementById("min_height");
-  node.innerHTML = `${infoExtra.Altura_minima}m`;
+  document.getElementById("min_height").innerHTML = `${infoExtra.Altura_minima}m`;
+  
   //Desnivell
-  node = document.getElementById("unevenness");
-  node.innerHTML = `${infoExtra.Desnivell}m`;
+  document.getElementById("unevenness").innerHTML = `${infoExtra.Desnivell}m`;
+  
   //Distance
-  node = document.getElementById("distance");
-  node.innerHTML = `${infoExtra.Distancia}km`;
+  document.getElementById("distance").innerHTML = `${infoExtra.Distancia}km`;;
+  
   //Duration
-  node = document.getElementById("duration");
-  node.innerHTML = infoExtra.Duracio_total;
+  document.getElementById("duration").innerHTML = infoExtra.Duracio_total;;
+  
   //Season
-  node = document.getElementById("season");
-  node.innerHTML = infoExtra.Epoca_recomanada;
+  document.getElementById("season").innerHTML = infoExtra.Epoca_recomanada;;
+  
 
   //Audio
 
-  node = document.getElementById("audio");
+  let node = document.getElementById("audio");
   
 
   await fetch('./audio/Hiking Sounds.mp3')
