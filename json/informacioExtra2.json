@@ -6,5 +6,7 @@
     "Altura_minima": 6,
     "Epoca_recomanada": "Tot l'any",
     "Tipus_de_ruta": "Anada i tornada",
-    "Dificultat": 1
+    "Dificultat": 1,
+    "lat": 39.755869703466146,
+    "lon": 3.404760500000013
 }

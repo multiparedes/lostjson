@@ -61,9 +61,9 @@ async function showExcursio() {
 
   //Weather
   const weatherApiKey = "f6cb10fa96624400aee1b519f5b3f2ad";
-
+    console.log(infoExtra.lon)
   let weatherResponse = await fetch(
-    `https://api.openweathermap.org/data/2.5/weather?lat=39.643761&lon=2.646356&appid=${weatherApiKey}&units=metric&lang=ca`
+    `https://api.openweathermap.org/data/2.5/weather?lat=${infoExtra.lat}&lon=${infoExtra.lon}&appid=${weatherApiKey}&units=metric&lang=ca`
   )
     .then((response) => response.json())
     .catch((error) => {

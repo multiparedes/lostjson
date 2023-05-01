@@ -6,5 +6,7 @@
     "Altura_minima": 400,
     "Epoca_recomanada": "Tot l'any",
     "Tipus_de_ruta": "Circular",
-    "Dificultat": 1
+    "Dificultat": 1,
+    "lat": 39.725798201699426,
+    "lon": 2.638617499999989
 }

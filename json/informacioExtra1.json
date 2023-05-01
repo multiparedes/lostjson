@@ -6,5 +6,7 @@
     "Altura_minima": 5,
     "Epoca_recomanada":"Tot l'any",
     "Tipus_de_ruta": "Lineal",
-    "Dificultat":1
+    "Dificultat":1,
+    "lat": 39.57838761907168,
+    "lon": 2.3790090000000235
 }

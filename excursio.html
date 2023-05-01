@@ -252,7 +252,7 @@
             }).on('loaded', function(e) {
                 var gpx = e.target;
                 map.fitBounds(gpx.getBounds(), { padding: [10, 10] });
-
+                console.log(map.getCenter())
                 // Agrega puntos extra
                 //L.marker([LATITUD, LONGITUD], { icon: markerIcon }).bindPopup(DESCRIPCION).addTo(map);
             }).addTo(map);
