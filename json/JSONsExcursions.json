@@ -23,7 +23,7 @@
                 
             }
         ],
-        "image": ["http://www.walkingmallorca.co.uk/senderismo_mallorca/images/senda_16/mapa_16.gif","https://cdn1.click-mallorca.com/blog/wp-content/uploads/2021/04/puig-des-teix-1.jpg",
+        "image": ["https://cdn1.click-mallorca.com/blog/wp-content/uploads/2021/04/puig-des-teix-1.jpg",
                 "https://cdn1.click-mallorca.com/blog/wp-content/uploads/2021/04/puig-des-teix-4.jpg", "https://cdn1.click-mallorca.com/blog/wp-content/uploads/2021/04/puig-des-teix-3.jpg",
                 "https://cdn1.click-mallorca.com/blog/wp-content/uploads/2021/04/puig-des-teix-2.jpg"],
         "subjectOf": {
@@ -316,6 +316,42 @@
             "audio": [""]
         },
         "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra6.json"
+    },
+    {
+        "@type": "Trip",
+        "name": "Castell d'Alaró",
+        "identifier": 7,
+        "description": "El text que m'has proporcionat és un article extens sobre una ruta a peu a les muntanyes de Mallorca, que té com a objectiu la consecució de diverses cims i llocs d'interès natural i històric.\n\nEn primer lloc, es descriu el punt de partida, que és el poble d'Alaró, on els excursionistes deixen el seu vehicle en un aparcament públic i gratuït. Es detalla la ruta que es segueix per arribar a la primera parada, la Font de ses Artigues, que és una font de mina de l'època musulmana que actualment és utilitzada per una comunitat de regants. A continuació, els excursionistes prenen el Camí del Pas de s'Escaleta, un camí empedrat que es troba en mal estat de conservació i que els porta a la Talaia de Cals Reis, que és la primera cim que s'ha de conquerir. El Pas de s'Escaleta és un pas fàcil, que consta de deu esglaons de pedra que ajuden a superar la bretxa entre les roques. Després de superar el pas, es camina per una altiplanicie fins a arribar a la desviació que porta al Puig de Can Llenderina.\n\nEn aquest punt, els excursionistes poden optar per seguir el camí que rodeja la Talaia de Cals Reis i que porta fins a Alaró pel Pas de s'Estaló, o bé per prendre la desviació cap a la cim de la Talaia. El camí que porta a la cim és un bonic camí de carro que té trams empedrats i que finalitza en una era de carboner. Des de l'era, es pren un sender oblic que, seguint els hitos, porta fins a un rellano rocallós des d'on es poden observar unes magnífiques vistes del Valle de Orient i de la Serra de Alfàbia.\n\nUn cop a la cim de la Talaia de Cals Reis, els excursionistes continuen per la carena fins a arribar al Puig de Can Llenderina, que és la segona cim que s'ha de conquerir. Després, es continua per la carena fins a arribar al Puig d'Alaró, que és la cim més alta de la ruta. Des de la cim del Puig d'Alaró, es pot veure una espectacular vista panoràmica de l'illa de Mallorca.\n\nFinalment, els excursionistes prenen el Pas de s'Estaca per retornar al punt de partida, que és el poble d'Alaró. Durant el descens, es fa una parada a la plaça de Cabrit i Bassa, on es commemora la mort dels dos herois locals que van ser cremats vius per oposar-se al rei Alfonso II d'Aragó.",        
+        "itinerary": [
+            {
+                "@type": "City",
+                "name": "Alaró"
+                
+            },
+            {
+                "@type": "Mountain",
+                "name": "Puig de Can Llendrina"
+                
+            },
+            {
+                "@type": "Mountain",
+                "name": "Castell d'Alaró"
+                
+            },
+            {
+                "@type": "City",
+                "name": "Alaró"
+                
+            }
+        ],
+        "image": ["https://www.turismepetit.com/wp-content/uploads/2020/05/vistas-castell-alaro.jpg","https://media.mallorca-touristguide.com/imagenes/718/10181castillo%20de%20alaro%20acceso.JPG",
+    "https://pequepaginas.com/images/camino-del-castillo-de-alaro.jpg","https://viajesyeventos.files.wordpress.com/2012/01/imag0460.jpg"],
+        "subjectOf": {
+            "@type": "CreativeWork",
+            "video": [""],
+            "audio": [""]
+        },
+        "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra7.json"
     }
     
     ]
