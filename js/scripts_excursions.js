@@ -107,7 +107,12 @@ async function fillExcursio(excursio, infoExtra){
   start.textContent = excursio.itinerary[0].name;
 
   //Description
-  document.getElementById("description").innerHTML = excursio.description;
+  const formatedDesc = excursio.description.split("\n\n")
+  formatedDesc.forEach(desc => {
+    const p = document.createElement('p');
+    p.textContent = desc
+    document.getElementById("description").appendChild(p)
+  })
 
   const description = document.createElement('p');
   description.textContent = excursio.description;
@@ -207,7 +212,11 @@ async function loadComments() {
   if(comentaris.length !== 0) {
     comentaris.forEach(coment => {
       const newComment = document.createElement('p');
-      newComment.textContent = coment.user + ": " + coment.desc;
+      const username = document.createElement('span');
+      username.textContent = coment.user + ": ";
+      username.classList.add('fw-bold'); // Agregamos la clase fw-bold para hacer el nombre de usuario en negrita
+      newComment.appendChild(username);
+      newComment.appendChild(document.createTextNode(coment.desc));
       commentsSection.appendChild(newComment);
     });
   } else {
@@ -244,7 +253,6 @@ async function updateComments(event) {
   comForm.classList.add("d-none");
   comSucess.classList.remove("d-none");
   comSucess.classList.add("d-block");
-
 }
 
 loadComments();

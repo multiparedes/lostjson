@@ -235,13 +235,16 @@
     <hr>
 
 
-    <div class="container">
+    <div class="container align-items-center">
       <div class="row">
         <div class="col-md-6">        
           <div>
             <h2>Comentaris:</h2>
-            <div style="margin-left: 2em;" id="commentsArea" class="text-muted"></div>
+            <div style="margin-left: 2em;" id="commentsArea"></div>
           </div>
+        </div>
+
+        <div class="col-md-6">        
           <form id="commentsForm">
             <h2 class="fw-bolder">Deixa un comentari!</h2>
             <div class="form-group row align-items-center mb-3">
@@ -262,8 +265,10 @@
               <button type="submit" class="btn btn-primary">Enviar </button>
             </div>
           </form>
+
           <section id="formSucces" class="d-none text-center">
-            <p>Gràcies per el treu comentari :) </p>
+            <h3>Comentari publicat!  <span class="bi bi-check2-circle mr-4"></span> </h3>
+            <p>Moltes gràcies pel vostre feedback.</p>
           </section>
         </div>
       </div>
@@ -283,7 +288,6 @@
   </footer>
   <!-- Core theme JS-->
   <!-- Bootstrap core JS-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://www.youtube.com/player_api"></script>
   <script src="https://apis.google.com/js/api.js"></script>
   <script type="module" src="js/scripts_excursions.js"></script>
