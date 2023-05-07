@@ -4,6 +4,8 @@ const mapOverlay = document.querySelector(".map-container");
 const mapOverlayMessage = document.querySelector(".b-container");
 const map = document.querySelector(".mapa");
 
+document.querySelector('form').addEventListener('submit', updateComments);
+
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
@@ -79,9 +81,6 @@ async function showExcursio() {
    weather_icon:weatherResponse.weather[0].icon,
    weather_description: weatherResponse.weather[0].description,
   }
-
-
-
   document.getElementById("weather_desc").innerHTML = capitalizeFirstLetter(weatherInfo.weather_description)
   document.getElementById("weather_icon").src = "https://openweathermap.org/img/wn/" + weatherInfo.weather_icon + "@2x.png"
   document.getElementById("temp_normal").innerHTML = weatherInfo.temp
@@ -98,31 +97,26 @@ async function fillExcursio(excursio, infoExtra){
 
   const pageTitle = document.createElement('h1');
   pageTitle.textContent = excursio.name;
-  pageContent.appendChild(pageTitle);
 
   const detailsSection = document.createElement('section');
   detailsSection.setAttribute('aria-labelledby', 'details-heading');
-  pageContent.appendChild(detailsSection);
   //Start
   document.getElementById("start").innerHTML = excursio.itinerary[0].name;
 
   const start = document.createElement('p');
   start.textContent = excursio.itinerary[0].name;
-  detailsSection.appendChild(start);
 
   //Description
   document.getElementById("description").innerHTML = excursio.description;
 
   const description = document.createElement('p');
   description.textContent = excursio.description;
-  detailsSection.appendChild(description);
 
   //Dificulty
   document.getElementById("dificulty").innerHTML = dificultyToString(infoExtra.Dificultat);
 
   const difficulty = document.createElement('p');
   difficulty.textContent = `Difficulty rating: ${infoExtra.Dificultat}`;
-  detailsSection.appendChild(difficulty);
 
   //Type
   document.getElementById("type1").innerHTML = infoExtra.Tipus_de_ruta;
@@ -133,48 +127,40 @@ async function fillExcursio(excursio, infoExtra){
   
   const max_height = document.createElement('p');
   max_height.textContent = `Max height: ${infoExtra.Altura_maxima} m`;
-  detailsSection.appendChild(max_height);
 
   //Height min
   document.getElementById("min_height").innerHTML = `${infoExtra.Altura_minima}m`;
   
   const min_height = document.createElement('p');
   min_height.textContent = `Min height: ${infoExtra.Altura_minima} m`;
-  detailsSection.appendChild(min_height);
 
   //Desnivell
   document.getElementById("unevenness").innerHTML = `${infoExtra.Desnivell}m`;
 
   const elevation = document.createElement('p');
   elevation.textContent = `Elevation gain: ${infoExtra.Desnivell} m`;
-  detailsSection.appendChild(elevation);
   
   //Distance
   document.getElementById("distance").innerHTML = `${infoExtra.Distancia}km`;;
 
   const distance = document.createElement('p');
   distance.textContent = `Distance: ${infoExtra.Distancia} km`;
-  detailsSection.appendChild(distance);
   
   //Duration
   document.getElementById("duration").innerHTML = infoExtra.Duracio_total;;
 
   const duration = document.createElement('p');
   duration.textContent = `Duration: ${infoExtra.Duracio_total}`;
-  detailsSection.appendChild(duration);
   
   //Season
   document.getElementById("season").innerHTML = infoExtra.Epoca_recomanada;;
   
   const season = document.createElement('p');
   season.textContent = `Recommended season: ${infoExtra.Epoca_recomanada}`;
-  difficultySection.appendChild(season);
 
   //Audio
-
   let node = document.getElementById("audio");
   
-
   await fetch('./audio/Hiking Sounds.mp3')
   .then(response => response.blob()) // convierte la respuesta en un objeto de datos de archivo
   .then(blob => {
@@ -208,4 +194,58 @@ async function fillExcursio(excursio, infoExtra){
   node.innerHTML = images;
 
 }
+
+async function loadComments() {
+  const commentsSection = document.getElementById("commentsArea")
+  const queryString = window.location.search;
+  const params = new URLSearchParams(queryString);
+  const excursioId = params.get("id");
+
+  let comentaris = await getCommentsForPage(excursioId)
+  console.log(comentaris)
+
+  if(comentaris.length !== 0) {
+    comentaris.forEach(coment => {
+      const newComment = document.createElement('p');
+      newComment.textContent = coment.user + ": " + coment.desc;
+      commentsSection.appendChild(newComment);
+    });
+  } else {
+    const missingComments = document.createElement('p')
+    missingComments.textContent = "Encara no hi ha cap comentari... "
+    commentsSection.appendChild(missingComments)
+  }
+}
+
+async function getCommentsForPage(pageNumber) {
+  let comments = await fetch('./json/comentaris.json')
+    .then((response) => response.json())
+    .catch((error) => {
+      console.error(error);
+    });
+
+  let filteredComments = [];
+
+  for (let i = 0; i < comments.comentaris.length; i++) {
+    if (comments.comentaris[i].page === parseInt(pageNumber)) {
+      filteredComments.push(comments.comentaris[i]);
+    }
+  }
+
+  return filteredComments;
+}
+
+async function updateComments(event) {
+  event.preventDefault();
+
+  const comForm = document.getElementById("commentsForm")
+  const comSucess = document.getElementById("formSucces")
+  
+  comForm.classList.add("d-none");
+  comSucess.classList.remove("d-none");
+  comSucess.classList.add("d-block");
+
+}
+
+loadComments();
 showExcursio();

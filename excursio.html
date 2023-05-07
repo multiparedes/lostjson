@@ -1,442 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Excursió -Teix</title>
-    <!-- Favicon-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Google fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
-      rel="stylesheet"
-    />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-    <!-- Leafjs and GPXextension -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
-      crossorigin=""
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
-  </head>
-  <body>
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light shadow-sm" id="mainNav">
-      <div class="container px-5">
-        <a class="navbar-brand fw-bold" href="/">ExcursionsXMallorca</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          Menú
-          <i class="bi-list"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-            <li class="nav-item">
-              <a class="nav-link me-lg-3" href="/llistat-excursions.html"
-                >Llistat d'excursions</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
 
-    <!-- Page content-->
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-lg-8">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Excursió -Teix</title>
+  <!-- Favicon-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <!-- Google fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet" />
+  <!-- Leafjs and GPXextension -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
+</head>
+
+<body>
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-light shadow-sm" id="mainNav">
+    <div class="container px-5">
+      <a class="navbar-brand fw-bold" href="/">ExcursionsXMallorca</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menú
+        <i class="bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link me-lg-3" href="/llistat-excursions.html">Llistat d'excursions</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page content-->
+  <div class="container mt-5" id="page-content">
+    <div class="row">
+      <div class="col-lg-8">
+        <!-- Post content-->
+        <article>
+          <!-- Post header-->
+          <header class="mb-4">
+            <!-- Post title-->
+            <h1 class="fw-bolder mb-1" id="excursioTitle"></h1>
+            <!-- Post meta content-->
+            <div class="text-muted fst-italic mb-2" id="start"></div>
+            <!-- Post categories-->
+            <p class="badge bg-secondary text-decoration-none link-light" id="dificulty"></p>
+            <p class="badge bg-secondary text-decoration-none link-light" id="type1"></p>
+          </header>
+
+          <!-- Map -->
+          <div class="map-container">
+            <div id="map" height="450px" class="mapa"></div>
+            <div class="b-container">
+              <p class="b-message">Fes clic en el mapa per a interactuar</p>
+            </div>
+          </div>
           <!-- Post content-->
-          <article>
-            <!-- Post header-->
-            <header class="mb-4">
-              <!-- Post title-->
-              <h1 class="fw-bolder mb-1" id="excursioTitle"></h1>
-              <!-- Post meta content-->
-              <div class="text-muted fst-italic mb-2" id="start"></div>
-              <!-- Post categories-->
-              <p
-                class="badge bg-secondary text-decoration-none link-light"
-                id="dificulty"
-              ></p>
-              <p
-                class="badge bg-secondary text-decoration-none link-light"
-                id="type1"
-              ></p>
-            </header>
-
-            <!-- Map -->
-            <div class="map-container">
-              <div id="map" height="450px" class="mapa"></div>
-              <div class="b-container">
-                <p class="b-message">Fes clic en el mapa per a interactuar</p>
+          <section class="mb-5">
+            <p class="fs-5 mb-4" id="description" style="text-align: justify"></p>
+          </section>
+        </article>
+      </div>
+      <!-- Side widgets-->
+      <div class="col-lg-4">
+        <!-- Categories widget-->
+        <div class="card mb-4">
+          <div class="card-header">Dades tècniques de l'excursió</div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-6">
+                <ul class="list-unstyled mb-0 text-center">
+                  <p>
+                    <span class="bi bi-flag text-gradient col-6 mr-4"></span>Distancia:<br />
+                    <span class="fw-bold" id="distance"></span>
+                  </p>
+                  <p>
+                    <span class="bi bi-clock text-gradient col-6 mr-4"></span>Duració total:<br /><span class="fw-bold"
+                      id="duration"></span>
+                  </p>
+                  <p>
+                    <span class="bi bi-geo text-gradient col-6 mr-4"></span>Desnivell:<br /><span class="fw-bold"
+                      id="unevenness"></span>
+                  </p>
+                </ul>
               </div>
-            </div>
-            <!-- Post content-->
-            <section class="mb-5">
-              <p
-                class="fs-5 mb-4"
-                id="description"
-                style="text-align: justify"
-              ></p>
-            </section>
-          </article>
-        </div>
-        <!-- Side widgets-->
-        <div class="col-lg-4">
-          <!-- Categories widget-->
-          <div class="card mb-4">
-            <div class="card-header">Dades tècniques de l'excursió</div>
-            <div class="card-body">
-              <div class="row">
-                <div class="col-sm-6">
-                  <ul class="list-unstyled mb-0 text-center">
-                    <p>
-                      <span class="bi bi-flag text-gradient col-6 mr-4"></span
-                      >Distancia:<br />
-                      <span class="fw-bold" id="distance"></span>
-                    </p>
-                    <p>
-                      <span class="bi bi-clock text-gradient col-6 mr-4"></span
-                      >Duració total:<br /><span
-                        class="fw-bold"
-                        id="duration"
-                      ></span>
-                    </p>
-                    <p>
-                      <span class="bi bi-geo text-gradient col-6 mr-4"></span
-                      >Desnivell:<br /><span
-                        class="fw-bold"
-                        id="unevenness"
-                      ></span>
-                    </p>
-                  </ul>
-                </div>
-                <div class="col-sm-6">
-                  <ul class="list-unstyled mb-0 text-center">
-                    <p>
-                      <span class="bi bi-arrow-up text-gradient mr-4"></span>
-                      Altura màxima:<br /><span
-                        class="fw-bold"
-                        id="max_height"
-                      ></span>
-                    </p>
-                    <p>
-                      <span
-                        class="bi bi-arrow-down text-gradient col-6 mr-4"
-                      ></span>
-                      Altura mínima:<br /><span
-                        class="fw-bold"
-                        id="min_height"
-                      ></span>
-                    </p>
-                  </ul>
-                </div>
+              <div class="col-sm-6">
+                <ul class="list-unstyled mb-0 text-center">
+                  <p>
+                    <span class="bi bi-arrow-up text-gradient mr-4"></span>
+                    Altura màxima:<br /><span class="fw-bold" id="max_height"></span>
+                  </p>
+                  <p>
+                    <span class="bi bi-arrow-down text-gradient col-6 mr-4"></span>
+                    Altura mínima:<br /><span class="fw-bold" id="min_height"></span>
+                  </p>
+                </ul>
               </div>
             </div>
           </div>
-          <!-- Side widget-->
-          <div class="card mb-4">
-            <div class="card-header">Informació addicional</div>
-            <div class="card-body text-center">
-              <p>
-                <span class="bi bi-calendar3 text-gradient mr-4"></span>Època
-                recomanada:<br /><span class="fw-bold" id="season"></span>
+        </div>
+        <!-- Side widget-->
+        <div class="card mb-4">
+          <div class="card-header">Informació addicional</div>
+          <div class="card-body text-center">
+            <p>
+              <span class="bi bi-calendar3 text-gradient mr-4"></span>Època
+              recomanada:<br /><span class="fw-bold" id="season"></span>
+            </p>
+            <p>
+              <span class="bi bi-brightness-alt-high text-gradient mr-4"></span>Tipus de ruta:<br /><span
+                class="fw-bold" id="type2"></span>
+            </p>
+          </div>
+        </div>
+        <div class="card mb-4">
+          <div class="card-header">Temps</div>
+          <div class="card-body text-center conte">
+            <div class="d-flex justify-content-center align-items-center">
+              <img id="weather_icon" alt="Weather icon" class="d-inline-block w-25 h-25" />
+              <p id="weather_desc" class="pt-2"></p>
+            </div>
+            <ul class="list-unstyled mb-0 text-center d-flex flex-wrap">
+              <p class="flex-grow-1">
+                <span class="bi bi-thermometer-half text-gradient mr-4"></span>
+                Tº : <span id="temp_normal" class="fw-bold"></span> ºC
               </p>
-              <p>
-                <span
-                  class="bi bi-brightness-alt-high text-gradient mr-4"
-                ></span
-                >Tipus de ruta:<br /><span class="fw-bold" id="type2"></span>
+              <p class="flex-grow-1">
+                <span class="bi bi-thermometer-high text-gradient col-6 mr-4"></span>
+                Tº màxima : <span id="temp_max" class="fw-bold"></span> ºC
               </p>
-            </div>
-          </div>
-          <div class="card mb-4">
-            <div class="card-header">Temps</div>
-            <div class="card-body text-center conte">
-              <div class="d-flex justify-content-center align-items-center">
-                <img
-                  id="weather_icon"
-                  alt="Weather icon"
-                  class="d-inline-block w-25 h-25"
-                />
-                <p id="weather_desc" class="pt-2"></p>
-              </div>
-              <ul class="list-unstyled mb-0 text-center d-flex flex-wrap">
-                <p class="flex-grow-1">
-                  <span
-                    class="bi bi-thermometer-half text-gradient mr-4"
-                  ></span>
-                  Tº : <span id="temp_normal" class="fw-bold"></span> ºC
-                </p>
-                <p class="flex-grow-1">
-                  <span
-                    class="bi bi-thermometer-high text-gradient col-6 mr-4"
-                  ></span>
-                  Tº màxima : <span id="temp_max" class="fw-bold"></span> ºC
-                </p>
-                <p class="flex-grow-1">
-                  <span
-                    class="bi bi-thermometer text-gradient col-6 mr-4"
-                  ></span>
-                  Tº mínima : <span id="temp_min" class="fw-bold"></span> ºC
-                </p>
-              </ul>
-            </div>
-          </div>
-          <div class="card mb-4">
-            <div class="card-header">Àudio</div>
-            <div class="card-body text-center" id="audio"></div>
+              <p class="flex-grow-1">
+                <span class="bi bi-thermometer text-gradient col-6 mr-4"></span>
+                Tº mínima : <span id="temp_min" class="fw-bold"></span> ºC
+              </p>
+            </ul>
           </div>
         </div>
-      </div>
-
-      <!-- Imagenes -->
-      <div class="card mb-4">
-        <div class="card-header mb-4">Imatges</div>
-        <div class="card-body">
-          <div
-            id="carouselImagenes"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-inner" id="carouselImagenesGenerate"></div>
-            <button
-              class="carousel-control-prev z-10"
-              type="button"
-              data-bs-target="#carouselImagenes"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Anterior</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselImagenes"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Siguiente</span>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Videos -->
-      <div class="card mb-4">
-        <div class="card-header mb-4">Vídeos</div>
-        <div class="card-body">
-          <div
-            id="carouselVideos"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <iframe
-                  id="video"
-                  width="100%"
-                  height="450px"
-                  src=""
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                >
-                </iframe>
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselVideos"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Anterior</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselVideos"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Siguiente</span>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Puntos de interes -->
-      <div class="card mb-4">
-        <div class="card-header">Punts d'interès:</div>
-        <div class="card-body">
-          <div
-            id="carouselPInteres"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="https://ndic.gov.ng/wp-content/uploads/2020/04/placeholder.png"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-
-              <div class="carousel-item">
-                <img
-                  src="https://ndic.gov.ng/wp-content/uploads/2020/04/placeholder.png"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselPInteres"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Anterior</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselPInteres"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Siguiente</span>
-            </button>
-          </div>
+        <div class="card mb-4">
+          <div class="card-header">Àudio</div>
+          <div class="card-body text-center" id="audio"></div>
         </div>
       </div>
     </div>
 
-    <!-- Footer-->
-    <footer class="bg-black text-center py-5">
-      <div class="container px-5">
-        <div class="text-white-50 small">
-          <div class="mb-2">
-            &copy; ExcursionsXMallorca. Tots els drets reservats.
-          </div>
-          <p>Treball final de tecnologia multimèdia.</p>
+    <!-- Imagenes -->
+    <div class="card mb-4">
+      <div class="card-header mb-4">Imatges</div>
+      <div class="card-body">
+        <div id="carouselImagenes" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner" id="carouselImagenesGenerate"></div>
+          <button class="carousel-control-prev z-10" type="button" data-bs-target="#carouselImagenes"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselImagenes" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
         </div>
       </div>
-    </footer>
-    <!-- Core theme JS-->
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://www.youtube.com/player_api"></script>
-    <script src="https://apis.google.com/js/api.js"></script>
-    <script type="module" src="js/scripts_excursions.js"></script>
-    <script>
-      // Crea un mapa amb Leaflet i el situa en una vista predeterminada
-      let map = L.map("map", {
-        dragging: true, // Habilita la interacció de drag & drop
-        scrollWheelZoom: true, // Habilita la interacció de zoom amb la roda del ratolí
-      }).setView([0, 0], 13);
+    </div>
 
-      // Obté l'ID de l'excursió a través de la URL
-      const queryString = window.location.search;
-      const params = new URLSearchParams(queryString);
-      const excursioId = params.get("id");
+    <!-- Videos -->
+    <div class="card mb-4">
+      <div class="card-header mb-4">Vídeos</div>
+      <div class="card-body">
+        <div id="carouselVideos" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <iframe id="video" width="100%" height="450px" src="" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselVideos" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselVideos" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+    </div>
 
-      // Afegeix una capa de mapa de tiles OpenStreetMap Cyclosm a Leaflet
-      L.tileLayer(
-        "https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png",
-        {
-          maxZoom: 20,
-        }
-      ).addTo(map);
+    <!-- Puntos de interes -->
+    <div class="card mb-4">
+      <div class="card-header">Punts d'interès:</div>
+      <div class="card-body">
+        <div id="carouselPInteres" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://ndic.gov.ng/wp-content/uploads/2020/04/placeholder.png" class="d-block w-100"
+                alt="..." />
+            </div>
 
-      // Defineix la ruta GPX que es vol mostrar al mapa i l'icona del marcador
-      var gpx = "./assets/gpx/" + excursioId + ".gpx";
-      var markerIcon = L.icon({
-        iconUrl: "./assets/marker.png",
-        iconSize: [32, 32],
-        iconAnchor: [16, 32],
-        popupAnchor: [0, -30],
-      });
+            <div class="carousel-item">
+              <img src="https://ndic.gov.ng/wp-content/uploads/2020/04/placeholder.png" class="d-block w-100"
+                alt="..." />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselPInteres" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselPInteres" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+    </div>
 
-      // Crea un objecte de ruta GPX amb Leaflet i configura els paràmetres de polilínia i marcador
-      new L.GPX(gpx, {
-        async: true,
-        polyline_options: {
-          color: "orange", // Color de la línia de la ruta
-          weight: 3, // Gruix de la línia de la ruta
-          lineCap: "round", // Estil dels extrems de la línia de la ruta
+    <!-- Comments -->
+    <hr>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">        
+          <div>
+            <h2>Comentaris:</h2>
+            <div style="margin-left: 2em;" id="commentsArea"></div>
+          </div>
+          <form id="commentsForm">
+            <h2 class="fw-bolder">Deixa un comentari!</h2>
+            <div class="form-group row align-items-center mb-3">
+              <label for="username" class="col-sm-3 col-form-label text-sm-start">Nom d'usuari</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="username" aria-describedby="commentUsername" placeholder="El vostre nom ..."
+                  required>
+              </div>
+            </div>
+            <div class="form-group row mb-3">
+              <label for="comment" class="col-sm-3 col-form-label text-sm-start">Comentari</label>
+              <div class="col-sm-9">
+                <textarea class="form-control" id="comment" rows="3" placeholder="Escriviu el vostre comentari aquí..."
+                  required></textarea>
+              </div>
+            </div>
+            <div class="d-grid col-2 mx-auto mb-4">
+              <button type="submit" class="btn btn-primary">Enviar </button>
+            </div>
+          </form>
+          <section id="formSucces" class="d-none text-center">
+            <p>Gràcies per el treu comentari :) </p>
+          </section>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Footer-->
+  <footer class="bg-black text-center py-5">
+    <div class="container px-5">
+      <div class="text-white-50 small">
+        <div class="mb-2">
+          &copy; ExcursionsXMallorca. Tots els drets reservats.
+        </div>
+        <p>Treball final de tecnologia multimèdia.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- Core theme JS-->
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://www.youtube.com/player_api"></script>
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script type="module" src="js/scripts_excursions.js"></script>
+  <script>
+    // Crea un mapa amb Leaflet i el situa en una vista predeterminada
+    let map = L.map("map", {
+      dragging: true, // Habilita la interacció de drag & drop
+      scrollWheelZoom: true, // Habilita la interacció de zoom amb la roda del ratolí
+    }).setView([0, 0], 13);
+
+    // Obté l'ID de l'excursió a través de la URL
+    const queryString = window.location.search;
+    const params = new URLSearchParams(queryString);
+    const excursioId = params.get("id");
+
+    // Afegeix una capa de mapa de tiles OpenStreetMap Cyclosm a Leaflet
+    L.tileLayer(
+      "https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png",
+      {
+        maxZoom: 20,
+      }
+    ).addTo(map);
+
+    // Defineix la ruta GPX que es vol mostrar al mapa i l'icona del marcador
+    var gpx = "./assets/gpx/" + excursioId + ".gpx";
+    var markerIcon = L.icon({
+      iconUrl: "./assets/marker.png",
+      iconSize: [32, 32],
+      iconAnchor: [16, 32],
+      popupAnchor: [0, -30],
+    });
+
+    // Crea un objecte de ruta GPX amb Leaflet i configura els paràmetres de polilínia i marcador
+    new L.GPX(gpx, {
+      async: true,
+      polyline_options: {
+        color: "orange", // Color de la línia de la ruta
+        weight: 3, // Gruix de la línia de la ruta
+        lineCap: "round", // Estil dels extrems de la línia de la ruta
+      },
+      marker_options: {
+        startIconUrl: null,
+        endIconUrl: null,
+        shadowUrl: null,
+        wptIcons: {
+          "": markerIcon, // Icona del marcador de la ruta
         },
-        marker_options: {
-          startIconUrl: null,
-          endIconUrl: null,
-          shadowUrl: null,
-          wptIcons: {
-            "": markerIcon, // Icona del marcador de la ruta
-          },
-        },
+      },
+    })
+      .on("loaded", function (e) {
+        var gpx = e.target;
+        // Ajusta la vista del mapa per mostrar la ruta GPX sencera
+        map.fitBounds(gpx.getBounds(), { padding: [10, 10] });
+        console.log(map.getCenter());
+
+        // Opcionalment, afegiu punts extra a la ruta amb marcadors personalitzats
+        // L.marker([LATITUDE, LONGITUDE], { icon: markerIcon }).bindPopup(DESCRIPTION).addTo(map);
       })
-        .on("loaded", function (e) {
-          var gpx = e.target;
-          // Ajusta la vista del mapa per mostrar la ruta GPX sencera
-          map.fitBounds(gpx.getBounds(), { padding: [10, 10] });
-          console.log(map.getCenter());
+      .addTo(map);
+  </script>
+</body>
 
-          // Opcionalment, afegiu punts extra a la ruta amb marcadors personalitzats
-          // L.marker([LATITUDE, LONGITUDE], { icon: markerIcon }).bindPopup(DESCRIPTION).addTo(map);
-        })
-        .addTo(map);
-    </script>
-  </body>
 </html>
