@@ -90,18 +90,39 @@ async function showExcursio() {
 }
 
 async function fillExcursio(excursio, infoExtra){
+
+  const pageContent = document.getElementById('page-content');
+
   //Title
   document.getElementById("excursioTitle").innerHTML = excursio.name;
-  
 
+  const pageTitle = document.createElement('h1');
+  pageTitle.textContent = excursio.name;
+  pageContent.appendChild(pageTitle);
+
+  const detailsSection = document.createElement('section');
+  detailsSection.setAttribute('aria-labelledby', 'details-heading');
+  pageContent.appendChild(detailsSection);
   //Start
   document.getElementById("start").innerHTML = excursio.itinerary[0].name;
+
+  const start = document.createElement('p');
+  start.textContent = excursio.itinerary[0].name;
+  detailsSection.appendChild(start);
 
   //Description
   document.getElementById("description").innerHTML = excursio.description;
 
+  const description = document.createElement('p');
+  description.textContent = excursio.description;
+  detailsSection.appendChild(description);
+
   //Dificulty
   document.getElementById("dificulty").innerHTML = dificultyToString(infoExtra.Dificultat);
+
+  const difficulty = document.createElement('p');
+  difficulty.textContent = `Difficulty rating: ${infoExtra.Dificultat}`;
+  detailsSection.appendChild(difficulty);
 
   //Type
   document.getElementById("type1").innerHTML = infoExtra.Tipus_de_ruta;
@@ -110,22 +131,44 @@ async function fillExcursio(excursio, infoExtra){
   //Height max
   document.getElementById("max_height").innerHTML = `${infoExtra.Altura_maxima}m`;
   
+  const max_height = document.createElement('p');
+  max_height.textContent = `Max height: ${infoExtra.Altura_maxima} m`;
+  detailsSection.appendChild(max_height);
 
   //Height min
   document.getElementById("min_height").innerHTML = `${infoExtra.Altura_minima}m`;
   
+  const min_height = document.createElement('p');
+  min_height.textContent = `Min height: ${infoExtra.Altura_minima} m`;
+  detailsSection.appendChild(min_height);
+
   //Desnivell
   document.getElementById("unevenness").innerHTML = `${infoExtra.Desnivell}m`;
+
+  const elevation = document.createElement('p');
+  elevation.textContent = `Elevation gain: ${infoExtra.Desnivell} m`;
+  detailsSection.appendChild(elevation);
   
   //Distance
   document.getElementById("distance").innerHTML = `${infoExtra.Distancia}km`;;
+
+  const distance = document.createElement('p');
+  distance.textContent = `Distance: ${infoExtra.Distancia} km`;
+  detailsSection.appendChild(distance);
   
   //Duration
   document.getElementById("duration").innerHTML = infoExtra.Duracio_total;;
+
+  const duration = document.createElement('p');
+  duration.textContent = `Duration: ${infoExtra.Duracio_total}`;
+  detailsSection.appendChild(duration);
   
   //Season
   document.getElementById("season").innerHTML = infoExtra.Epoca_recomanada;;
   
+  const season = document.createElement('p');
+  season.textContent = `Recommended season: ${infoExtra.Epoca_recomanada}`;
+  difficultySection.appendChild(season);
 
   //Audio
 
