@@ -95,16 +95,20 @@ async function fillExcursio(excursio, infoExtra){
   //Title
   document.getElementById("excursioTitle").innerHTML = excursio.name;
 
-  const pageTitle = document.createElement('h1');
-  pageTitle.textContent = excursio.name;
+  const title = document.createElement("span");
+  title.classList.add("Title");
+  title.textContent = excursio.name;
+  document.getElementById("excursioTitle").appendChild(title);
 
   const detailsSection = document.createElement('section');
   detailsSection.setAttribute('aria-labelledby', 'details-heading');
   //Start
-  document.getElementById("start").innerHTML = excursio.itinerary[0].name;
+  //document.getElementById("start").innerHTML = excursio.itinerary[0].name;
 
-  const start = document.createElement('p');
+  const start = document.createElement("span");
+  start.classList.add("Start");
   start.textContent = excursio.itinerary[0].name;
+  document.getElementById("start").appendChild(start);
 
   //Description
   const formatedDesc = excursio.description.split("\n\n")
@@ -114,14 +118,11 @@ async function fillExcursio(excursio, infoExtra){
     document.getElementById("description").appendChild(p)
   })
 
-  const description = document.createElement('p');
-  description.textContent = excursio.description;
+
 
   //Dificulty
   //document.getElementById("dificulty").innerHTML = dificultyToString(infoExtra.Dificultat);
 
-  //const difficulty = document.createElement('p');
-  //difficulty.textContent = `Difficulty rating: ${infoExtra.Dificultat}`;
   const difficultyLevel = document.createElement("span");
   difficultyLevel.classList.add("difficulty-level");
   difficultyLevel.textContent = dificultyToString(infoExtra.Dificultat);
@@ -132,40 +133,55 @@ async function fillExcursio(excursio, infoExtra){
   document.getElementById("type2").innerHTML = infoExtra.Tipus_de_ruta;
   
   //Height max
-  document.getElementById("max_height").innerHTML = `${infoExtra.Altura_maxima}m`;
+  //document.getElementById("max_height").innerHTML = `${infoExtra.Altura_maxima}m`;
   
-  const max_height = document.createElement('p');
-  max_height.textContent = `Max height: ${infoExtra.Altura_maxima} m`;
+  const maxHeight = document.createElement("span");
+  maxHeight.classList.add("max-height");
+  maxHeight.textContent = `${infoExtra.Altura_maxima}m`;
+  document.getElementById("max_height").appendChild(maxHeight);
 
   //Height min
   document.getElementById("min_height").innerHTML = `${infoExtra.Altura_minima}m`;
-  
-  const min_height = document.createElement('p');
-  min_height.textContent = `Min height: ${infoExtra.Altura_minima} m`;
+
+  const minHeight = document.createElement("span");
+  minHeight.classList.add("min-height");
+  minHeight.textContent = `${infoExtra.Altura_minima}m`;
+  document.getElementById("min_height").appendChild(minHeight);
 
   //Desnivell
-  document.getElementById("unevenness").innerHTML = `${infoExtra.Desnivell}m`;
+  //document.getElementById("unevenness").innerHTML = `${infoExtra.Desnivell}m`;
 
-  const elevation = document.createElement('p');
-  elevation.textContent = `Elevation gain: ${infoExtra.Desnivell} m`;
+  const elevation = document.createElement("span");
+  elevation.classList.add("min-height");
+  elevation.textContent = `${infoExtra.Desnivell}m`;
+  document.getElementById("Elevation-gain").appendChild(elevation);
   
   //Distance
-  document.getElementById("distance").innerHTML = `${infoExtra.Distancia}km`;;
+  //document.getElementById("distance").innerHTML = `${infoExtra.Distancia}km`;;
 
-  const distance = document.createElement('p');
-  distance.textContent = `Distance: ${infoExtra.Distancia} km`;
+  const distance = document.createElement("span");
+  distance.classList.add("Distance");
+  distance.textContent = `${infoExtra.Distancia}km`;
+  document.getElementById("distance").appendChild(distance);
   
   //Duration
-  document.getElementById("duration").innerHTML = infoExtra.Duracio_total;;
+  // document.getElementById("duration").innerHTML = infoExtra.Duracio_total;;
 
-  const duration = document.createElement('p');
-  duration.textContent = `Duration: ${infoExtra.Duracio_total}`;
+  const duration = document.createElement("span");
+  duration.classList.add("Duration");
+  duration.textContent = infoExtra.Duracio_total;
+  document.getElementById("duration").appendChild(duration);
+
+
   
   //Season
-  document.getElementById("season").innerHTML = infoExtra.Epoca_recomanada;;
+  // document.getElementById("season").innerHTML = infoExtra.Epoca_recomanada;;
   
-  const season = document.createElement('p');
-  season.textContent = `Recommended season: ${infoExtra.Epoca_recomanada}`;
+  const season = document.createElement("span");
+  season.classList.add("Recommended Season:");
+  season.textContent = infoExtra.Epoca_recomanada;
+  document.getElementById("season").appendChild(season);
+
 
   //Audio
   let node = document.getElementById("audio");
