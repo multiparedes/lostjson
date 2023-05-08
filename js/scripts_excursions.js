@@ -118,11 +118,15 @@ async function fillExcursio(excursio, infoExtra){
   description.textContent = excursio.description;
 
   //Dificulty
-  document.getElementById("dificulty").innerHTML = dificultyToString(infoExtra.Dificultat);
+  //document.getElementById("dificulty").innerHTML = dificultyToString(infoExtra.Dificultat);
 
-  const difficulty = document.createElement('p');
-  difficulty.textContent = `Difficulty rating: ${infoExtra.Dificultat}`;
-
+  //const difficulty = document.createElement('p');
+  //difficulty.textContent = `Difficulty rating: ${infoExtra.Dificultat}`;
+  const difficultyLevel = document.createElement("span");
+  difficultyLevel.classList.add("difficulty-level");
+  difficultyLevel.textContent = dificultyToString(infoExtra.Dificultat);
+  document.getElementById("dificulty").appendChild(difficultyLevel);
+  
   //Type
   document.getElementById("type1").innerHTML = infoExtra.Tipus_de_ruta;
   document.getElementById("type2").innerHTML = infoExtra.Tipus_de_ruta;
