@@ -177,10 +177,10 @@ async function fillExcursio(excursio, infoExtra){
   //Season
   // document.getElementById("season").innerHTML = infoExtra.Epoca_recomanada;;
   
-  const season = document.createElement("span");
-  season.classList.add("Recommended Season:");
-  season.textContent = infoExtra.Epoca_recomanada;
-  document.getElementById("season").appendChild(season);
+  const hikeSeason = document.createElement("span");
+  hikeSeason.classList.add("Recommended-Season:");
+  hikeSeason.textContent = infoExtra.Epoca_recomanada;
+  document.getElementById("season").appendChild(hikeSeason);
 
 
   //Audio
