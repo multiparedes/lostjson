@@ -152,25 +152,25 @@ async function fillExcursio(excursio, infoExtra){
   //document.getElementById("unevenness").innerHTML = `${infoExtra.Desnivell}m`;
 
   const elevation = document.createElement("span");
-  elevation.classList.add("min-height");
+  elevation.classList.add("Elevation-gain");
   elevation.textContent = `${infoExtra.Desnivell}m`;
-  document.getElementById("Elevation-gain").appendChild(elevation);
+  document.getElementById("unevenness").appendChild(elevation);
   
   //Distance
   //document.getElementById("distance").innerHTML = `${infoExtra.Distancia}km`;;
 
-  const distance = document.createElement("span");
-  distance.classList.add("Distance");
-  distance.textContent = `${infoExtra.Distancia}km`;
-  document.getElementById("distance").appendChild(distance);
+  const hikeDistance = document.createElement("span");
+  hikeDistance.classList.add("Hike-distance");
+  hikeDistance.textContent = `${infoExtra.Distancia}km`;
+  document.getElementById("distance").appendChild(hikeDistance);
   
   //Duration
   // document.getElementById("duration").innerHTML = infoExtra.Duracio_total;;
 
-  const duration = document.createElement("span");
-  duration.classList.add("Duration");
-  duration.textContent = infoExtra.Duracio_total;
-  document.getElementById("duration").appendChild(duration);
+  const hikeDuration = document.createElement("span");
+  hikeDuration.classList.add("Hike-Duration");
+  hikeDuration.textContent = infoExtra.Duracio_total;
+  document.getElementById("duration").appendChild(hikeDuration);
 
 
   
