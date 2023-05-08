@@ -141,7 +141,7 @@ async function fillExcursio(excursio, infoExtra){
   document.getElementById("max_height").appendChild(maxHeight);
 
   //Height min
-  document.getElementById("min_height").innerHTML = `${infoExtra.Altura_minima}m`;
+  //document.getElementById("min_height").innerHTML = `${infoExtra.Altura_minima}m`;
 
   const minHeight = document.createElement("span");
   minHeight.classList.add("min-height");
