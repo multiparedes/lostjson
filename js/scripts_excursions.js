@@ -93,7 +93,7 @@ async function fillExcursio(excursio, infoExtra){
   const pageContent = document.getElementById('page-content');
 
   //Title
-  document.getElementById("excursioTitle").innerHTML = excursio.name;
+  //document.getElementById("excursioTitle").innerHTML = excursio.name;
 
   const title = document.createElement("span");
   title.classList.add("Title");
