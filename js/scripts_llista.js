@@ -11,7 +11,7 @@ import { durationToMin, toStars, dificultyToString } from './utils.js';
 function cardViewer() {
   //Checks if a search by name has been made
   const input = document.getElementById("cercador");
-  input.addEventListener("change", () => {
+  input.addEventListener("keypress", () => {
     generateCard({ name: input.value });
   });
 
@@ -74,7 +74,7 @@ async function generateCard({ sortValue, name }) {
   });
   //if search was made
   if (name) {
-    // TODO
+    excursions = excursions.filter(excursio => excursio.info.name.toLowerCase().trim().includes(name.toLowerCase().trim()));
   }
 
   //If sort was made

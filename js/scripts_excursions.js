@@ -2,6 +2,7 @@ import {
   dificultyToString,
   getExcursio,
   checkCoordinatesWithinRadius,
+  beachInRange,
 } from "./utils.js";
 
 const mapOverlay = document.querySelector(".map-container");
@@ -92,13 +93,11 @@ async function showExcursio() {
   //Other JSONs
 
   //Mountains
-  const mountainsResponse = await fetch(`http://www.joanpep.com/jsons/mountains.json`, { mode: 'no-cors' })
+  const mountainsResponse = await fetch(`json/externs/mountains.json`)
     .then((response) => response.json())
     .catch((error) => {
       console.error("Error fetching Mountains:", error);
     });
-
-    console.log(mountainsResponse)
 
   let mountains = mountainsResponse.itemListElement.reduce(
     (accumulator, mountain) => {
@@ -119,12 +118,12 @@ async function showExcursio() {
   mountains = mountains.map((mountain) => {
     return { 
       name: mountain.name,
-      lat: mountain.geo.latitude,
-      lon: mountain.geo.longitude,
-      elevation: mountain.geo.elevation,
-      review: mountain.review[0].text,
-      description: mountain.description,
-      img: mountain.image[0].url,
+      lat: mountain.geo?.latitude || '',
+      lon: mountain.geo?.longitude || '',
+      elevation: mountain.geo?.elevation || '',
+      review: mountain.review[0]?.text || '',
+      description: mountain.description || '',
+      img: mountain.image[0]?.url || '',
     };
   });
 
@@ -154,16 +153,53 @@ async function showExcursio() {
   monuments = monuments.map((monument) => {
     return { 
       name: monument.name,
-      lat: monument.geo.latitude,
-      lon: monument.geo.longitude,
-      description: monument.description,
-      schedule: monument.openingHours[0],
-      img: monument.image[0].url,
-      adress: monument.address
+      lat: monument.geo?.latitude || '',
+      lon: monument.geo?.longitude || '',
+      description: monument.description || '',
+      schedule: monument.openingHours[0] || '',
+      img: monument.image[0]?.url || '',
+      adress: monument.address || ''
     };
   });
   
-  console.log(monuments)
+  //viewpoint
+  const viewpointsResponse = await fetch(`json/externs/miradors.json`)
+    .then((response) => response.json())
+    .catch((error) => {
+      console.error("Error fetching viewpoints:", error);
+    });
+
+  let viewpoints = viewpointsResponse.itemListElement.reduce(
+    (accumulator, viewpoint) => {
+
+      if (
+        checkCoordinatesWithinRadius({
+          lat1: infoExtra.lat,
+          lon1: infoExtra.lon,
+          lat2: viewpoint.geo.latitude,
+          lon2: viewpoint.geo.longitude,
+        })
+      ) {
+        accumulator.push(viewpoint);
+      }
+      return accumulator;
+    },
+    []
+  );
+  viewpoints = viewpoints.map((viewpoint) => {
+    return { 
+      name: viewpoint.name,
+      lat: viewpoint.geo?.latitude || '',
+      lon: viewpoint.geo?.longitude || '',
+      description: viewpoint.description || '',
+      isAccessibleForFree: viewpoint.isAccessibleForFree || '',
+      img: viewpoint.image[0]?.url || '',
+    };
+  });
+
+ 
+
+
 }
 
 async function fillExcursio(excursio, infoExtra) {

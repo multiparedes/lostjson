@@ -1,0 +1,242 @@
+{
+    "@context": "http://schema.org",
+    "@type": "itemList",
+    "itemListElement": [
+        {
+            "@type": "TouristAttraction",
+            "identifier": 1,
+            "name": "Mirador es Colomer",
+            "hasMap": "https://goo.gl/maps/VhNiUHFxPNKq9gGV8",
+            "description": [
+                "<p>El mirador de Es Colomer, también conocido como de sa Creueta, es un conocido mirador situado en la península de Formentor, en Pollensa, al norte de Mallorca. Recibe sus nombres por estar cerca del cerro de sa Creueta, y por mirar directamente al islote del Colomer <i>(El Palomar)</i>.</p>"
+            ],
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Peninsula de Formentor",
+                "addressRegion": "ES",
+                "postalCode": "07460"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "39.92934550022099",
+                "longitude": "3.1114713240447966"
+            },
+            "isAccessibleForFree": true,
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://mallorcamiradores.com/assets/img/destacadas/destacada-1.jpg"
+                },
+                {
+                    "@type": "ImageObject",
+                    "url": "https://mallorcamiradores.com/assets/img/destacadas/mirador-info-2.jpg"
+                },
+                {
+                    "@type": "ImageObject",
+                    "url": "https://mallorcamiradores.com/assets/img/destacadas/mirador-info-1.jpg"
+                }
+            ],
+            "publicAccess": true,
+            "hasDriveThroughService": true,
+            "review": {
+                "@type": "Review",
+                "itemReviewed": "",
+                "text": "",
+                "author": "",
+                "datePublished": ""
+            },
+            "subjectOf": {
+                "@type": "CreativeWork",
+                "video": [
+			{
+				"@type": "VideoObject",
+				"name": "Video Mirador es Colomer",
+				"contentUrl": "[URL]"
+			}
+		    ],
+                "audio": [
+			{
+				"@type": "AudioObject",
+				"name": "Audio",
+				"contentUrl": "[URL]"
+			}
+		    ]
+            }
+        },
+        {
+            "@type": "TouristAttraction",
+            "identifier": 2,
+            "name": "Cap Formentor",
+            "hasMap": "https://goo.gl/maps/ysy8JzuS8iDK3R5L8",
+            "description": [
+                "<p>Se encuentra en el extremo norte de la isla de Mallorca, un lugar que además de contar con una extraordinaria belleza natural, ha servido de inspiración para numerosos artistas. Y es que la península de Formentor es, junto con el Cavall Bernat de Cala Sant Vicenç, también en el municipio de Pollença, uno de los lugares más retratados y descritos de la isla. </p>"
+            ],
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Peninsula de Formentor",
+                "addressRegion": "ES",
+                "postalCode": "07460"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "39.95924793815197",
+                "longitude": "3.210036668276719"
+            },
+            "isAccessibleForFree": true,
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://mallorcamiradores.com/assets/img/destacadas/destacada-2.jpg"
+                },
+                {
+                    "@type": "ImageObject",
+                    "url": "https://mallorcamiradores.com/assets/img/destacadas/mirador-info-3.jpg"
+                },
+                {
+                    "@type": "ImageObject",
+                    "url": "https://mallorcamiradores.com/assets/img/destacadas/mirador-info-4.jpg"
+                }
+            ],
+            "publicAccess": true,
+            "hasDriveThroughService": true,
+            "review": {
+                "@type": "Review",
+                "itemReviewed": "",
+                "text": "",
+                "author": "",
+                "datePublished": ""
+            },
+            "subjectOf": {
+                "@type": "CreativeWork",
+                "video": [
+			{
+				"@type": "VideoObject",
+				"name": "Video Cap Formentor",
+				"contentUrl": "[URL]"
+			}
+		    ],
+                "audio": [
+			{
+				"@type": "AudioObject",
+				"name": "Audio",
+				"contentUrl": "[URL]"
+			}
+		    ]
+            }
+        },
+        {
+            "@type": "TouristAttraction",
+            "identifier": 3,
+            "name": "Mirador de Ricardo Roca",
+            "hasMap": "https://goo.gl/maps/mrryXRKgsquj29z28",
+            "description": [
+                "<p>El Mirador de Ricardo Roca es también conocido como el Mirador des Grau y se encuentra a las afueras del pueblo de Estellencs, entre Cas Mosson, es Grau, la playa de Can Pruaga y Can Cerdà.<br><br>Posiblemente es un mirador de los menos conocidos de Mallorca pero eso no le resta atractivo.<br><br>A 4 km de Estellencs en la carretera que nos lleva dirección a Andratx, llegaremos a un pequeño túnel llamado también «des Grau». El mirador se encuentra justo encima. Podremos aparcar fácilmente al salir del túnel, a mano izquierda.</p>"
+            ],
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Sierra de Tramuntana",
+                "addressRegion": "ES",
+                "postalCode": "07192"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "39.646094948400545",
+                "longitude": "2.45329751252738"
+            },
+            "isAccessibleForFree": true,
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://mallorcamiradores.com/assets/img/destacadas/destacada-3.jpg"
+                },
+                {
+                    "@type": "ImageObject",
+                    "url": "https://mallorcamiradores.com/assets/img/destacadas/mirador-info-5.jpg"
+                }
+            ],
+            "publicAccess": true,
+            "hasDriveThroughService": true,
+            "review": {
+                "@type": "Review",
+                "itemReviewed": "",
+                "text": "",
+                "author": "",
+                "datePublished": ""
+            },
+            "subjectOf": {
+                "@type": "CreativeWork",
+                "video": [
+			{
+				"@type": "VideoObject",
+				"name": "Video Ricardo Roca",
+				"contentUrl": "[URL]"
+			}
+		    ],
+                "audio": [
+			{
+				"@type": "AudioObject",
+				"name": "Audio",
+				"contentUrl": "[URL]"
+			}
+		    ]
+            }
+        },
+        {
+            "@type": "TouristAttraction",
+            "identifier": 4,
+            "name": "Sa Foradada",
+            "hasMap": "https://goo.gl/maps/imVWZekMH7W4ecHZ8",
+            "description": [
+                "<p>Sa Foradada es una península de la Sierra de Tramontana de Mallorca (Islas Baleares, España), que está situada en el término municipal de Deyá.<br><br>Recibe este nombre porque tiene un agujero visible desde varios puntos de la Sierra.<br><br>Es especialmente reseñable la panorámica que se ve del mirador de Son Marroig, donde a la hora de la puesta de sol se reúne un buen grupo de gente a admirar una visión que resulta sobrecogedora.</p>"
+            ],
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Sierra de Tramuntana",
+                "addressRegion": "ES",
+                "postalCode": "07192"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "39.75766284304023",
+                "longitude": "2.626097632544271"
+            },
+            "isAccessibleForFree": true,
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://mallorcamiradores.com/assets/img/destacadas/destacada-4.jpg"
+                },
+                {
+                    "@type": "ImageObject",
+                    "url": "https://mallorcamiradores.com/assets/img/destacadas/mirador-info-6.jpg"
+                }
+            ],
+            "publicAccess": true,
+            "hasDriveThroughService": true,
+            "review": {
+                "@type": "Review",
+                "itemReviewed": "",
+                "text": "",
+                "author": "",
+                "datePublished": ""
+            },
+            "subjectOf": {
+                "@type": "CreativeWork",
+                "video": [
+			{
+				"@type": "VideoObject",
+				"name": "Video Cap Formentor",
+				"contentUrl": "[URL]"
+			}
+		    ],
+                "audio": [
+			{
+				"@type": "AudioObject",
+				"name": "Audio",
+				"contentUrl": "[URL]"
+			}
+		    ]
+            }
+        }
+        ]
+    }

@@ -101,3 +101,14 @@
   function toRadians(degrees) {
     return (degrees * Math.PI) / 180;
   }
+
+  export function beachInRange({excursio , beach}){
+      excursio.itinerary.forEach(element => {
+          console.log("element: ", element.name.toLowerCase());
+          console.log("beach: ", beach.geo.address.addressLocality.toLowerCase());
+          if(beach.geo.address.addressLocality.toLowerCase().includes(element.name.toLowerCase())){
+            return true;
+          }
+      });
+    return false;
+  }
