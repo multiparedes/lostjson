@@ -548,7 +548,219 @@
             "audio": [""]
         },
         "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra13.json"
-    }
+    },
+    {
+        "@type": "Trip",
+        "name": "Ruta Costanera de Cap de Formentor",
+        "identifier": 14,
+        "description": "Experimenta la impressionant bellesa de la costa nord de Mallorca amb la Ruta Costanera de Cap de Formentor. Aquesta excursió panoràmica et porta per una carretera sinuosa que envolta els penya-segats, oferint vistes impressionants del Mar Mediterrani.\n\nMentre recorres la costa escarpada, passaràs per cales pintoresques, penya-segats espectaculars i platges verges. Assegura't de parar al famós Far de Formentor, situat en un penya-segat amb vistes al mar. Les vistes panoràmiques des d'aquest punt de vista són senzillament impressionants.\n\nLa Ruta Costanera de Cap de Formentor és una experiència obligada per als amants de la natura i els entusiastes de la fotografia. No oblidis la teva càmera per capturar els paisatges inoblidables i els colors vius de la Mediterrània.\n\nCal tenir en compte que la carretera pot ser estreta i sinuosa en alguns trams, requerint una conducció atenta. Es recomana prendre's el temps i gaudir del viatge a un ritme tranquil.",
+        "itinerary": [
+          {
+            "@type": "City",
+            "name": "Alcúdia"
+          },
+          {
+            "@type": "LandmarksOrHistoricalBuildings",
+            "name": "Cap de Formentor"
+          },
+          {
+            "@type": "LandmarksOrHistoricalBuildings",
+            "name": "Far de Formentor"
+          }
+        ],
+        "image": [
+          "rsion-mallorca-fumat-formentor-1024x607.jpg",
+          "https://www.click-mallorca.com/imagenes/excursiones/ruta-en-barco-cabo-formentor-11085-o.jpg",
+          "https://caminandopormallorca.es/wp-content/uploads/2020/11/1605691020461-1024x768.jpg"
+        ],
+        "subjectOf": {
+          "@type": "CreativeWork",
+          "video": [""],
+          "audio": [""]
+        },
+        "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra14.json"
+      },
+      {
+        "@type": "Trip",
+        "name": "Ruta de Senderisme per la Serra de Tramuntana",
+        "identifier": 15,
+        "description": "Descobreix la bellesa natural de la Serra de Tramuntana amb aquesta ruta de senderisme inoblidable. Camina per camins serpentejants entre muntanyes escarpades, boscos verds i rierols cristal·lins.\n\nLa Serra de Tramuntana és un paradís per als amants de la natura, amb vistes panoràmiques que t'embruixaran. A mesura que t'enfonsis en aquesta serralada, trobaràs pobles encantadors, com Valldemossa i Deià, que et transportaran a un temps passat.\n\nRecorda portar roba còmoda, calçat adequat i aigua suficient per aquesta caminada. Disfruta de la tranquil·litat de la natura i de l'aire pur de la muntanya mentre t'aventures per la Serra de Tramuntana.",
+        "itinerary": [
+          {
+            "@type": "City",
+            "name": "Valldemossa"
+          },
+          {
+            "@type": "City",
+            "name": "Deià"
+          },
+          {
+            "@type": "LandmarksOrHistoricalBuildings",
+            "name": "Mirador del Colomer"
+          }
+        ],
+        "image": [
+          "https://www.hotelsviva.com/hubfs/FOTOS%20BLOG/SEPTIEMBRE%202019/Mirador-Es-Colomer.jpg",
+          "https://i.ytimg.com/vi/ap4GMyA2bow/maxresdefault.jpg",
+          "https://abcmallorcastorage.blob.core.windows.net/images/2020/05/mirador-es-colomer-cap-de-formentor-01-1.jpg"
+        ],
+        "subjectOf": {
+          "@type": "CreativeWork",
+          "video": [""],
+          "audio": [""]
+        },
+        "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra15.json"
+      },
+      {
+        "@type": "Trip",
+        "name": "Ruta a peu pel Casco Antic de Palma",
+        "identifier": 16,
+        "description": "Endinsa't en l'encantador Casco Antic de Palma amb aquesta visita a peu. Descobreix els carrers empedrats, les places pintoresques i els edificis històrics que fan d'aquesta zona una joia cultural.\n\nVisita la majestuosa Catedral de Mallorca, coneguda com a La Seu, amb la seva impressionant arquitectura gòtica. Explora els estrets carrerons del Barri Gòtic i admirat les cases senyorials de l'època medieval. No oblidis visitar el Palau de l'Almudaina, un palau reial amb vistes al mar.\n\nDurant el recorregut, descobriràs també botigues de moda, cafès acollidors i artesans locals. Deixa't seduir per l'ambient bohemi del Casco Antic de Palma mentre et perds pels seus carrers.",
+        "itinerary": [
+          {
+            "@type": "City",
+            "name": "Palma de Mallorca"
+          },
+          {
+            "@type": "LandmarksOrHistoricalBuildings",
+            "name": "Catedral de Mallorca"
+          },
+          {
+            "@type": "LandmarksOrHistoricalBuildings",
+            "name": "Palau de l'Almudaina"
+          }
+        ],
+        "image": [
+          "https://www.posadaterrasanta.com/wp-content/uploads/2022/12/Calles_palma_samaritana.jpg",
+          "https://www.posadaterrasanta.com/wp-content/uploads/2022/05/catedral-de-palma-de-mallorca-1.jpg",
+          "https://www.posadaterrasanta.com/wp-content/uploads/2020/06/centromallorca2.jpg"
+        ],
+        "subjectOf": {
+          "@type": "CreativeWork",
+          "video": [""],
+          "audio": [""]
+        },
+        "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra16.json"
+      },
+      {
+        "@type": "Trip",
+        "name": "Aventura Soterrada a les Coves del Drac",
+        "identifier": 17,
+        "description": "Viure una aventura sota terra a les Coves del Drac és una experiència fascinant. Descobreix aquest món subterrani ple de meravelles geològiques i estalactites impressionants.\n\nExplora les diverses galeries i sales de les Coves del Drac, amb les seves formacions calcàries úniques. Un punt destacat d'aquesta aventura és el llac subterrani Martel, on podràs gaudir d'un espectacle de llums i música en viu mentre naveges pel llac en una barca.\n\nDurant la visita, els guies experts et revelaran els secrets i la història d'aquestes coves impressionants. Descobriràs com s'han format les formacions geològiques i els misteris que amaguen les profunditats de les Coves del Drac.\n\nRecorda portar roba còmoda i calçat adequat per aquesta aventura subterrània. Les Coves del Drac són una atracció inoblidable per als amants de la natura i els entusiastes de l'exploració.",
+        "itinerary": [
+        {
+        "@type": "City",
+        "name": "Porto Cristo"
+        },
+        {
+        "@type": "LandmarksOrHistoricalBuildings",
+        "name": "Coves del Drac"
+        },
+        {
+        "@type": "LandmarksOrHistoricalBuildings",
+        "name": "Llac Martel"
+        }
+        ],
+        "image": [
+        "https://media.traveler.es/photos/61376c64b57001fc862c832b/master/w_1600%2Cc_limit/139932.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlguu09h-7z1FHxOuiagzVDIaSIt6u1f2Mng&usqp=CAU",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQpyt0JjcNlfGfDhDtp2MjKWNw2qgfOmUedw&usqp=CAU"
+        ],
+        "subjectOf": {
+        "@type": "CreativeWork",
+        "video": [""],
+        "audio": [""]
+        },
+        "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra17.json"
+        },
+        {
+            "@type": "Trip",
+            "name": "Ruta de les Coves de Campanet",
+            "identifier": 18,
+            "description": "Explora les fascinants Coves de Campanet en aquesta ruta de senderisme. Aquestes coves són una meravella geològica situada a Mallorca i ofereixen una experiència subterrània inoblidable.\n\nDurant el recorregut, caminaràs per camins ben senyalitzats i descendiràs a les profunditats d'aquest món subterrani. Admiraràs les impressionants estalactites i estalagmites mentre aprens sobre la seva formació i història.\n\nAquesta ruta de senderisme és adequada per a tots els públics, però és recomanable portar calçat amb bon adherència i roba còmoda. Vine a descobrir les meravelles de les Coves de Campanet.",
+            "itinerary": [
+              {
+                "@type": "City",
+                "name": "Campanet"
+              },
+              {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Coves de Campanet"
+              }
+            ],
+            "image": [
+              "https://www.posadaterrasanta.com/wp-content/uploads/2020/06/Coves-del-Drach.jpg",
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx27AqO8RX9aVRlVR_r5LQOnZkG1fo3PO6-A&usqp=CAU",
+              "https://viajes.nationalgeographic.com.es/medio/2017/07/25/cuevas-de-arta-en-mallorca-walking-formentera_f6034def.JPG"
+            ],
+            "subjectOf": {
+              "@type": "CreativeWork",
+              "video": [""],
+              "audio": [""]
+            },
+            "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra18.json"
+          },
+          {
+            "@type": "Trip",
+            "name": "Camí de l'Arxiduc a Valldemossa",
+            "identifier": 19,
+            "description": "Segueix els passos de l'Arxiduc Lluís Salvador en aquesta ruta de senderisme que uneix Deià i Valldemossa. Aquest camí panoràmic t'ofereix vistes espectaculars de la costa i les muntanyes de Mallorca.\n\nDurant la caminada, passaràs per camins empedrats i senders serpentejants mentre admires els paisatges idíl·lics que envolten aquesta zona. Descobreix racons secrets, ermites antigues i gaudiràs de la tranquil·litat de la natura mallorquina.\n\nRecorda portar calçat adequat i càmera per capturar els moments màgics d'aquesta ruta única.",
+            "itinerary": [
+              {
+                "@type": "City",
+                "name": "Deià"
+              },
+              {
+                "@type": "City",
+                "name": "Valldemossa"
+              }
+            ],
+            "image": [
+              "https://travelmademedoit.com/wp-content/uploads/2021/12/DJI_0433-min.jpg",
+              "https://elturismofacil.com/wp-content/uploads/2019/02/ruta-camiarxiduc-1024x576.jpg",
+              "https://outdoortrip-web.s3.eu-central-1.amazonaws.com/3034-cami-de-archiduc-hiking-tour-from-valldemossa/cami-de-archiduc-hiking-tour-from-valldemossa.5e4e6fc8b8222.jpg"
+            ],
+            "subjectOf": {
+              "@type": "CreativeWork",
+              "video": [""],
+              "audio": [""]
+            },
+            "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra19.json"
+          },
+          {
+            "@type": "Trip",
+            "name": "Ruta de Ses Fonts Ufanes",
+            "identifier": 20,
+            "description": "Descobreix la màgia de Ses Fonts Ufanes en aquesta ruta de senderisme. Situada a la Reserva Natural de Muntanya d'Artà, aquesta ruta et portarà a un espectacle únic: el brot d'aigua de les Fonts Ufanes.\n\nA mesura que camines pel bosc, arribaràs a aquest lloc sorprenent on l'aigua emergeix del sòl amb força i energia. Observa l'espectacle natural i gaudeix de la frescor i la serenitat que t'envolten.\n\nAquesta ruta és apta per a tots els nivells i és perfecta per a famílies i amants de la natura. Recorda portar calçat còmode i càmera per capturar la bellesa d'aquest fenomen natural.",
+            "itinerary": [
+              {
+                "@type": "City",
+                "name": "Artà"
+              },
+              {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Ses Fonts Ufanes"
+              }
+            ],
+            "image": [
+              "https://www.click-mallorca.com/blog/wp-content/uploads/2021/11/ses-fonts-ufanes-3-1024x687.jpg",
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5wlNdG0PSf3sW_3qmAjXsYtab6H-dXQMGwg&usqp=CAU",
+              "https://farm8.staticflickr.com/7486/15952057541_99971eb7e1_z.jpg"
+            ],
+            "subjectOf": {
+              "@type": "CreativeWork",
+              "video": [""],
+              "audio": [""]
+            },
+            "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra20.json"
+          }
+          
+          
+          
+      
+      
+      
+      
     
     ]
 }
