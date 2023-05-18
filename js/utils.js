@@ -68,3 +68,36 @@
       infoExtra
     }
   }
+
+  export function checkCoordinatesWithinRadius({lat1, lon1, lat2, lon2}) {
+    const earthRadius = 6371; // Radio de la Tierra en kilómetros
+  
+    // Convertir las coordenadas de grados a radianes
+    const lat1Rad = toRadians(lat1);
+    const lon1Rad = toRadians(lon1);
+    const lat2Rad = toRadians(lat2);
+    const lon2Rad = toRadians(lon2);
+  
+    // Calcular la diferencia de latitud y longitud
+    const latDiff = lat2Rad - lat1Rad;
+    const lonDiff = lon2Rad - lon1Rad;
+  
+    // Aplicar la fórmula del haversine
+    const a =
+      Math.sin(latDiff / 2) ** 2 +
+      Math.cos(lat1Rad) * Math.cos(lat2Rad) * Math.sin(lonDiff / 2) ** 2;
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    const distance = earthRadius * c;
+  
+    // Verificar si la distancia es menor o igual a 15 km
+    if (distance <= 15) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  
+  // Función auxiliar para convertir grados a radianes
+  function toRadians(degrees) {
+    return (degrees * Math.PI) / 180;
+  }
