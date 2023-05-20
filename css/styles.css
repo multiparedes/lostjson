@@ -11224,3 +11224,9 @@ footer a:hover, footer a:active, footer a:focus {
   border-radius: 5px;
   z-index: 100;
 }
+
+.gradient-text {
+  background-image: linear-gradient(to right, var(--bs-primary), var(--bs-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
