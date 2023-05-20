@@ -197,7 +197,83 @@ async function showExcursio() {
     };
   });
 
- 
+  console.log(mountains)
+
+  let content = "";
+  let active = false;
+  const generateInterestPoints = document.getElementById('carouselCInterestGenerate');
+
+  mountains.forEach((element) => {
+    content = content.concat(`
+    <div class="carousel-item ${(!active ? " active": "")}">
+      <div class="col">
+        <div class="row align-self-center">
+          <img src="${element.img}"
+          class="d-block w-100" alt="${element.name}" />
+        </div>
+        <div class="col align-self-center">
+          <div class="p-3">
+            <h2>${element.name}</h2>
+            <p style="text-align: justify;">${element.review}</p>
+            <p class="text-center fw-bold">Elevación máxima: ${element.elevation}m<p>
+          </div>
+        </div>
+      </div>
+    </div>`);
+
+    if (!active) {
+      active = !active;
+    }
+  });
+
+  monuments.forEach((element) => {
+    content = content.concat(`
+    <div class="carousel-item ${(!active ? " active": "")}">
+      <div class="col">
+        <div class="row align-self-center">
+          <img src="${element.img}"
+          class="d-block w-100" alt="${element.name}" />
+        </div>
+        <div class="col align-self-center">
+          <div class="p-3">
+            <h2>${element.name}</h2>
+            <p style="text-align: justify;">${element.description}</p>
+            <p class="text-center fw-bold">Horario: ${element.schedule}<p>
+          </div>
+        </div>
+      </div>
+    </div>`);
+    
+    if (!active) {
+      active = !active;
+    }
+  });
+
+  viewpoints.forEach((element) => {
+    content = content.concat(`
+    <div class="carousel-item ${(!active ? " active": "")}">
+      <div class="col">
+        <div class="row align-self-center">
+          <img src="${element.img}"
+          class="d-block w-100" alt="${element.name}" />
+        </div>
+        <div class="col align-self-center">
+          <div class="p-3">
+            <h2>${element.name}</h2>
+            <p style="text-align: justify;">${element.description}</p>
+            <p class="text-center fw-bold">Gratuito: ${element.isAccessibleForFree ? 'Si.' : 'No.'}<p>
+          </div>
+        </div>
+      </div>
+    </div>`);
+    
+    if (!active) {
+      active = !active;
+    }
+  });
+
+  generateInterestPoints.innerHTML = content
+
 
 
 }
@@ -206,6 +282,8 @@ async function fillExcursio(excursio, infoExtra) {
   const pageContent = document.getElementById("page-content");
 
   //Title
+  document.getElementById("pageTitle").innerHTML = "Excursió " + excursio.name;
+
   //document.getElementById("excursioTitle").innerHTML = excursio.name;
 
   const title = document.createElement("span");
