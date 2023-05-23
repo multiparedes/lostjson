@@ -7,6 +7,97 @@
     </link>
     <time>2021-08-24T13:19:20Z</time>
   </metadata>
+  <wpt lat="39.526435" lon="2.914997">
+    <ele>287.0</ele>
+    <time>2021-08-24T11:46:01Z</time>
+    <name>Randa</name>
+    <cmt>Randa</cmt>
+    <desc>Randa</desc>
+  </wpt>
+  <wpt lat="39.525715" lon="2.916299">
+    <ele>297.0</ele>
+    <time>2021-08-24T11:48:31Z</time>
+    <name>Randa II</name>
+    <cmt>Randa II</cmt>
+    <desc>Randa II</desc>
+  </wpt>
+  <wpt lat="39.525316" lon="2.916921">
+    <ele>305.0</ele>
+    <time>2021-08-24T11:49:32Z</time>
+    <name>Camino</name>
+    <cmt>Camino</cmt>
+    <desc>Camino</desc>
+  </wpt>
+  <wpt lat="39.519501" lon="2.927695">
+    <ele>430.0</ele>
+    <time>2021-08-24T12:12:07Z</time>
+    <name>Sant Honorat</name>
+    <cmt>Sant Honorat</cmt>
+    <desc>Sant Honorat</desc>
+  </wpt>
+  <wpt lat="39.524110" lon="2.931373">
+    <ele>499.0</ele>
+    <time>2021-08-24T12:28:42Z</time>
+    <name>Camí Vell</name>
+    <cmt>Camí Vell</cmt>
+    <desc>Camí Vell</desc>
+  </wpt>
+  <wpt lat="39.527029" lon="2.929338">
+    <ele>540.0</ele>
+    <time>2021-08-24T12:36:25Z</time>
+    <name>Sendero bordeando el Santuario de Cura</name>
+    <cmt>Sendero bordeando el Santuario de Cura</cmt>
+    <desc>Sendero bordeando el Santuario de Cura</desc>
+  </wpt>
+  <wpt lat="39.527608" lon="2.928210">
+    <ele>530.0</ele>
+    <time>2021-08-24T12:39:19Z</time>
+    <name>Sendero Bordeando Cura II</name>
+    <cmt>Sendero Bordeando Cura II</cmt>
+    <desc>Sendero Bordeando Cura II</desc>
+  </wpt>
+  <wpt lat="39.527640" lon="2.928050">
+    <ele>529.0</ele>
+    <time>2021-08-24T12:39:52Z</time>
+    <name>Sendero y socio</name>
+    <cmt>Sendero y socio</cmt>
+    <desc>Sendero y socio</desc>
+  </wpt>
+  <wpt lat="39.528809" lon="2.925529">
+    <ele>502.0</ele>
+    <time>2021-08-24T12:45:43Z</time>
+    <name>Tuneles</name>
+    <cmt>Tuneles</cmt>
+    <desc>Tuneles</desc>
+  </wpt>
+  <wpt lat="39.528809" lon="2.925529">
+    <ele>502.0</ele>
+    <time>2021-08-24T12:45:43Z</time>
+    <name>Batmans</name>
+    <cmt>Batmans</cmt>
+    <desc>Batmans</desc>
+  </wpt>
+  <wpt lat="39.528946" lon="2.924870">
+    <ele>508.0</ele>
+    <time>2021-08-24T12:49:09Z</time>
+    <name>Salida de los túneles</name>
+    <cmt>Salida de los túneles</cmt>
+    <desc>Salida de los túneles</desc>
+  </wpt>
+  <wpt lat="39.528434" lon="2.923424">
+    <ele>483.0</ele>
+    <time>2021-08-24T12:52:13Z</time>
+    <name>Rampa descendente algo resbaliza</name>
+    <cmt>Rampa descendente algo resbaliza</cmt>
+    <desc>Rampa descendente algo resbaliza</desc>
+  </wpt>
+  <wpt lat="39.525590" lon="2.916722">
+    <ele>300.0</ele>
+    <time>2021-08-24T13:15:00Z</time>
+    <name>Vuelta a Randa</name>
+    <cmt>Vuelta a Randa</cmt>
+    <desc>Vuelta a Randa</desc>
+  </wpt>
   <trk>
     <name>Volta puig de Randa</name>
     <cmt></cmt>

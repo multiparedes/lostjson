@@ -7,6 +7,293 @@
     </link>
     <time>2021-02-27T13:10:31Z</time>
   </metadata>
+  <wpt lat="39.872176" lon="3.161088">
+    <ele>17.0</ele>
+    <time>2021-02-27T09:30:46Z</time>
+    <name>Párquing</name>
+    <cmt>Párquing</cmt>
+    <desc>Párquing</desc>
+  </wpt>
+  <wpt lat="39.872329" lon="3.162305">
+    <ele>10.0</ele>
+    <time>2021-02-27T09:32:14Z</time>
+    <name>Izquierda</name>
+    <cmt>Izquierda</cmt>
+    <desc>Izquierda</desc>
+  </wpt>
+  <wpt lat="39.871468" lon="3.165166">
+    <ele>29.0</ele>
+    <time>2021-02-27T09:36:22Z</time>
+    <name>Señal</name>
+    <cmt>Señal</cmt>
+    <desc>Señal</desc>
+  </wpt>
+  <wpt lat="39.871680" lon="3.166699">
+    <ele>42.0</ele>
+    <time>2021-02-27T09:38:51Z</time>
+    <name>Se sigue curso de torrente</name>
+    <cmt>Se sigue curso de torrente</cmt>
+    <desc>Se sigue curso de torrente</desc>
+  </wpt>
+  <wpt lat="39.871539" lon="3.166993">
+    <ele>50.0</ele>
+    <time>2021-02-27T09:41:15Z</time>
+    <name>Sendero</name>
+    <cmt>Sendero</cmt>
+    <desc>Sendero</desc>
+  </wpt>
+  <wpt lat="39.871454" lon="3.167780">
+    <ele>60.0</ele>
+    <time>2021-02-27T09:42:16Z</time>
+    <name>Izquierda</name>
+    <cmt>Izquierda</cmt>
+    <desc>Izquierda</desc>
+  </wpt>
+  <wpt lat="39.871513" lon="3.168176">
+    <ele>60.0</ele>
+    <time>2021-02-27T09:44:01Z</time>
+    <name>Se perdió Wikiloc seguir el sendero y no coger izq</name>
+    <cmt>Se perdió Wikiloc seguir el sendero y no coger izq</cmt>
+    <desc>Se perdió Wikiloc seguir el sendero y no coger izq</desc>
+  </wpt>
+  <wpt lat="39.873102" lon="3.170785">
+    <ele>138.0</ele>
+    <time>2021-02-27T09:49:00Z</time>
+    <name>Ermita y camino a Ses Tres Creus</name>
+    <cmt>Ermita y camino a Ses Tres Creus</cmt>
+    <desc>Ermita y camino a Ses Tres Creus</desc>
+  </wpt>
+  <wpt lat="39.874144" lon="3.172079">
+    <ele>155.0</ele>
+    <time>2021-02-27T09:51:12Z</time>
+    <name>Cancela</name>
+    <cmt>Cancela</cmt>
+    <desc>Cancela</desc>
+  </wpt>
+  <wpt lat="39.873464" lon="3.172595">
+    <ele>186.0</ele>
+    <time>2021-02-27T09:54:28Z</time>
+    <name>Tres Creus</name>
+    <cmt>Tres Creus</cmt>
+    <desc>Tres Creus</desc>
+  </wpt>
+  <wpt lat="39.875142" lon="3.176945">
+    <ele>255.0</ele>
+    <time>2021-02-27T09:59:44Z</time>
+    <name>Desvío Penya Roja</name>
+    <cmt>Desvío Penya Roja</cmt>
+    <desc>Desvío Penya Roja</desc>
+  </wpt>
+  <wpt lat="39.877089" lon="3.179788">
+    <ele>265.0</ele>
+    <time>2021-02-27T10:04:14Z</time>
+    <name>Vistas</name>
+    <cmt>Vistas</cmt>
+    <desc>Vistas</desc>
+  </wpt>
+  <wpt lat="39.880442" lon="3.182367">
+    <ele>286.0</ele>
+    <time>2021-02-27T10:11:26Z</time>
+    <name>Vistas</name>
+    <cmt>Vistas</cmt>
+    <desc>Vistas</desc>
+  </wpt>
+  <wpt lat="39.880860" lon="3.183377">
+    <ele>275.0</ele>
+    <time>2021-02-27T10:16:04Z</time>
+    <name>Vistas</name>
+    <cmt>Vistas</cmt>
+    <desc>Vistas</desc>
+  </wpt>
+  <wpt lat="39.879742" lon="3.182655">
+    <ele>353.0</ele>
+    <time>2021-02-27T10:24:26Z</time>
+    <name>Cima Penya Roja</name>
+    <cmt>Cima Penya Roja</cmt>
+    <desc>Cima Penya Roja</desc>
+  </wpt>
+  <wpt lat="39.881074" lon="3.182762">
+    <ele>266.0</ele>
+    <time>2021-02-27T10:40:15Z</time>
+    <name>Pas de Penya Rotja</name>
+    <cmt>Pas de Penya Rotja</cmt>
+    <desc>Pas de Penya Rotja</desc>
+  </wpt>
+  <wpt lat="39.881165" lon="3.182691">
+    <ele>275.0</ele>
+    <time>2021-02-27T10:41:43Z</time>
+    <name>Pas</name>
+    <cmt>Pas</cmt>
+    <desc>Pas</desc>
+  </wpt>
+  <wpt lat="39.881066" lon="3.182579">
+    <ele>270.0</ele>
+    <time>2021-02-27T10:42:56Z</time>
+    <name>Pas</name>
+    <cmt>Pas</cmt>
+    <desc>Pas</desc>
+  </wpt>
+  <wpt lat="39.880646" lon="3.182384">
+    <ele>285.0</ele>
+    <time>2021-02-27T10:44:35Z</time>
+    <name>Vistas</name>
+    <cmt>Vistas</cmt>
+    <desc>Vistas</desc>
+  </wpt>
+  <wpt lat="39.874848" lon="3.176785">
+    <ele>250.0</ele>
+    <time>2021-02-27T10:56:06Z</time>
+    <name>Pista otra vez</name>
+    <cmt>Pista otra vez</cmt>
+    <desc>Pista otra vez</desc>
+  </wpt>
+  <wpt lat="39.872172" lon="3.177702">
+    <ele>304.0</ele>
+    <time>2021-02-27T11:00:20Z</time>
+    <name>Al pasar, izquierda</name>
+    <cmt>Al pasar, izquierda</cmt>
+    <desc>Al pasar, izquierda</desc>
+  </wpt>
+  <wpt lat="39.871331" lon="3.178206">
+    <ele>341.0</ele>
+    <time>2021-02-27T11:03:05Z</time>
+    <name>Alambrada</name>
+    <cmt>Alambrada</cmt>
+    <desc>Alambrada</desc>
+  </wpt>
+  <wpt lat="39.871105" lon="3.178666">
+    <ele>347.0</ele>
+    <time>2021-02-27T11:04:06Z</time>
+    <name>Cima Talaia Vella</name>
+    <cmt>Cima Talaia Vella</cmt>
+    <desc>Cima Talaia Vella</desc>
+  </wpt>
+  <wpt lat="39.871056" lon="3.179012">
+    <ele>343.0</ele>
+    <time>2021-02-27T11:04:38Z</time>
+    <name>Vistas</name>
+    <cmt>Vistas</cmt>
+    <desc>Vistas</desc>
+  </wpt>
+  <wpt lat="39.868456" lon="3.174257">
+    <ele>319.0</ele>
+    <time>2021-02-27T11:13:18Z</time>
+    <name>Inicio subida Talaia Alcúdia</name>
+    <cmt>Inicio subida Talaia Alcúdia</cmt>
+    <desc>Inicio subida Talaia Alcúdia</desc>
+  </wpt>
+  <wpt lat="39.866069" lon="3.173584">
+    <ele>450.0</ele>
+    <time>2021-02-27T11:23:31Z</time>
+    <name>Cima Talaia Alcúdia</name>
+    <cmt>Cima Talaia Alcúdia</cmt>
+    <desc>Cima Talaia Alcúdia</desc>
+  </wpt>
+  <wpt lat="39.865752" lon="3.173691">
+    <ele>425.0</ele>
+    <time>2021-02-27T11:33:49Z</time>
+    <name>Bajada</name>
+    <cmt>Bajada</cmt>
+    <desc>Bajada</desc>
+  </wpt>
+  <wpt lat="39.865593" lon="3.174590">
+    <ele>391.0</ele>
+    <time>2021-02-27T11:42:25Z</time>
+    <name>Foto</name>
+    <cmt>Foto</cmt>
+    <desc>Foto</desc>
+  </wpt>
+  <wpt lat="39.865627" lon="3.176308">
+    <ele>362.0</ele>
+    <time>2021-02-27T11:45:00Z</time>
+    <name>Vistas</name>
+    <cmt>Vistas</cmt>
+    <desc>Vistas</desc>
+  </wpt>
+  <wpt lat="39.864785" lon="3.178301">
+    <ele>321.0</ele>
+    <time>2021-02-27T11:48:14Z</time>
+    <name>Sendero de bajada</name>
+    <cmt>Sendero de bajada</cmt>
+    <desc>Sendero de bajada</desc>
+  </wpt>
+  <wpt lat="39.862643" lon="3.182521">
+    <ele>312.0</ele>
+    <time>2021-02-27T11:55:12Z</time>
+    <name>Vistas</name>
+    <cmt>Vistas</cmt>
+    <desc>Vistas</desc>
+  </wpt>
+  <wpt lat="39.859619" lon="3.184629">
+    <ele>113.0</ele>
+    <time>2021-02-27T12:11:24Z</time>
+    <name>Refugi</name>
+    <cmt>Refugi</cmt>
+    <desc>Refugi</desc>
+  </wpt>
+  <wpt lat="39.858362" lon="3.182939">
+    <ele>95.0</ele>
+    <time>2021-02-27T12:13:31Z</time>
+    <name>Párquing km 9</name>
+    <cmt>Párquing km 9</cmt>
+    <desc>Párquing km 9</desc>
+  </wpt>
+  <wpt lat="39.854517" lon="3.180652">
+    <ele>56.0</ele>
+    <time>2021-02-27T12:18:38Z</time>
+    <name>Foto</name>
+    <cmt>Foto</cmt>
+    <desc>Foto</desc>
+  </wpt>
+  <wpt lat="39.855786" lon="3.178318">
+    <ele>59.0</ele>
+    <time>2021-02-27T12:21:42Z</time>
+    <name>Pasar</name>
+    <cmt>Pasar</cmt>
+    <desc>Pasar</desc>
+  </wpt>
+  <wpt lat="39.857503" lon="3.172265">
+    <ele>101.0</ele>
+    <time>2021-02-27T12:32:38Z</time>
+    <name>Cartel</name>
+    <cmt>Cartel</cmt>
+    <desc>Cartel</desc>
+  </wpt>
+  <wpt lat="39.856290" lon="3.170202">
+    <ele>144.0</ele>
+    <time>2021-02-27T12:36:25Z</time>
+    <name>Derecha</name>
+    <cmt>Derecha</cmt>
+    <desc>Derecha</desc>
+  </wpt>
+  <wpt lat="39.856677" lon="3.169360">
+    <ele>157.0</ele>
+    <time>2021-02-27T12:37:45Z</time>
+    <name>Señal</name>
+    <cmt>Señal</cmt>
+    <desc>Señal</desc>
+  </wpt>
+  <wpt lat="39.861189" lon="3.161078">
+    <ele>58.0</ele>
+    <time>2021-02-27T12:48:54Z</time>
+    <name>Señal</name>
+    <cmt>Señal</cmt>
+    <desc>Señal</desc>
+  </wpt>
+  <wpt lat="39.868293" lon="3.159131">
+    <ele>40.0</ele>
+    <time>2021-02-27T12:58:45Z</time>
+    <name>Señal</name>
+    <cmt>Señal</cmt>
+    <desc>Señal</desc>
+  </wpt>
+  <wpt lat="39.868053" lon="3.159854">
+    <ele>49.0</ele>
+    <time>2021-02-27T13:00:27Z</time>
+    <name>Izquierda y último km</name>
+    <cmt>Izquierda y último km</cmt>
+    <desc>Izquierda y último km</desc>
+  </wpt>
   <trk>
     <name>Alcúdia: Penya Rotja-Talaia Vella-Talaia d'Alcúdia-Coll Baix</name>
     <cmt></cmt>

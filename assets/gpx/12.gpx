@@ -7,6 +7,146 @@
     </link>
     <time>2013-02-27T12:27:42Z</time>
   </metadata>
+  <wpt lat="39.609828" lon="2.369968">
+    <ele>458.7</ele>
+    <time>2013-02-27T10:05:26Z</time>
+    <name>Gran 'fita'</name>
+    <cmt>Gran 'fita'</cmt>
+    <desc>Gran 'fita'</desc>
+  </wpt>
+  <wpt lat="39.610143" lon="2.368944">
+    <ele>453.3</ele>
+    <time>2013-02-27T10:11:58Z</time>
+    <name>Cap Fabioler</name>
+    <cmt>Cap Fabioler</cmt>
+    <desc>Cap Fabioler</desc>
+  </wpt>
+  <wpt lat="39.610111" lon="2.378107">
+    <ele>394.3</ele>
+    <time>2013-02-27T09:47:24Z</time>
+    <name>Cruce caminos</name>
+    <cmt>Cruce caminos</cmt>
+    <desc>Cruce caminos</desc>
+  </wpt>
+  <wpt lat="39.610673" lon="2.378991">
+    <ele>385.0</ele>
+    <time>2013-02-27T09:32:37Z</time>
+    <name>Mirador (toda la zona)</name>
+    <cmt>Mirador (toda la zona)</cmt>
+    <desc>Mirador (toda la zona)</desc>
+  </wpt>
+  <wpt lat="39.611205" lon="2.378573">
+    <ele>381.3</ele>
+    <time>2013-02-27T09:43:56Z</time>
+    <name>Mirador (toda la zona)</name>
+    <cmt>Mirador (toda la zona)</cmt>
+    <desc>Mirador (toda la zona)</desc>
+  </wpt>
+  <wpt lat="39.608498" lon="2.381612">
+    <ele>365.2</ele>
+    <time>2013-02-27T11:17:39Z</time>
+    <name>Caseta</name>
+    <cmt>Caseta</cmt>
+    <desc>Caseta</desc>
+  </wpt>
+  <wpt lat="39.605721" lon="2.389434">
+    <ele>362.5</ele>
+    <time>2013-02-27T11:47:31Z</time>
+    <name>Sima al borde del camino</name>
+    <cmt>Sima al borde del camino</cmt>
+    <desc>Sima al borde del camino</desc>
+  </wpt>
+  <wpt lat="39.608967" lon="2.380223">
+    <ele>378.5</ele>
+    <time>2013-02-27T11:14:46Z</time>
+    <name>Caseta</name>
+    <cmt>Caseta</cmt>
+    <desc>Caseta</desc>
+  </wpt>
+  <wpt lat="39.608477" lon="2.372981">
+    <ele>494.8</ele>
+    <time>2013-02-27T10:26:37Z</time>
+    <name>Puig de ses Basses</name>
+    <cmt>Puig de ses Basses</cmt>
+    <desc>Puig de ses Basses</desc>
+  </wpt>
+  <wpt lat="39.608301" lon="2.374364">
+    <ele>490.4</ele>
+    <time>2013-02-27T10:31:34Z</time>
+    <name>Mini pico</name>
+    <cmt>Mini pico</cmt>
+    <desc>Mini pico</desc>
+  </wpt>
+  <wpt lat="39.608090" lon="2.387890">
+    <ele>352.8</ele>
+    <time>2013-02-27T08:50:14Z</time>
+    <name>'Fita' desvío barranquismo s'Aigo des Ratjolí</name>
+    <cmt>'Fita' desvío barranquismo s'Aigo des Ratjolí</cmt>
+    <desc>'Fita' desvío barranquismo s'Aigo des Ratjolí</desc>
+  </wpt>
+  <wpt lat="39.607472" lon="2.383360">
+    <ele>334.4</ele>
+    <time>2013-02-27T08:59:11Z</time>
+    <name>Cruce GR (S'Arracó y Trapa)</name>
+    <cmt>Cruce GR (S'Arracó y Trapa)</cmt>
+    <desc>Cruce GR (S'Arracó y Trapa)</desc>
+  </wpt>
+  <wpt lat="39.604849" lon="2.397497">
+    <ele>358.3</ele>
+    <time>2013-02-27T08:14:26Z</time>
+    <name>Explanada Campàs</name>
+    <cmt>Explanada Campàs</cmt>
+    <desc>Explanada Campàs</desc>
+  </wpt>
+  <wpt lat="39.606992" lon="2.401478">
+    <ele>350.2</ele>
+    <time>2013-02-27T08:05:04Z</time>
+    <name>Camino lateral</name>
+    <cmt>Camino lateral</cmt>
+    <desc>Camino lateral</desc>
+  </wpt>
+  <wpt lat="39.605888" lon="2.399678">
+    <ele>356.3</ele>
+    <time>2013-02-27T08:08:45Z</time>
+    <name>Camino lateral</name>
+    <cmt>Camino lateral</cmt>
+    <desc>Camino lateral</desc>
+  </wpt>
+  <wpt lat="39.609318" lon="2.379657">
+    <ele>377.2</ele>
+    <time>2013-02-27T09:17:54Z</time>
+    <name>Conexión senda y GR</name>
+    <cmt>Conexión senda y GR</cmt>
+    <desc>Conexión senda y GR</desc>
+  </wpt>
+  <wpt lat="39.609963" lon="2.378690">
+    <ele>391.7</ele>
+    <time>2013-02-27T09:21:11Z</time>
+    <name>Desvío miradores</name>
+    <cmt>Desvío miradores</cmt>
+    <desc>Desvío miradores</desc>
+  </wpt>
+  <wpt lat="39.608022" lon="2.379825">
+    <ele>356.9</ele>
+    <time>2013-02-27T09:12:15Z</time>
+    <name>Explanada</name>
+    <cmt>Explanada</cmt>
+    <desc>Explanada</desc>
+  </wpt>
+  <wpt lat="39.607917" lon="2.381853">
+    <ele>356.4</ele>
+    <time>2013-02-27T09:04:27Z</time>
+    <name>Cruce caminos</name>
+    <cmt>Cruce caminos</cmt>
+    <desc>Cruce caminos</desc>
+  </wpt>
+  <wpt lat="39.607792" lon="2.381173">
+    <ele>353.4</ele>
+    <time>2013-02-27T09:06:58Z</time>
+    <name>Caseta</name>
+    <cmt>Caseta</cmt>
+    <desc>Caseta</desc>
+  </wpt>
   <trk>
     <name>Puig de ses Basses y Cap Fabioler (Andratx)</name>
     <cmt></cmt>

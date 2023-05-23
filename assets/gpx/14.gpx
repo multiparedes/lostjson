@@ -7,6 +7,62 @@
     </link>
     <time>2016-09-17T15:39:17Z</time>
   </metadata>
+  <wpt lat="39.949312" lon="3.171986">
+    <ele>.0</ele>
+    <time>2016-09-17T21:57:28Z</time>
+    <name>Inicio</name>
+    <cmt>Inicio</cmt>
+    <desc>Inicio</desc>
+  </wpt>
+  <wpt lat="39.952817" lon="3.191437">
+    <ele>.0</ele>
+    <time>2016-09-17T21:57:28Z</time>
+    <name>Senda</name>
+    <cmt>Senda</cmt>
+    <desc>Senda</desc>
+  </wpt>
+  <wpt lat="39.952079" lon="3.198315">
+    <ele>.0</ele>
+    <time>2016-09-17T21:57:28Z</time>
+    <name>Fotos</name>
+    <cmt>Fotos</cmt>
+    <desc>Fotos</desc>
+  </wpt>
+  <wpt lat="39.952987" lon="3.200730">
+    <ele>.0</ele>
+    <time>2016-09-17T21:57:28Z</time>
+    <name>Fotos</name>
+    <cmt>Fotos</cmt>
+    <desc>Fotos</desc>
+  </wpt>
+  <wpt lat="39.954579" lon="3.201309">
+    <ele>.0</ele>
+    <time>2016-09-17T21:57:28Z</time>
+    <name>Fotos</name>
+    <cmt>Fotos</cmt>
+    <desc>Fotos</desc>
+  </wpt>
+  <wpt lat="39.955537" lon="3.201462">
+    <ele>.0</ele>
+    <time>2016-09-17T21:57:28Z</time>
+    <name>Mirador</name>
+    <cmt>Mirador</cmt>
+    <desc>Mirador</desc>
+  </wpt>
+  <wpt lat="39.960567" lon="3.211098">
+    <ele>.0</ele>
+    <time>2016-09-17T21:57:28Z</time>
+    <name>Camino de contrabandistas</name>
+    <cmt>Camino de contrabandistas</cmt>
+    <desc>Camino de contrabandistas</desc>
+  </wpt>
+  <wpt lat="39.961126" lon="3.211932">
+    <ele>.0</ele>
+    <time>2016-09-17T21:57:28Z</time>
+    <name>Faro de Formentor</name>
+    <cmt>Faro de Formentor</cmt>
+    <desc>Faro de Formentor</desc>
+  </wpt>
   <trk>
     <name>Mallorca. Camino viejo al Faro Formentor</name>
     <cmt></cmt>

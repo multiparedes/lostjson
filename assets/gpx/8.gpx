@@ -5,8 +5,29 @@
     <link href="https://www.wikiloc.com/hiking-trails/orient-es-freu-orient-3782127">
       <text>Orient - Es Freu - Orient on Wikiloc</text>
     </link>
-    <time>2023-05-16T16:20:14Z</time>
+    <time>2023-05-23T17:54:13Z</time>
   </metadata>
+  <wpt lat="39.732463" lon="2.742355">
+    <ele>440.1</ele>
+    <time>2012-12-29T18:20:53Z</time>
+    <name>Carretera Bunyola-Orient</name>
+    <cmt>Carretera Bunyola-Orient</cmt>
+    <desc>Carretera Bunyola-Orient</desc>
+  </wpt>
+  <wpt lat="39.723760" lon="2.748013">
+    <ele>.0</ele>
+    <time>2012-12-29T18:29:06Z</time>
+    <name>Es Freu</name>
+    <cmt>Es Freu</cmt>
+    <desc>Es Freu</desc>
+  </wpt>
+  <wpt lat="39.735060" lon="2.760079">
+    <ele>457.1</ele>
+    <time>2012-12-29T18:19:59Z</time>
+    <name>Orient - salida y llegada</name>
+    <cmt>Orient - salida y llegada</cmt>
+    <desc>Orient - salida y llegada</desc>
+  </wpt>
   <trk>
     <name>Orient - Es Freu - Orient</name>
     <cmt></cmt>
@@ -290,23 +311,23 @@
       </trkpt>
       <trkpt lat="39.735550" lon="2.757688">
         <ele>438.607</ele>
-        <time>2023-05-16T17:06:14Z</time>
+        <time>2023-05-23T18:40:13Z</time>
       </trkpt>
       <trkpt lat="39.735371" lon="2.758241">
         <ele>441.548</ele>
-        <time>2023-05-16T17:06:54Z</time>
+        <time>2023-05-23T18:40:53Z</time>
       </trkpt>
       <trkpt lat="39.735236" lon="2.760009">
         <ele>451.042</ele>
-        <time>2023-05-16T17:07:34Z</time>
+        <time>2023-05-23T18:41:33Z</time>
       </trkpt>
       <trkpt lat="39.734967" lon="2.760341">
         <ele>455.853</ele>
-        <time>2023-05-16T17:08:14Z</time>
+        <time>2023-05-23T18:42:13Z</time>
       </trkpt>
       <trkpt lat="39.735056" lon="2.759954">
         <ele>458.987</ele>
-        <time>2023-05-16T17:08:54Z</time>
+        <time>2023-05-23T18:42:53Z</time>
       </trkpt>
     </trkseg>
   </trk></gpx>

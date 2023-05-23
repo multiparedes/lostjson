@@ -355,7 +355,7 @@
     },
     {
         "@type": "Trip",
-        "name": "Orient - Es Freu - Orient",
+        "name": "Es Freu",
         "identifier": 8,
         "description": "Salida d'Orient pel camí del pas de s'Estaló, cap a Es Freu i tornar per la carretera de Bunyola a Orient. Esta ruta està explicada amb detall a la web de Josep Enric Ferrer:\n\nhttp://pepnos.blogspot.com.es/2009/03/orient-pas-de-sestalo-i-salt-des-freu_06.html\n\nGracies Josep.\n\nSi os decidís a caminar per aquests parajes, recomiendo la seva lectura abans de fer-ho. L'únic detall que s'ha de tenir en compte és que la barrera des de la carretera, a la sortida d'Orient, a 29/12/2012 la hem trobat cerrada amb cadena i candat, per lo que hi ha que saltarla.",        
         "itinerary": [
@@ -386,7 +386,7 @@
     },
     {
         "@type": "Trip",
-        "name": "Barranco de Biniaraix-Camí des Barranc-Camí Vell",
+        "name": "Penyasegat de Biniaraix-Camí",
         "identifier": 9,
         "description": "Ruta circular que recorre el Camí Vell i el Camí des Barranc de Biniaraix, un dels millors exemples d'enginyeria viària tradicional.\n\nEl Camí des Barranc de Biniaraix és un dels tres grans conjunts patrimonials lligats a la tècnica de construcció coneguda com a “Piedra en sec” que estan protegits amb la figura de béns d'interès cultural (BIC) a Mallorca. ( Lo otros dos son los pozos de nieve y elementos asociados del macizo de Massanella, y los bancales de las Rotes de Caimari).\n\nLa tècnica “Piedra en sec” consisteix en la col·locació d'una pedra sobre una altra, sense cap tipus de ciment o argamasa. Així s'aixeca a l'illa un gran nombre d'estructures necessàries per a les més variades activitats, com els marges (murs de bancal) per permetre el cultiu de les escales, parets per delimitar les propietats i els sembrats, refugis, casetes i barraques per a persones. , animales y herramientas.... La tècnica també s'utilitza per atendre una extensa red de camins, en els que és freqüent trobar els firmes empedrats.\n\nEl barranco de Biniaraix està situat a l'extrem sur-oriental de Sóller. Es tracta d'un canó cárstic modelat per l'acció de les aigües que drenan cap a ponent. Els seus vertients s'organitzen en petites propietats agrícolas, que s'han abandonat intensament per dedicar-se principalment al cultiu de l'olivera, junt amb altres fruiters de sec com els algarrobos i els almendros, i alguns ports d'extensió reduïts.\n\nDesde tiempos inmemoriales, el Camí des Barranc ha constituido la vía principal de comunicación del valle de Sóller y Fornalutx con los valles del L’Ofre, Cúber, Orient o el monasterio de Lluc.\n\nPunt d'inici: En el pueblo de Biniaraix, junto al antiguo lavadero y la fuente ( la font d'en Det). Està a 50 m. de la iglesia, subiendo por la calle carret de Sant Joseph. Nosotros nos acerquemos con el coche hasta el punto de inicio y pudimos comprobar que es complicado aparcar en el pueblo, las calles son muy estrechas: Continuamos con el coche hacia la izquierda, por el cami de cas Patró Lau , hasta encontrar sitio donde orillar el cotxe deixant el lloc just per no obstaculitzar el trànsit.",        
         "itinerary": [
@@ -417,7 +417,7 @@
     },
     {
         "@type": "Trip",
-        "name": "Alcúdia: Penya Rotja-Talaia Vella-Talaia d'Alcúdia-Coll Baix",
+        "name": "Talaia d'Alcúdia",
         "identifier": 10,
         "description": "Ruta moderada per afegir la visita a la Penya Rotja. Si la anterior no se fa, podria ser fàcil. De todas maneras había bastante ambiente familiar en Penya Roja y en la Talaia de Alcúdia. Bueno, gent en general per tots els lados.\n\nLa primera part, al sortir del Párquing, se segueix el camí d'un torrent. Em vaig molt mal el GPS en aquesta zona i em vaig desviar un poc abans de trobar el missatger que et portava a l'ermita i posteriorment a les 3 Creus.\n\nUn poc més arriba, es coge el camí per a la Penya Rotja. Sendero que va subiendo poc a poc per la ladera de la muntanya. Existeix un túnel a la roca, aquest pas és un camí més o menys estret i al sortir del túnel està equipat amb unes cadenes per passar-lo amb ajuda. Tengo molt vértigo i em sentí bastant segur, per si pot ajudar perquè em vaig pensar abans de veure'l a les fotos. Luego la subida hasta el canyó es bastante divertido, hay que usar la mano en algún punto concreto, pero no la vi difícil y eso que la roca estaba muy, muy mojada. La bajada por el mismo camino, alguna vez el culo al suelo.\n\nLuego viene la Talaia Vella que sin más. Hi ha una panoràmica des de dalt i ja. Cuidado con una alambrada con pinchos que está tirada por el suelo en alguna parte.\n\nDespués viene la subida a la Talaia de la Victoria o d'Alcúdia, creo. La subida és molt fàcil i ràpida. En la última parte hay un pasamanos de madera. La cima es bonita un par de casas en ruinas, vértice geodésico, buenas vistas... pero estaba lleno de gente. He de ser comú perquè les cabres se li acosten.\n\nLa baixada hi ha que va cap a la izquierda. Existen otras bajadas y a mí me confundieron esos enviados, pero nada... en el track se ve. Una baixada fàcil. Se baixa un poc, es creua i al final, en la part prèvia al Refugi, és un poc aburrida, herradura i eso.\n\nDesprés és un pinar i es torna a aconseguir un torrent i ja és un passeig més bonito.\n\nPer últim, se vallea i molt bonito, la verdad. En poc temps s'aconsegueix el punt d'inici.",        
         "itinerary": [
@@ -453,7 +453,7 @@
     },
     {
         "@type": "Trip",
-        "name": "Volta puig de Randa",
+        "name": "Puig de Randa",
         "identifier": 11,
         "description": "Passeig express per una zona amb cert halo màgic. (nota: En Agosto amb el calor el Halo màgic sembla que se'n tomó unas vacances).\n\nDesde el cerro es pot observar casi en 360 la majoria de les poblacions que componen la llanura baixa de l'illa.\n\nPuig de Randa 542 metres.\n\nAparcament fàcil amb un petit tram amb encant pel poble.",        
         "itinerary": [
@@ -484,7 +484,7 @@
     },
     {
         "@type": "Trip",
-        "name": "Puig de ses Basses y Cap Fabioler (Andratx)",
+        "name": "Puig de ses Basses y Cap Fabioler",
         "identifier": 12,
         "description": "L'excursió al Puig de ses Basses i al Cap Fabioler, situats a Andratx, ofereix una experiència impressionant en la natura de Mallorca. El Puig de ses Basses és una imponent muntanya que ofereix vistes panoràmiques de la costa i les muntanyes que l'envolten. A mesura que t'endinsis en aquesta ruta, descobriràs una varietat d'espècies vegetals autòctones i una riquesa de fauna local, que fan d'aquest lloc un autèntic paradís per als amants de la natura. A més, el Cap Fabioler és un penya-segat impressionant amb un far que et captivarà amb la seva bellesa i la seva vista sobre el mar Mediterrani. Aquesta excursió combina a la perfecció la natura, la història i la bellesa escènica, fent-la inoblidable per a tots els qui la visiten.",        
         "itinerary": [
@@ -520,7 +520,7 @@
     },
     {
         "@type": "Trip",
-        "name": "TORRENT DE PARELLS",
+        "name": "Torrents de Pareis",
         "identifier": 13,
         "description": "L'excursió al Torrent de Pareis és una experiència fascinant per als amants de la natura i els aventurers. Situat a la Serra de Tramuntana, a Mallorca, aquest impressionant barranc és conegut per les seves parets verticals i el seu riu que flueix entre elles. Els visitants poden gaudir d'una caminada emocionant pel llit del riu, passant per les aigües cristal·lines i les formacions rocoses impressionants.\n\nA mesura que t'endinsis en el Torrent de Pareis, et trobaràs envoltat d'un paisatge espectacular. Les parets de pedra calcària s'alçaran majestuoses per sobre teu, formant un estret passadís natural. A cada pas, et sorprendràs amb la bellesa i la grandesa d'aquest lloc únic. També hi ha zones on pots gaudir de petites platges ocultes, on podràs relaxar-te i banyar-te en les aigües refrescants del riu.\n\nCal tenir en compte que l'excursió al Torrent de Pareis requereix una certa preparació física i experiència en senderisme, ja que hi ha passatges estrets i algunes parts rocoses. No obstant això, la recompensa de descobrir aquest paratge natural impressionant i únic en val la pena. Una aventura al Torrent de Pareis et deixarà amb records inoblidables de la bellesa indomable de la natura mallorquina.",        
         "itinerary": [
@@ -531,7 +531,7 @@
             },
             {
                 "@type": "LandmarksOrHistoricalBuildings",
-                "name": "Torrent de Parells"
+                "name": "Torrent de Pareis"
                 
             },
             {
@@ -551,7 +551,7 @@
     },
     {
         "@type": "Trip",
-        "name": "Ruta Costanera de Cap de Formentor",
+        "name": "Cap de Formentor",
         "identifier": 14,
         "description": "Experimenta la impressionant bellesa de la costa nord de Mallorca amb la Ruta Costanera de Cap de Formentor. Aquesta excursió panoràmica et porta per una carretera sinuosa que envolta els penya-segats, oferint vistes impressionants del Mar Mediterrani.\n\nMentre recorres la costa escarpada, passaràs per cales pintoresques, penya-segats espectaculars i platges verges. Assegura't de parar al famós Far de Formentor, situat en un penya-segat amb vistes al mar. Les vistes panoràmiques des d'aquest punt de vista són senzillament impressionants.\n\nLa Ruta Costanera de Cap de Formentor és una experiència obligada per als amants de la natura i els entusiastes de la fotografia. No oblidis la teva càmera per capturar els paisatges inoblidables i els colors vius de la Mediterrània.\n\nCal tenir en compte que la carretera pot ser estreta i sinuosa en alguns trams, requerint una conducció atenta. Es recomana prendre's el temps i gaudir del viatge a un ritme tranquil.",
         "itinerary": [
@@ -582,7 +582,7 @@
       },
       {
         "@type": "Trip",
-        "name": "Ruta de Senderisme per la Serra de Tramuntana",
+        "name": "Els Miradors",
         "identifier": 15,
         "description": "Descobreix la bellesa natural de la Serra de Tramuntana amb aquesta ruta de senderisme inoblidable. Camina per camins serpentejants entre muntanyes escarpades, boscos verds i rierols cristal·lins.\n\nLa Serra de Tramuntana és un paradís per als amants de la natura, amb vistes panoràmiques que t'embruixaran. A mesura que t'enfonsis en aquesta serralada, trobaràs pobles encantadors, com Valldemossa i Deià, que et transportaran a un temps passat.\n\nRecorda portar roba còmoda, calçat adequat i aigua suficient per aquesta caminada. Disfruta de la tranquil·litat de la natura i de l'aire pur de la muntanya mentre t'aventures per la Serra de Tramuntana.",
         "itinerary": [
@@ -613,7 +613,7 @@
       },
       {
         "@type": "Trip",
-        "name": "Ruta a peu pel Casco Antic de Palma",
+        "name": "Casc Antic de Palma",
         "identifier": 16,
         "description": "Endinsa't en l'encantador Casco Antic de Palma amb aquesta visita a peu. Descobreix els carrers empedrats, les places pintoresques i els edificis històrics que fan d'aquesta zona una joia cultural.\n\nVisita la majestuosa Catedral de Mallorca, coneguda com a La Seu, amb la seva impressionant arquitectura gòtica. Explora els estrets carrerons del Barri Gòtic i admirat les cases senyorials de l'època medieval. No oblidis visitar el Palau de l'Almudaina, un palau reial amb vistes al mar.\n\nDurant el recorregut, descobriràs també botigues de moda, cafès acollidors i artesans locals. Deixa't seduir per l'ambient bohemi del Casco Antic de Palma mentre et perds pels seus carrers.",
         "itinerary": [
@@ -644,7 +644,7 @@
       },
       {
         "@type": "Trip",
-        "name": "Aventura Soterrada a les Coves del Drach",
+        "name": "Les Coves del Drach",
         "identifier": 17,
         "description": "Viure una aventura sota terra a les Coves del Drac és una experiència fascinant. Descobreix aquest món subterrani ple de meravelles geològiques i estalactites impressionants.\n\nExplora les diverses galeries i sales de les Coves del Drac, amb les seves formacions calcàries úniques. Un punt destacat d'aquesta aventura és el llac subterrani Martel, on podràs gaudir d'un espectacle de llums i música en viu mentre naveges pel llac en una barca.\n\nDurant la visita, els guies experts et revelaran els secrets i la història d'aquestes coves impressionants. Descobriràs com s'han format les formacions geològiques i els misteris que amaguen les profunditats de les Coves del Drac.\n\nRecorda portar roba còmoda i calçat adequat per aquesta aventura subterrània. Les Coves del Drac són una atracció inoblidable per als amants de la natura i els entusiastes de l'exploració.",
         "itinerary": [
@@ -675,7 +675,7 @@
         },
         {
             "@type": "Trip",
-            "name": "Ruta de les Coves de Campanet",
+            "name": "Les Coves de Campanet",
             "identifier": 18,
             "description": "Explora les fascinants Coves de Campanet en aquesta ruta de senderisme. Aquestes coves són una meravella geològica situada a Mallorca i ofereixen una experiència subterrània inoblidable.\n\nDurant el recorregut, caminaràs per camins ben senyalitzats i descendiràs a les profunditats d'aquest món subterrani. Admiraràs les impressionants estalactites i estalagmites mentre aprens sobre la seva formació i història.\n\nAquesta ruta de senderisme és adequada per a tots els públics, però és recomanable portar calçat amb bon adherència i roba còmoda. Vine a descobrir les meravelles de les Coves de Campanet.",
             "itinerary": [
@@ -702,7 +702,7 @@
           },
           {
             "@type": "Trip",
-            "name": "Camí de l'Arxiduc a Valldemossa",
+            "name": "De l'Arxiduc a Valldemossa",
             "identifier": 19,
             "description": "Segueix els passos de l'Arxiduc Lluís Salvador en aquesta ruta de senderisme que uneix Deià i Valldemossa. Aquest camí panoràmic t'ofereix vistes espectaculars de la costa i les muntanyes de Mallorca.\n\nDurant la caminada, passaràs per camins empedrats i senders serpentejants mentre admires els paisatges idíl·lics que envolten aquesta zona. Descobreix racons secrets, ermites antigues i gaudiràs de la tranquil·litat de la natura mallorquina.\n\nRecorda portar calçat adequat i càmera per capturar els moments màgics d'aquesta ruta única.",
             "itinerary": [
@@ -729,7 +729,7 @@
           },
           {
             "@type": "Trip",
-            "name": "Ruta de Ses Fonts Ufanes",
+            "name": "Ses Fonts Ufanes",
             "identifier": 20,
             "description": "Descobreix la màgia de Ses Fonts Ufanes en aquesta ruta de senderisme. Situada a la Reserva Natural de Muntanya d'Artà, aquesta ruta et portarà a un espectacle únic: el brot d'aigua de les Fonts Ufanes.\n\nA mesura que camines pel bosc, arribaràs a aquest lloc sorprenent on l'aigua emergeix del sòl amb força i energia. Observa l'espectacle natural i gaudeix de la frescor i la serenitat que t'envolten.\n\nAquesta ruta és apta per a tots els nivells i és perfecta per a famílies i amants de la natura. Recorda portar calçat còmode i càmera per capturar la bellesa d'aquest fenomen natural.",
             "itinerary": [
