@@ -753,7 +753,162 @@
               "audio": [""]
             },
             "sameAs": " https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra20.json"
-          }
+          },
+          {
+            "@type": "Trip",
+            "name": "Cova de les Dues Boques",
+            "identifier": 21,
+            "description": "Descobreix la fascinant Cova de les Dues Boques seguint els passos del Robust Marge i del Petit Pi. Aquesta ruta et portarà per un entorn natural impressionant, combinant bellesa paisatgística i història. L'ascens al cim del Robust Marge ofereix vistes panoràmiques espectaculars. Després, podràs explorar les cambres fosques de la Cova de les Dues Boques, amb formacions de pedra impressionants. Admira la flora i fauna local durant la ruta, que inclou arbres com el pi blanc i el roure, i possibles avistaments d'espècies com el corço i l'àguila reial. Aquesta és una experiència única per a amants de la natura i els entusiastes de l'aventura.",
+            "itinerary": [
+            {
+            "@type": "LandmarksOrHistoricalBuildings",
+            "name": "Cova de les Dues Boques"
+            },
+            {
+            "@type": "LandmarksOrHistoricalBuildings",
+            "name": "Robust Marge"
+            },
+            {
+            "@type": "LandmarksOrHistoricalBuildings",
+            "name": "Petit Pi"
+            },
+            {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Cova de les Dues Boques"
+            }
+            ],
+            "image": [
+            "https://s0.wklcdn.com/image_14/422589/6560720/3638307.jpg",
+            "https://s2.wklcdn.com/image_18/566473/17524722/11055194.jpg",
+            "https://3.bp.blogspot.com/-5tIX1ACHdE8/W9C1qUNuIEI/AAAAAAABVPc/K1176s1dVOc4Mq_0Y7SAIQgQf8BZgGixACKgBGAs/s1600/P1140186.JPG"
+            ],
+            "subjectOf": {
+            "@type": "CreativeWork",
+            "video": [],
+            "audio": []
+            },
+            "sameAs": "https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra21.json"
+            },
+            {
+                "@type": "Trip",
+                "name": "El Mirador de la Mola Ferrana",
+                "identifier": 22,
+                "description": "Descobreix les impressionants vistes des del Mirador de la Mola Ferrana. Situat en un indret privilegiat, aquesta ruta de senderisme t'endinsarà en un paisatge de muntanya majestuós. Caminant per senders serpentejants i boscos frondosos, arribaràs a aquest mirador panoràmic que ofereix una visió espectacular de la vall i les muntanyes que l'envolten.\n\nEl Mirador de la Mola Ferrana és un lloc perfecte per gaudir d'un moment de pau i contemplació. Pots observar l'esplendor de la natura i deixar-te impressionar pels colors canviants dels paisatges en diferents èpoques de l'any.\n\nAquesta ruta és adequada per a tots els nivells i és ideal per a aquells que busquen connectar amb la natura i buscar una experiència enriquidora. Assegura't de portar calçat adequat i una càmera per capturar aquestes vistes inoblidables.",
+                "itinerary": [
+                {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Mirador de la Mola Ferrana"
+                }
+                ],
+                "image": [
+                "https://uh.gsstatic.es/sfAttachPlugin/198091.jpg",
+                "https://s1.wklcdn.com/image_0/17608/19724372/12351415.jpg",
+                "https://s0.wklcdn.com/image_0/17608/19724385/12351474.jpg"
+                ],
+                "subjectOf": {
+                "@type": "CreativeWork",
+                "video": [],
+                "audio": []
+                },
+                "sameAs": "https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra22.json"
+            },
+            {
+                "@type": "Trip",
+                "name": "Valldemossa: Mirador de Ses Puntes, Camí de l'Arxiduc i Refugi des Cairats",
+                "identifier": 23,
+                "description": "Descobreix la pintoresca localitat de Valldemossa i els seus impressionants paratges naturals. Aquesta ruta et portarà a explorar el Mirador de Ses Puntes, el Camí de l'Arxiduc i el Refugi des Cairats, oferint-te una experiència completa de la bellesa i la història de la zona.\n\nComença amb una visita al Mirador de Ses Puntes, des d'on podràs gaudir de vistes panoràmiques de la costa i les muntanyes que envolten Valldemossa. És un lloc ideal per capturar fotografies increïbles i contemplar la serenitat de la natura.\n\nA continuació, segueix el Camí de l'Arxiduc, una ruta famosa que connecta Valldemossa amb Deià. Aquest camí t'endinsarà en un paisatge impressionant, amb penya-segats i vistes panoràmiques que et deixaran sense alè.\n\nFinalment, arriba al Refugi des Cairats, un lloc d'interès històric situat enmig de la natura. Pots explorar les seves instal·lacions i aprendre sobre la seva importància durant la guerra civil espanyola.\n\nAquesta ruta combina natura, cultura i aventura, oferint-te una experiència inoblidable a Valldemossa.",
+                "itinerary": [
+                {
+                "@type": "City",
+                "name": "Valldemossa"
+                },
+                {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Mirador de Ses Puntes"
+                },
+                {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Camí de l'Arxiduc"
+                },
+                {
+                    "@type": "LandmarksOrHistoricalBuildings",
+                    "name": "Refugi des Cairats"
+                },
+                {
+                    "@type": "City",
+                    "name": "Valldemossa"
+                }
+                ],
+                "image": [
+                "https://4.bp.blogspot.com/-IGfkfETvV4c/Wyfl5J0M9nI/AAAAAAAAqxc/R0kpfnTM5zYfoXuPd8r3wNvYBJYHfQfhwCLcBGAs/w1200-h630-p-k-no-nu/1.JPG",
+                "https://s2.wklcdn.com/image_22/689998/9312685/5535371.jpg",
+                "https://estefanialfonso.files.wordpress.com/2018/10/600_474844197.jpeg?w=1400"
+                ],
+                "subjectOf": {
+                "@type": "CreativeWork",
+                "video": [],
+                "audio": []
+                },
+                "sameAs": "https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra23.json"
+            },
+            {
+                "@type": "Trip",
+                "name": "Camins des Rafal",
+                "identifier": 24,
+                "description": "Descobreix els encantadors camins que travessen els paisatges de des Rafal, Antic de Planícia i de sa Síquia de Baix. Aquesta ruta de senderisme et portarà a explorar les meravelles naturals i històriques d'aquesta zona.\n\nComença amb el camí des Rafal, que et guiarà a través de camps verds i pintorescs. Podràs admirar les vistes panoràmiques de les terres de cultiu i gaudir de la tranquil·litat que ofereix aquest entorn rural.\n\nContinua pel camí Antic de Planícia, un antic trajecte que connecta pobles i que et portarà a través de boscos frondosos i senders empedrats. Et sentiràs immers en la història mentre camines per aquest camí antic, que ha estat utilitzat durant segles.\n\nFinalment, segueix el camí de sa Síquia de Baix, que et durà a una antiga séquia utilitzada per regar les terres de conreu. Aquest camí et permetrà descobrir les infraestructures hidràuliques tradicionals i gaudir de la bellesa natural dels voltants.\n\nAquesta ruta és una oportunitat única per connectar amb la natura i la història, mentre descobreixes els camins que han estat recorreguts durant generacions.",
+                "itinerary": [
+                {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Camí des Rafal"
+                },
+                {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Camí Antic de Planícia"
+                },
+                {
+                "@type": "LandmarksOrHistoricalBuildings",
+                "name": "Camí de sa Síquia de Baix"
+                },
+                {
+                    "@type": "LandmarksOrHistoricalBuildings",
+                    "name": "Camí des Rafal"
+                }
+                ],
+                "image": [
+                "https://1.bp.blogspot.com/-nNRnRmK0gIg/Xo8eTUMdB_I/AAAAAAABcDc/99wPoGUsWCMSA2n-_DseCVYgn74nOO_nACKgBGAsYHg/s1600/DSCF8241.JPG",
+                "https://s1.wklcdn.com/image_0/17608/14444756/8966467.jpg",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2T8vTaB3hZQ1PtUOacrBRlfPbyKvPxN-JYQ&usqp=CAU"
+                ],
+                "subjectOf": {
+                "@type": "CreativeWork",
+                "video": [],
+                "audio": []
+                },
+                "sameAs": "https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra24.json"
+                },
+                {
+                    "@type": "Trip",
+                    "name": "Es Puig Roig",
+                    "identifier": 25,
+                    "description": "Descobreix l'impressionant Puig Roig, una muntanya emblemàtica de Mallorca. Aquesta ruta de senderisme t'endinsarà en un paisatge de bellesa indescriptible i t'oferirà vistes panoràmiques excepcionals de l'illa.\n\nComença l'excursió a la base d'Es Puig Roig i inicia l'ascens cap a la cima. El camí et portarà per senders escarpats, passant per boscos i zones rocades. Amb cada pas, gaudiràs de la flora i fauna autòctona de l'illa, així com de la serenitat de la natura.\n\nA mesura que t'apropis a la cima, podràs admirar les espectaculars vistes panoràmiques de les muntanyes de Mallorca, les valls verdes i el mar brillant a l'horitzó. Una vegada a dalt, sentiràs una sensació d'èxtasi mentre gaudeixes dels paisatges de somni que s'estenen davant teu.\n\nEs Puig Roig és una experiència inoblidable per als amants de la natura i els entusiastes de l'aventura. Recorda portar calçat adequat i una càmera per capturar aquests moments inoblidables.",
+                    "itinerary": [
+                    {
+                    "@type": "LandmarksOrHistoricalBuildings",
+                    "name": "Es Puig Roig"
+                    }
+                    ],
+                    "image": [
+                    "https://trailrunningmallorca.es/wp-content/uploads/2016/10/Puig-Roig.jpg",
+                    "https://caminandopormallorca.es/wp-content/uploads/2020/10/IMG-20191015-WA0091-1400x800.jpg",
+                    "https://caminandopormallorca.es/wp-content/uploads/2020/12/IMG_20201215_124542-1400x800.jpg"
+                    ],
+                    "subjectOf": {
+                    "@type": "CreativeWork",
+                    "video": [],
+                    "audio": []
+                    },
+                    "sameAs": "https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra25.json"
+                }
           
           
           
