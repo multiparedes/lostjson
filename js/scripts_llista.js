@@ -122,7 +122,7 @@ function createCard(card) {
   return `
         <div class="col mb-5">
             <div class="card h-100">
-                <img class="card-img-top no-active" src="${card.urlFoto}" alt=${card.nom} />
+                <img class="card-img-top no-active" src="${card.urlFoto}" style="width: 223px; height: 150px;"alt=${card.nom} />
                 <div class="card-body p-4">
                     <div class="text-center">
                         <h5 class="fw-bolder">${card.nom}</h5>
