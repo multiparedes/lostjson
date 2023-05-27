@@ -2,12 +2,13 @@ import {
   dificultyToString,
   getExcursio,
   checkCoordinatesWithinRadius,
-  beachInRange,
 } from "./utils.js";
 
 const mapOverlay = document.querySelector(".map-container");
 const mapOverlayMessage = document.querySelector(".b-container");
 const map = document.querySelector(".mapa");
+
+let aditionalWaypoints = [];
 
 document.querySelector("form").addEventListener("submit", updateComments);
 
@@ -197,13 +198,13 @@ async function showExcursio() {
     };
   });
 
-  console.log(mountains)
 
   let content = "";
   let active = false;
   const generateInterestPoints = document.getElementById('carouselCInterestGenerate');
 
   mountains.forEach((element) => {
+    aditionalWaypoints.push(element);
     content = content.concat(`
     <div class="carousel-item ${(!active ? " active": "")}">
       <div class="col">
@@ -227,6 +228,7 @@ async function showExcursio() {
   });
 
   monuments.forEach((element) => {
+    aditionalWaypoints.push(element);
     content = content.concat(`
     <div class="carousel-item ${(!active ? " active": "")}">
       <div class="col">
@@ -250,6 +252,7 @@ async function showExcursio() {
   });
 
   viewpoints.forEach((element) => {
+    aditionalWaypoints.push(element);
     content = content.concat(`
     <div class="carousel-item ${(!active ? " active": "")}">
       <div class="col">
@@ -273,9 +276,7 @@ async function showExcursio() {
   });
 
   generateInterestPoints.innerHTML = content
-
-
-
+  createMap(aditionalWaypoints);
 }
 
 async function fillExcursio(excursio, infoExtra) {
@@ -453,10 +454,95 @@ async function updateComments(event) {
   const comForm = document.getElementById("commentsForm");
   const comSucess = document.getElementById("formSucces");
 
+  const params = new URLSearchParams(window.location.search);
+  const page = params.get("id");
+  const user = document.getElementById('username').value;
+  const comment = document.getElementById('comment').value;
+
+  try {
+    const response = await fetch('../php/updateComments.php', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ page: page, user: user, comment: comment })
+    });
+
+    if (response.ok) {
+      // El archivo PHP ha sido llamado exitosamente y ha actualizado el JSON
+      // Puedes realizar acciones adicionales aquí si es necesario
+    } else {
+      throw new Error('Error en la solicitud.');
+    }
+  } catch (error) {
+    // Manejar errores de la solicitud
+    console.log(error);
+  }
+
   comForm.classList.add("d-none");
   comSucess.classList.remove("d-none");
   comSucess.classList.add("d-block");
 }
 
-loadComments();
+function createMap(aditionalWaypoints) {
+   // Crea un mapa amb Leaflet i el situa en una vista predeterminada
+   let map = L.map("map", {
+    dragging: true, // Habilita la interacció de drag & drop
+    scrollWheelZoom: true, // Habilita la interacció de zoom amb la roda del ratolí
+  }).setView([0, 0], 13);
+
+  // Obté l'ID de l'excursió a través de la URL
+  const queryString = window.location.search;
+  const params = new URLSearchParams(queryString);
+  const excursioId = params.get("id");
+
+  // Afegeix una capa de mapa de tiles OpenStreetMap Cyclosm a Leaflet
+  L.tileLayer(
+    "https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png",
+    {
+      maxZoom: 20,
+    }
+  ).addTo(map);
+
+  // Defineix la ruta GPX que es vol mostrar al mapa i l'icona del marcador
+  var gpx = "./assets/gpx/" + excursioId + ".gpx";
+  var markerIcon = L.icon({
+    iconUrl: "./assets/marker.png",
+    iconSize: [32, 32],
+    iconAnchor: [16, 32],
+    popupAnchor: [0, -30],
+  });
+
+  // Crea un objecte de ruta GPX amb Leaflet i configura els paràmetres de polilínia i marcador
+  new L.GPX(gpx, {
+    async: true,
+    polyline_options: {
+      color: "orange", // Color de la línia de la ruta
+      weight: 3, // Gruix de la línia de la ruta
+      lineCap: "round", // Estil dels extrems de la línia de la ruta
+    },
+    marker_options: {
+      startIconUrl: null,
+      endIconUrl: null,
+      shadowUrl: null,
+      wptIcons: {
+        "": markerIcon, // Icona del marcador de la ruta
+      },
+    },
+  })
+    .on("loaded", function (e) {
+      var gpx = e.target;
+      // Ajusta la vista del mapa per mostrar la ruta GPX sencera
+      map.fitBounds(gpx.getBounds(), { padding: [10, 10] });
+      
+      // Opcionalment, afegiu punts extra a la ruta amb marcadors personalitzats
+      // L.marker([LATITUDE, LONGITUDE], { icon: markerIcon }).bindPopup(DESCRIPTION).addTo(map);
+      aditionalWaypoints.map((elem) => {
+        L.marker([elem.lat, elem.lon], { icon: markerIcon }).bindPopup(elem.name).addTo(map);
+      })
+    })
+    .addTo(map);
+}
+
 showExcursio();
+loadComments();

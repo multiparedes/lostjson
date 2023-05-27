@@ -282,61 +282,7 @@
   <script src="https://apis.google.com/js/api.js"></script>
   <script type="module" src="js/scripts_excursions.js"></script>
   <script>
-    // Crea un mapa amb Leaflet i el situa en una vista predeterminada
-    let map = L.map("map", {
-      dragging: true, // Habilita la interacció de drag & drop
-      scrollWheelZoom: true, // Habilita la interacció de zoom amb la roda del ratolí
-    }).setView([0, 0], 13);
-
-    // Obté l'ID de l'excursió a través de la URL
-    const queryString = window.location.search;
-    const params = new URLSearchParams(queryString);
-    const excursioId = params.get("id");
-
-    // Afegeix una capa de mapa de tiles OpenStreetMap Cyclosm a Leaflet
-    L.tileLayer(
-      "https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png",
-      {
-        maxZoom: 20,
-      }
-    ).addTo(map);
-
-    // Defineix la ruta GPX que es vol mostrar al mapa i l'icona del marcador
-    var gpx = "./assets/gpx/" + excursioId + ".gpx";
-    var markerIcon = L.icon({
-      iconUrl: "./assets/marker.png",
-      iconSize: [32, 32],
-      iconAnchor: [16, 32],
-      popupAnchor: [0, -30],
-    });
-
-    // Crea un objecte de ruta GPX amb Leaflet i configura els paràmetres de polilínia i marcador
-    new L.GPX(gpx, {
-      async: true,
-      polyline_options: {
-        color: "orange", // Color de la línia de la ruta
-        weight: 3, // Gruix de la línia de la ruta
-        lineCap: "round", // Estil dels extrems de la línia de la ruta
-      },
-      marker_options: {
-        startIconUrl: null,
-        endIconUrl: null,
-        shadowUrl: null,
-        wptIcons: {
-          "": markerIcon, // Icona del marcador de la ruta
-        },
-      },
-    })
-      .on("loaded", function (e) {
-        var gpx = e.target;
-        // Ajusta la vista del mapa per mostrar la ruta GPX sencera
-        map.fitBounds(gpx.getBounds(), { padding: [10, 10] });
-        console.log(map.getCenter());
-
-        // Opcionalment, afegiu punts extra a la ruta amb marcadors personalitzats
-        // L.marker([LATITUDE, LONGITUDE], { icon: markerIcon }).bindPopup(DESCRIPTION).addTo(map);
-      })
-      .addTo(map);
+   
   </script>
 </body>
 
