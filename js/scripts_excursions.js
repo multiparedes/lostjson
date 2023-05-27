@@ -450,7 +450,7 @@ async function getCommentsForPage(pageNumber) {
 
 async function updateComments(event) {
   event.preventDefault();
-
+/*
   const comForm = document.getElementById("commentsForm");
   const comSucess = document.getElementById("formSucces");
 
@@ -482,6 +482,7 @@ async function updateComments(event) {
   comForm.classList.add("d-none");
   comSucess.classList.remove("d-none");
   comSucess.classList.add("d-block");
+  */
 }
 
 function createMap(aditionalWaypoints) {
