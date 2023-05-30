@@ -939,7 +939,121 @@
                     "audio": []
                     },
                     "sameAs": "https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra26.json"
-                }
+                },
+                {
+                    "@type": "Trip",
+                    "name": "De s'Estanyol a Vallgornera",
+                    "identifier": 27,
+                    "description": "L'excursió de s'Estanyol a Vallgornera és un preciós recorregut que et porta per la impressionant costa de Mallorca. Començant des del pintoresc poble de s'Estanyol, caminaràs pel penya-segat, oferint vistes impressionants del mar Mediterrani turquesa.\n\nA mesura que et dirigeixis cap a Vallgornera, passaràs per platges verges i cales amagades. Les aigües cristal·lines t'inviten a un bany refrescant o a una aventura de busseig. El paisatge accidentat i l'aroma del mar creen una atmosfera captivadora que et submergirà en la natura.\n\nEn arribar a Vallgornera, et trobaràs amb un encantador poble de pescadors, on podràs gaudir d'un deliciós àpat de peix en un dels restaurants locals. Pren-te el temps per explorar el poble i gaudir de l'autèntica atmosfera mediterrània.\n\nL'excursió de s'Estanyol a Vallgornera és una oportunitat fantàstica per experimentar la bellesa de la costa de Mallorca, descobrir llocs amagats pel camí i gaudir del encant coastal de Vallgornera.",
+                    "itinerary": [
+                      {
+                        "@type": "LandmarksOrHistoricalBuildings",
+                        "name": "s'Estanyol"
+                      },
+                      {
+                        "@type": "LandmarksOrHistoricalBuildings",
+                        "name": "Vallgornera"
+                      }
+                    ],
+                    "image": [
+                      "https://trailrunningmallorca.es/wp-content/gallery/rutas-costeras-4/25.jpeg",
+                      "https://caminandopormallorca.es/wp-content/uploads/2021/10/IMG_20211021_105907-1024x576.jpg",
+                      "https://caminandopormallorca.es/wp-content/uploads/2021/10/IMG_20211021_100542-1024x576.jpg"
+                    ],
+                    "subjectOf": {
+                      "@type": "CreativeWork",
+                      "video": [],
+                      "audio": []
+                    },
+                    "sameAs": "https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra27.json"
+                  },
+                  {
+                    "@type": "Trip",
+                    "name": "De Aucanada a Es Coll Baix",
+                    "identifier": 28,
+                    "description": "L'excursió de Aucanada a Es Coll Baix és una caminada impressionant que et porta a través dels paisatges impressionants de Mallorca. Començant des del pintoresc poble d'Aucanada, et posaràs en marxa en un viatge panoràmic al llarg de la costa.\n\nA mesura que camines cap a Es Coll Baix, passaràs per penya-segats escarpats, boscos de pins i cales pintoresques. Les aigües turqueses del mar Mediterrani t'acompanyaran durant tota la ruta, convidant-te a un bany refrescant pel camí.\n\nUn cop arribis a Es Coll Baix, seràs recompensat amb una bonica platja apartada envoltada de penya-segats. Pren un moment per relaxar-te, prendre el sol i gaudir de la bellesa natural intacta d'aquest tresor amagat.\n\nL'excursió de Aucanada a Es Coll Baix ofereix una aventura inoblidable, permetent-te immergir-te en els paisatges impressionants de Mallorca i descobrir els tresors amagats de la costa de l'illa.",
+                    "itinerary": [
+                      {
+                        "@type": "LandmarksOrHistoricalBuildings",
+                        "name": "Aucanada"
+                      },
+                      {
+                        "@type": "LandmarksOrHistoricalBuildings",
+                        "name": "Es Coll Baix"
+                      }
+                    ],
+                    "image": [
+                      "https://www.click-mallorca.com/blog/wp-content/uploads/2021/02/coll-baix-playa-1024x638.jpg",
+                      "https://www.click-mallorca.com/blog/wp-content/uploads/2021/01/playa-coll-baix.jpeg",
+                      "https://i0.wp.com/viajesgreen.com/wp-content/uploads/2021/04/20210402_114717-scaled.jpg?ssl=1"
+                    ],
+                    "subjectOf": {
+                      "@type": "CreativeWork",
+                      "video": [],
+                      "audio": []
+                    },
+                    "sameAs": "https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra28.json"
+                  },
+                  {
+                    "@type": "Trip",
+                    "name": "Puig de Massanella",
+                    "identifier": 29,
+                    "description": "L'excursió al Puig de Massanella és una experiència emocionant que et portarà a l'cim de la segona muntanya més alta de Mallorca. Amb els seus 1.365 metres d'altitud, aquesta imponent muntanya ofereix vistes espectaculars i una sensació de realització.\n\nEl recorregut comença en un entorn natural impressionant, amb densos boscos i vegetació exuberant. A mesura que et vas elevan cap al cim, podràs apreciar la diversitat de flora i fauna que ofereix aquesta àrea protegida.\n\nL'ascensió al Puig de Massanella pot ser exigent, ja que cal superar desnivells i terrenys irregulars. Però cada pas val la pena quan arribes al cim i gaudir de les vistes panoràmiques de la serra de Tramuntana i la costa mallorquina.\n\nAquesta excursió és perfecta per als amants del senderisme i per a aquells que busquen un desafiament emocionant. Prepara't per una aventura inoblidable i descobreix la majestuositat del Puig de Massanella.",
+                    "itinerary": [
+                      {
+                        "@type": "LandmarksOrHistoricalBuildings",
+                        "name": "Puig de Massanella"
+                      }
+                    ],
+                    "image": [
+                        "https://gataconbotas.com/wp-content/uploads/2019/02/RB_190108_massanella-21.jpg",
+                      "https://img2.oastatic.com/img2/7111563/max/am-gipfel-des-puig-de-massanella.jpg",
+                      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyQZqKzdo6DfVMcoCrHcT1aC8LHXc7BVZ_qw&usqp=CAU"
+                    ],
+                    "subjectOf": {
+                      "@type": "CreativeWork",
+                      "video": [],
+                      "audio": []
+                    },
+                    "sameAs": "https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra29.json"
+                  },
+                  {
+                    "@type": "Trip",
+                    "name": "Cami des Rafal",
+                    "identifier": 30,
+                    "description": "Aquesta aventura de senderisme combina tres camins destacats de Mallorca: des Rafal, Antic de Planícia i de sa Síquia de Baix. Et portarà per entorns naturals diversos, oferint paisatges pintorescos i descobriments emocionants al llarg del camí.\n\nEl camí des Rafal és un sender que travessa un bosc mediterrani i t'ofereix belles vistes de la serra de Tramuntana. Podràs admirar les oliveres centenàries i gaudir de la serenitat de la natura.\n\nEl camí Antic de Planícia et guiarà a través d'antics camins rurals que connecten diferents pobles de la zona. Passaràs per camps de cultiu, cases de pedra i camps d'ametllers, descobrint la riquesa agrícola i la història d'aquesta regió.\n\nEl camí de sa Síquia de Baix és un trajecte que segueix una antiga sèquia utilitzada per irrigar els camps. Et portarà per paisatges planers i tranquil·litat rural, amb les aigües de la sèquia acompanyant el teu camí.\n\nAquesta combinació de camins et permetrà experimentar la diversitat natural i cultural de Mallorca, descobrint racons encantadors i connectant amb la història i l'entorn rural de l'illa.",
+                    "itinerary": [
+                      {
+                        "@type": "LandmarksOrHistoricalBuildings",
+                        "name": "Camí des Rafal"
+                      },
+                      {
+                        "@type": "LandmarksOrHistoricalBuildings",
+                        "name": "Camí Antic de Planícia"
+                      },
+                      {
+                        "@type": "LandmarksOrHistoricalBuildings",
+                        "name": "Camí de sa Síquia de Baix"
+                      }
+                    ],
+                    "image": [
+                      "https://1.bp.blogspot.com/-nNRnRmK0gIg/Xo8eTUMdB_I/AAAAAAABcDc/99wPoGUsWCMSA2n-_DseCVYgn74nOO_nACKgBGAsYHg/s1600/DSCF8241.JPG",
+                      "https://s0.wklcdn.com/image_0/17608/14444757/8966472.jpg",
+                      "https://s0.wklcdn.com/image_0/17608/14444753/8966454.jpg"
+                    ],
+                    "subjectOf": {
+                      "@type": "CreativeWork",
+                      "video": [],
+                      "audio": []
+                    },
+                    "sameAs": "https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra30.json"
+                  }
+                  
+                  
+                  
+
+                  
+                  
           
           
           
