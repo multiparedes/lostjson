@@ -399,7 +399,7 @@ async function fillExcursio(excursio, infoExtra) {
       active = " active";
     }
     images = images.concat(`<div class="carousel-item ${active}">
-    <img src="${img}" class="d-block w-100" alt="...">
+    <img src="${img}" class="d-block w-100" alt="Images of the excursion">
     </div>`);
   });
   node.innerHTML = images;
