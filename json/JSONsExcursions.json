@@ -908,6 +908,37 @@
                     "audio": []
                     },
                     "sameAs": "https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra25.json"
+                },
+                {
+                    "@type": "Trip",
+                    "name": "Cova de les Dues Boques",
+                    "identifier": 26,
+                    "description": "L'excursió a la Cova de les Dues Boques és una experiència fascinant que et portarà pels passos del Robust Marge i del Petit Pi, dues emblemàtiques muntanyes de la zona. Situada en un entorn natural impressionant, aquesta ruta et permetrà descobrir la bellesa del paisatge montanyenc i endinsar-te en els misteris de la cova.\n\nLa caminada comença amb l'ascens al Robust Marge, una imponent muntanya que ofereix unes vistes panoràmiques espectaculars. Amb cada pas, et sentiràs més a prop del cel mentre guaites la immensitat del paisatge. Després d'una ascensió exigent però emocionant, arribaràs a la cova, que es troba a les profunditats del turó.  \n\nLa Cova de les Dues Boques és un indret màgic, carregat d'història i llegendes. La seva entrada, de dimensions majestuoses, et convida a endinsar-te en el seu interior. A mesura que vagis explorant els túnels estrets i les galeries fosques, et sentiràs com si estiguessis descobrint un món subterrani secret. Les estalactites i estalagmites són autèntiques obres d'art geològiques, que formen un espectacle impressionant enmig de la penombra.\n\nLa segona part de l'excursió et portarà pel Petit Pi, una muntanya més modesta però no menys fascinant. El camí t'endinsarà en un bosc dens, envoltat de vegetació exuberant i amb l'aroma fresc dels arbres. A mesura que et vas acostant a la cima, l'ambient es torna més tranquil i et sentiràs en harmonia amb la natura.\n\nL'excursió a la Cova de les Dues Boques, pels passos del Robust Marge i del Petit Pi, és una aventura única que et permetrà descobrir els secrets de la natura i gaudir de la màgia de les muntanyes. Sigui que siguis un amant de la geologia, un entusiasta de l'excursionisme o simplement busquis una escapada a la natura, aquesta ruta et deixarà meravellat i amb ganes de repetir.",
+                    "itinerary": [
+                    {
+                    "@type": "LandmarksOrHistoricalBuildings",
+                    "name": "Cova de les Dues Boques"
+                    },
+                    {
+                        "@type": "LandmarksOrHistoricalBuildings",
+                        "name": "Robust Marge"
+                    },
+                    {
+                        "@type": "LandmarksOrHistoricalBuildings",
+                        "name": "Petit Pi"
+                    }
+                    ],
+                    "image": [
+                    "https://s1.wklcdn.com/image_0/17608/29694389/18984649.jpg",
+                    "https://s0.wklcdn.com/image_0/17608/29694395/18984720.jpg",
+                    "https://3.bp.blogspot.com/-a8j1iZP-Pv8/W9C2O4ZHjRI/AAAAAAABVPs/PF0_eAPAs2UI3qUylBKK-iu5TbKzxM-QACKgBGAs/s1600/P1140263.JPG"
+                    ],
+                    "subjectOf": {
+                    "@type": "CreativeWork",
+                    "video": [],
+                    "audio": []
+                    },
+                    "sameAs": "https://raw.githubusercontent.com/multiparedes/lostjson/Production/json/informacioExtra26.json"
                 }
           
           
