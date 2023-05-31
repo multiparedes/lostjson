@@ -456,18 +456,19 @@ async function addComment(event) {
   const user = document.getElementById('username').value;
   const comment = document.getElementById('comment').value;
 
-//   jQuery.ajax({
-//   url: 'createCommnets.php',
-//   type: 'POST',
-//   data: { page: page, user: user, comment: comment},
-//   success: function(response) {
-//     console.log('JSON file created successfully!');
-//   },
-//   error: function(xhr, status, error) {
-//     console.log('Error creating JSON file: ' + error);
-//   }
-// });
+  jQuery.ajax({
+  url: 'createCommnets.php',
+  type: 'POST',
+  data: { page: page, user: user, comment: comment},
+  success: function(response) {
+    console.log('JSON file created successfully!');
+  },
+  error: function(xhr, status, error) {
+    console.log('Error creating JSON file: ' + error);
+  }
+});
 }
+
 
 
 async function updateComments(event) {
