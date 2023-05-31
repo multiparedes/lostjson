@@ -1,13 +1,11 @@
 <?php
-$page = $_POST['page'];
-$user = $_POST['user'];
-$comment = $_POST['comment'];
+  $user = $_POST['username'];
+  $comment = $_POST['comment'];
 
 $filePath = __DIR__ . "/" . $page+$user;
 
 $data = array(
-    'page' => $page,
-    'user' => $user,
+    'user' => $username,
     'comment' => $comment
 );
 
