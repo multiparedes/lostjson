@@ -3,11 +3,9 @@ import {
   getExcursio,
   checkCoordinatesWithinRadius,
 } from "./utils.js";
-
 const mapOverlay = document.querySelector(".map-container");
 const mapOverlayMessage = document.querySelector(".b-container");
 const map = document.querySelector(".mapa");
-
 let aditionalWaypoints = [];
 
 document.querySelector("form").addEventListener("submit", updateComments);
@@ -455,18 +453,41 @@ async function addComment(event) {
   const page = params.get("id");
   const user = document.getElementById('username').value;
   const comment = document.getElementById('comment').value;
-
-  jQuery.ajax({
-  url: 'createCommnets.php',
-  type: 'POST',
-  data: { page: page, user: user, comment: comment},
-  success: function(response) {
-    console.log('JSON file created successfully!');
-  },
-  error: function(xhr, status, error) {
-    console.log('Error creating JSON file: ' + error);
+  const com = {
+    page : page,
+    user : user,
+    comment : comment
   }
-});
+
+  const data = JSON.stringify(com);
+  var xhr = new XMLHttpRequest();
+
+  var url = '../php/createCommnets.php';
+  xhr.open('POST', url, true);
+  xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+  xhr.onload = function() {
+    if (xhr.status === 200) {
+      // Request was successful, do something with the response
+      console.log(xhr.responseText);
+    } else {
+      // Request failed
+      console.log('Error: ' + xhr.status);
+    }
+  };
+  xhr.send(data);
+//   jQuery.ajax({
+//   url: 'createCommnets.php',
+//   type: 'POST',
+//   data: { page: page, user: user, comment: comment},
+//   success: function(response) {
+//     console.log('JSON file created successfully!');
+//   },
+//   error: function(xhr, status, error) {
+//     console.log('Error creating JSON file: ' + error);
+//   }
+// });
+
+
 }
 
 
