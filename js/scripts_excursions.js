@@ -12,6 +12,9 @@ let aditionalWaypoints = [];
 
 document.querySelector("form").addEventListener("submit", updateComments);
 
+var button = document.getElementById('myButton');
+button.addEventListener('click', addComment);
+
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
@@ -447,6 +450,25 @@ async function getCommentsForPage(pageNumber) {
 
   return filteredComments;
 }
+async function addComment(event) {
+  const params = new URLSearchParams(window.location.search);
+  const page = params.get("id");
+  const user = document.getElementById('username').value;
+  const comment = document.getElementById('comment').value;
+
+  jQuery.ajax({
+  url: 'createCommnets.php',
+  type: 'POST',
+  data: { page: page, user: user, comment: comment},
+  success: function(response) {
+    console.log('JSON file created successfully!');
+  },
+  error: function(xhr, status, error) {
+    console.log('Error creating JSON file: ' + error);
+  }
+});
+}
+
 
 async function updateComments(event) {
   event.preventDefault();
