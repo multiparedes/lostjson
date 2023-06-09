@@ -27,6 +27,21 @@ map.addEventListener("mouseleave", () => {
   mapOverlayMessage.style.display = "flex"; // mostrar el overlay
 });
 
+function loadJSON_LD(info) {
+  const script = document.createElement('script');
+  script.setAttribute('type', 'application/ld+json');
+
+  let s = {
+      "@context": "https://schema.org",
+      "@type": "Trip",
+      "name": info.name,
+      "image": info.image,
+      "description": info.description,
+      "itinerary": info.itinerary
+  };
+  script.textContent = JSON.stringify(s);
+  document.head.appendChild(script);
+}
 async function showExcursio() {
   //Get the info of the excursió
   const { excursio, infoExtra } = await getExcursio();
@@ -34,6 +49,8 @@ async function showExcursio() {
   //Fill the html template with dynamic info
   fillExcursio(excursio, infoExtra);
 
+  //feim la cridada perque es carregui la semantica
+  loadJSON_LD(excursio);
   // Videos
   var apiKey = "AIzaSyBNzTRgAIH_1V-eYFol5ByUxgW5cdOSG0A";
 

@@ -37,6 +37,22 @@ function cardViewer() {
   });
 }
 
+function loadJSON_LD(info) {
+  const script = document.createElement('script');
+  script.setAttribute('type', 'application/ld+json');
+
+  let s = {
+      "@context": "https://schema.org",
+      "@type": "Trip",
+      "name": info.name,
+      "image": info.image,
+      "description": info.description,
+      "itinerary": info.itinerary
+  };
+  script.textContent = JSON.stringify(s);
+  document.head.appendChild(script);
+}
+
 async function generateCard({ sortValue, name }) {
   
   const toGen = document.getElementById("toGenerar");
@@ -51,6 +67,8 @@ async function generateCard({ sortValue, name }) {
     });
 
   jsonExcursions = jsonExcursions.itemListElement;
+  
+  loadJSON_LD(jsonExcursions);
   
   //Get the extra info
   let infoExtras = [];
