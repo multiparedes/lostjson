@@ -44,8 +44,7 @@ function loadJSON_LD(info) {
   let s = {
       "@context": "https://schema.org",
       "@type": "Trip",
-      "name": info.name,
-      "description": info.description
+      "name": info.name
   };
   script.textContent = JSON.stringify(s);
   document.head.appendChild(script);
@@ -66,7 +65,6 @@ async function generateCard({ sortValue, name }) {
 
   jsonExcursions = jsonExcursions.itemListElement;
   
-  loadJSON_LD(jsonExcursions);
 
   //Get the extra info
   let infoExtras = [];
@@ -117,6 +115,7 @@ async function generateCard({ sortValue, name }) {
 
   let cards = "";
   excursions.forEach((elem) => {
+    loadJSON_LD(elem.info);
     cards = cards.concat(
       createCard({
         id: elem.info.identifier,

@@ -34,8 +34,7 @@ function loadJSON_LD(info) {
   let s = {
       "@context": "https://schema.org",
       "@type": "Trip",
-      "name": info.name,
-      "description": info.description
+      "name": info.name
   };
   script.textContent = JSON.stringify(s);
   document.head.appendChild(script);
